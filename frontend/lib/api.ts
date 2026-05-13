@@ -20,3 +20,48 @@ export async function checkDatabaseHealth() {
 
   return response.json();
 }
+
+export async function sendChatMessage(message: string) {
+  const response = await fetch(`${API_BASE_URL}/api/chat`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ message }),
+  });
+
+  if (!response.ok) {
+    throw new Error("Chat request failed");
+  }
+
+  return response.json();
+}
+
+export async function sendChatMessageStream(
+  message: string,
+  onChunk: (chunk: string) => void
+) {
+  const response = await fetch(`${API_BASE_URL}/api/chat/stream`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ message }),
+  });
+
+  if (!response.ok || !response.body) {
+    throw new Error("Streaming request failed");
+  }
+
+  const reader = response.body.getReader();
+  const decoder = new TextDecoder("utf-8");
+
+  while (true) {
+    const { value, done } = await reader.read();
+
+    if (done) break;
+
+    const chunk = decoder.decode(value, { stream: true });
+    onChunk(chunk);
+  }
+}

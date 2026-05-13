@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Bãi biển Mỹ Khê",
+    "city": "Đà Nẵng",
+    "category": "biển",
+    "address": "Võ Nguyên Giáp, Đà Nẵng",
+    "best_time": "Sáng sớm hoặc chiều mát",
+    "budget": "Miễn phí",
+    "suitable_for": ["gia đình", "nhóm bạn", "người thích biển"],
+    "description": "Bãi biển Mỹ Khê là một trong những bãi biển nổi tiếng của Đà Nẵng, phù hợp để tắm biển, đi dạo, ngắm bình minh hoặc thư giãn vào buổi chiều.",
+    "tips": "Nên đi sáng sớm để ngắm bình minh và tránh nắng gắt.",
+    "source_url": "",
+    "latitude": null,
+    "longitude": null
+  }
+]

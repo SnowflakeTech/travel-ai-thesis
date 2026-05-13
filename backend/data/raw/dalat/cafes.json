@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Tiệm Cà Phê Túi Mơ To",
+    "city": "Đà Lạt",
+    "category": "cafe",
+    "address": "Hẻm 31 Sào Nam, Đà Lạt",
+    "best_time": "Sáng sớm hoặc chiều hoàng hôn",
+    "budget": "50000-100000 VND/người",
+    "suitable_for": ["cặp đôi", "bạn bè", "người thích cafe chill"],
+    "description": "Tiệm Cà Phê Túi Mơ To là quán cafe nổi tiếng với không gian nhiều cây xanh, view thung lũng và phong cách nhẹ nhàng. Phù hợp với người thích chụp ảnh, uống cafe chậm và trải nghiệm không khí Đà Lạt.",
+    "tips": "Nên đi vào sáng sớm hoặc chiều muộn để có ánh sáng đẹp.",
+    "source_url": "",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "title": "An Cafe",
+    "city": "Đà Lạt",
+    "category": "cafe",
+    "address": "63Bis đường 3 tháng 2, Đà Lạt",
+    "best_time": "Buổi sáng hoặc đầu giờ chiều",
+    "budget": "40000-90000 VND/người",
+    "suitable_for": ["gia đình", "bạn bè", "người thích không gian xanh"],
+    "description": "An Cafe có không gian nhiều cây xanh, nằm gần trung tâm, thuận tiện di chuyển. Quán phù hợp để nghỉ chân, trò chuyện và thưởng thức đồ uống trong lịch trình nhẹ nhàng.",
+    "tips": "Phù hợp để ghé giữa lịch trình vì gần trung tâm.",
+    "source_url": "",
+    "latitude": null,
+    "longitude": null
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Hồ Xuân Hương",
+    "city": "Đà Lạt",
+    "category": "thiên nhiên",
+    "address": "Trung tâm thành phố Đà Lạt",
+    "best_time": "Sáng sớm hoặc chiều mát",
+    "budget": "Miễn phí",
+    "suitable_for": ["người thích đi bộ", "cặp đôi", "gia đình"],
+    "description": "Hồ Xuân Hương phù hợp để đi dạo, đạp xe hoặc thư giãn. Đây là địa điểm trung tâm, dễ kết hợp với Quảng trường Lâm Viên, chợ Đà Lạt và các quán cafe gần đó.",
+    "tips": "Có thể kết hợp đi bộ quanh hồ và ghé quảng trường.",
+    "source_url": "",
+    "latitude": null,
+    "longitude": null
+  },
+  {
+    "title": "Quảng trường Lâm Viên",
+    "city": "Đà Lạt",
+    "category": "tham quan",
+    "address": "Đường Trần Quốc Toản, Đà Lạt",
+    "best_time": "Chiều mát hoặc buổi tối",
+    "budget": "Miễn phí",
+    "suitable_for": ["gia đình", "cặp đôi", "nhóm bạn"],
+    "description": "Quảng trường Lâm Viên là địa điểm biểu tượng của Đà Lạt, phù hợp để đi dạo, chụp ảnh và kết hợp tham quan Hồ Xuân Hương. Đây là điểm đến dễ di chuyển và không tốn chi phí.",
+    "tips": "Nên đi chiều mát để dễ chụp ảnh và dạo quanh hồ.",
+    "source_url": "",
+    "latitude": null,
+    "longitude": null
+  }
+]

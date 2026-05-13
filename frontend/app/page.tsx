@@ -1,10 +1,10 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { useEffect, useState } from "react";
 import {
   Activity,
   Bot,
-  CheckCircle2,
   Database,
   MapPinned,
   Route,
@@ -13,12 +13,15 @@ import {
 } from "lucide-react";
 
 import { checkBackendHealth, checkDatabaseHealth } from "@/lib/api";
+import { AiChatPanel } from "@/components/travel/ai-chat-panel";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function Home() {
-  const [backendStatus, setBackendStatus] = useState<string>("Đang kiểm tra...");
-  const [databaseStatus, setDatabaseStatus] = useState<string>("Đang kiểm tra...");
+  const [backendStatus, setBackendStatus] =
+    useState<string>("Đang kiểm tra...");
+  const [databaseStatus, setDatabaseStatus] =
+    useState<string>("Đang kiểm tra...");
 
   const backendOnline =
     backendStatus !== "Đang kiểm tra..." &&
@@ -39,15 +42,15 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="relative min-h-screen w-full max-w-full overflow-x-hidden bg-slate-950 text-white">
-      <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute left-[-10%] top-[-10%] h-80 w-80 rounded-full bg-cyan-500/20 blur-3xl" />
-        <div className="absolute right-[-10%] top-[20%] h-96 w-96 rounded-full bg-blue-600/20 blur-3xl" />
-        <div className="absolute bottom-[-10%] left-[30%] h-96 w-96 rounded-full bg-violet-600/20 blur-3xl" />
+    <main className="relative min-h-screen w-full overflow-x-hidden bg-slate-950 text-white">
+      <div className="pointer-events-none fixed inset-0 overflow-hidden">
+        <div className="absolute left-[-12rem] top-[-10rem] h-[28rem] w-[28rem] rounded-full bg-cyan-500/20 blur-3xl" />
+        <div className="absolute right-[-14rem] top-[8rem] h-[34rem] w-[34rem] rounded-full bg-blue-600/20 blur-3xl" />
+        <div className="absolute bottom-[-12rem] left-[28%] h-[32rem] w-[32rem] rounded-full bg-violet-600/20 blur-3xl" />
       </div>
 
-      <section className="relative mx-auto flex min-h-screen w-full max-w-7xl flex-col px-6 py-8 lg:px-10">
-        <nav className="mb-12 flex items-center justify-between">
+      <section className="relative mx-auto w-full max-w-7xl px-5 py-6 sm:px-6 lg:px-10">
+        <nav className="mb-10 flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-cyan-400/30 bg-cyan-400/10 shadow-lg shadow-cyan-500/20">
               <Bot className="h-6 w-6 text-cyan-300" />
@@ -57,9 +60,7 @@ export default function Home() {
               <p className="text-sm font-semibold tracking-wide text-white">
                 Travel AI Planner
               </p>
-              <p className="text-xs text-slate-400">
-                Agentic AI Thesis System
-              </p>
+              <p className="text-xs text-slate-400">Agentic AI Thesis System</p>
             </div>
           </div>
 
@@ -69,7 +70,7 @@ export default function Home() {
           </div>
         </nav>
 
-        <div className="grid flex-1 items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="grid min-h-[calc(100vh-8rem)] items-center gap-8 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-200">
               <Sparkles className="h-4 w-4" />
@@ -77,7 +78,7 @@ export default function Home() {
             </div>
 
             <div className="space-y-5">
-              <h1 className="max-w-4xl text-5xl font-bold leading-tight tracking-tight md:text-6xl">
+              <h1 className="max-w-4xl text-4xl font-bold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
                 Intelligent Travel Planning{" "}
                 <span className="bg-gradient-to-r from-cyan-300 via-blue-400 to-violet-400 bg-clip-text text-transparent">
                   with Agentic AI
@@ -92,7 +93,14 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col gap-3 sm:flex-row">
-              <Button className="h-12 rounded-xl bg-cyan-400 px-6 font-semibold text-slate-950 hover:bg-cyan-300">
+              <Button
+                onClick={() =>
+                  document
+                    .getElementById("chat-panel")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+                className="h-12 rounded-xl bg-cyan-400 px-6 font-semibold text-slate-950 hover:bg-cyan-300"
+              >
                 Bắt đầu lập lịch trình
               </Button>
 
@@ -110,11 +118,13 @@ export default function Home() {
                 title="Travel Data"
                 desc="Dữ liệu địa điểm Việt Nam"
               />
+
               <FeatureCard
                 icon={<Route className="h-5 w-5" />}
                 title="AI Planner"
                 desc="Lập lịch trình cá nhân hóa"
               />
+
               <FeatureCard
                 icon={<Database className="h-5 w-5" />}
                 title="RAG System"
@@ -177,6 +187,12 @@ export default function Home() {
             </Card>
           </div>
         </div>
+
+        <section id="chat-panel" className="mt-20 scroll-mt-20 pb-10">
+          <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950/40 shadow-2xl shadow-cyan-950/30">
+            <AiChatPanel />
+          </div>
+        </section>
       </section>
     </main>
   );
@@ -192,14 +208,14 @@ function StatusItem({
   online: boolean;
 }) {
   return (
-    <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-slate-950/50 p-4">
-      <div className="space-y-1">
+    <div className="flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-slate-950/50 p-4">
+      <div className="min-w-0 space-y-1">
         <p className="font-medium text-white">{title}</p>
-        <p className="text-sm text-slate-400">{description}</p>
+        <p className="break-words text-sm text-slate-400">{description}</p>
       </div>
 
       <div
-        className={`flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium ${
+        className={`flex shrink-0 items-center gap-2 rounded-full px-3 py-1 text-xs font-medium ${
           online
             ? "bg-emerald-400/10 text-emerald-300"
             : "bg-red-400/10 text-red-300"
@@ -221,15 +237,16 @@ function FeatureCard({
   title,
   desc,
 }: {
-  icon: React.ReactNode;
+  icon: ReactNode;
   title: string;
   desc: string;
 }) {
   return (
-    <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
+    <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur transition hover:border-cyan-400/30 hover:bg-white/10">
       <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-400/10 text-cyan-300">
         {icon}
       </div>
+
       <p className="font-semibold text-white">{title}</p>
       <p className="mt-1 text-sm text-slate-400">{desc}</p>
     </div>
@@ -238,9 +255,11 @@ function FeatureCard({
 
 function TechItem({ label, value }: { label: string; value: string }) {
   return (
-    <div className="flex items-center justify-between rounded-xl bg-white/5 px-4 py-3">
+    <div className="flex items-center justify-between gap-4 rounded-xl bg-white/5 px-4 py-3">
       <span className="text-sm text-slate-400">{label}</span>
-      <span className="text-sm font-medium text-slate-100">{value}</span>
+      <span className="text-right text-sm font-medium text-slate-100">
+        {value}
+      </span>
     </div>
   );
 }
