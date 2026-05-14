@@ -68,6 +68,12 @@ def extract_available_categories(contexts: list[dict[str, Any]]) -> list[str]:
 
 async def critic_agent(state: TravelAgentState) -> TravelAgentState:
     user_request = state["user_request"]
+
+    user_memories = state.get(
+        "user_memories",
+        "Chưa có thông tin ghi nhớ về người dùng.",
+    )
+
     requirements = state.get("trip_requirements", {})
     raw_contexts = state.get("retrieved_contexts", [])
     contexts = compact_contexts(raw_contexts, max_items=10)
@@ -91,18 +97,26 @@ DANH SÁCH NHÓM DỮ LIỆU HIỆN CÓ:
 QUY TẮC BẮT BUỘC:
 1. Chỉ sử dụng địa điểm, món ăn, trải nghiệm có trong DANH SÁCH TÊN ĐƯỢC PHÉP SỬ DỤNG hoặc trong retrieved_contexts.
 2. Tuyệt đối không tự thêm món ăn, địa điểm, quán, bãi biển, cafe, hoạt động hoặc điểm tham quan không có trong retrieved_contexts.
-3. Không bịa giá vé, giờ mở cửa, tình trạng đông khách, thời gian di chuyển chính xác hoặc dữ liệu thời gian thực.
-4. Nếu route_provider là haversine_fallback, chỉ nhắc ngắn rằng khoảng cách là ước lượng.
-5. Không viết mở đầu dài.
-6. Không lặp lại cùng một lưu ý nhiều lần.
-7. Không dùng câu chung chung như "các điểm cảnh đẹp khác", "những địa điểm nổi tiếng khác", "khám phá thêm" nếu không nêu được tên cụ thể từ retrieved_contexts.
-8. Nếu có dữ liệu category "lịch trình" hoặc "lịch trình mẫu", hãy dùng nó làm khung chính cho lịch trình.
-9. Nếu retrieved_contexts có các mục dạng "Ngày 1", "Ngày 2", "Ngày 3", hãy ưu tiên phân bổ theo đúng thứ tự ngày đó.
-10. Nếu route_plan có ordered_places, hãy tham khảo thứ tự điểm đến trong ordered_places, nhưng không cần nhắc chi tiết kỹ thuật.
-11. Nếu có dữ liệu ẩm thực, chỉ đưa vào phần ăn uống bổ sung theo từng ngày hoặc phần đặc sản; không biến toàn bộ lịch trình thành food tour trừ khi người dùng chỉ hỏi về ăn uống.
-12. Nếu không thấy một món ăn trong retrieved_contexts, không được liệt kê món đó trong phần đặc sản.
-13. Nếu không thấy một địa điểm trong retrieved_contexts, không được đưa địa điểm đó vào lịch trình.
-14. Nếu dữ liệu không đủ để lập lịch trình chi tiết, hãy nói rõ dữ liệu hiện có còn hạn chế và chỉ gợi ý dựa trên các mục đã truy xuất được.
+3. Cá nhân hóa lịch trình dựa trên user_memories nếu phù hợp với yêu cầu người dùng.
+4. Không bịa giá vé, giờ mở cửa, tình trạng đông khách, thời gian di chuyển chính xác hoặc dữ liệu thời gian thực.
+5. Nếu route_provider là haversine_fallback, chỉ nhắc ngắn rằng khoảng cách là ước lượng.
+6. Không viết mở đầu dài.
+7. Không lặp lại cùng một lưu ý nhiều lần.
+8. Không dùng câu chung chung như "các điểm cảnh đẹp khác", "những địa điểm nổi tiếng khác", "khám phá thêm" nếu không nêu được tên cụ thể từ retrieved_contexts.
+9. Nếu có dữ liệu category "lịch trình" hoặc "lịch trình mẫu", hãy dùng nó làm khung chính cho lịch trình.
+10. Nếu retrieved_contexts có các mục dạng "Ngày 1", "Ngày 2", "Ngày 3", hãy ưu tiên phân bổ theo đúng thứ tự ngày đó.
+11. Nếu route_plan có ordered_places, hãy tham khảo thứ tự điểm đến trong ordered_places, nhưng không cần nhắc chi tiết kỹ thuật.
+12. Nếu có dữ liệu ẩm thực, chỉ đưa vào phần ăn uống bổ sung theo từng ngày hoặc phần đặc sản; không biến toàn bộ lịch trình thành food tour trừ khi người dùng chỉ hỏi về ăn uống.
+13. Nếu không thấy một món ăn trong retrieved_contexts, không được liệt kê món đó trong phần đặc sản.
+14. Nếu không thấy một địa điểm trong retrieved_contexts, không được đưa địa điểm đó vào lịch trình.
+15. Nếu dữ liệu không đủ để lập lịch trình chi tiết, hãy nói rõ dữ liệu hiện có còn hạn chế và chỉ gợi ý dựa trên các mục đã truy xuất được.
+
+QUY TẮC DÙNG MEMORY:
+1. Nếu user_memories có sở thích liên quan như cafe chill, thiên nhiên, biển, văn hóa, ẩm thực, ít đi bộ, ngân sách thấp, hãy ưu tiên khi chọn và diễn giải lịch trình.
+2. Nếu user_memories mâu thuẫn với yêu cầu hiện tại, ưu tiên yêu cầu hiện tại của người dùng.
+3. Không nhắc lại toàn bộ memory một cách máy móc.
+4. Chỉ dùng memory để cá nhân hóa lựa chọn, nhịp lịch trình, lưu ý và ngân sách.
+5. Không tự thêm địa điểm hoặc món ăn chỉ vì memory có nhắc đến, nếu retrieved_contexts không có dữ liệu đó.
 
 QUY TẮC LẬP LỊCH TRÌNH THEO NHU CẦU:
 1. Với yêu cầu road trip, thiên nhiên hoặc khám phá:
@@ -143,6 +157,9 @@ QUY TẮC PHÂN BỔ THEO NGÀY:
 4. Ngân sách tham khảo
 5. Lưu ý quan trọng
 
+Thông tin đã ghi nhớ về người dùng:
+{user_memories}
+
 Yêu cầu người dùng:
 {user_request}
 
@@ -175,6 +192,6 @@ Hãy trả lời bằng tiếng Việt, thực tế, gọn, cụ thể và hoàn
 
     return {
         **state,
-        "critique": "Đã kiểm tra lịch trình theo RAG context, route plan và budget plan.",
+        "critique": "Đã kiểm tra lịch trình theo RAG context, route plan, budget plan và user memory.",
         "final_answer": response.text or "",
     }

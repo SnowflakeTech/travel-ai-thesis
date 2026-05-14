@@ -1,9 +1,14 @@
 from typing import Any
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, Field
+from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.agents.travel_graph import run_travel_agent
+from app.core.config import settings
+from app.db.session import get_db
+from app.memory.extractor import extract_memories_from_message
+from app.memory.service import get_user_memory_text, save_or_update_memory
 
 
 router = APIRouter()
@@ -11,6 +16,14 @@ router = APIRouter()
 
 class AgentRequest(BaseModel):
     message: str = Field(..., min_length=1, max_length=1200)
+    user_id: str = "demo_user"
+
+
+class SavedMemoryResponse(BaseModel):
+    id: int
+    memory_type: str
+    content: str
+    confidence: float
 
 
 class AgentResponse(BaseModel):
@@ -20,12 +33,49 @@ class AgentResponse(BaseModel):
     route_plan: dict[str, Any]
     budget_plan: dict[str, Any]
     critique: str
+    saved_memories: list[SavedMemoryResponse]
 
 
 @router.post("/agent/travel", response_model=AgentResponse)
-async def travel_agent(request: AgentRequest):
+async def travel_agent(
+    request: AgentRequest,
+    db: AsyncSession = Depends(get_db),
+):
     try:
-        result = await run_travel_agent(request.message)
+        user_memory_text = await get_user_memory_text(
+            db=db,
+            user_id=request.user_id,
+            limit=settings.MEMORY_MAX_ITEMS,
+        )
+
+        result = await run_travel_agent(
+            user_request=request.message,
+            user_id=request.user_id,
+            user_memories=user_memory_text,
+        )
+
+        extracted = await extract_memories_from_message(request.message)
+
+        saved_memories = []
+
+        for memory in extracted.memories:
+            saved = await save_or_update_memory(
+                db=db,
+                user_id=request.user_id,
+                memory_type=memory.memory_type,
+                content=memory.content,
+                source_message=request.message,
+                confidence=memory.confidence,
+            )
+
+            saved_memories.append(
+                SavedMemoryResponse(
+                    id=saved.id,
+                    memory_type=saved.memory_type,
+                    content=saved.content,
+                    confidence=saved.confidence,
+                )
+            )
 
         return AgentResponse(
             answer=result.get("final_answer", ""),
@@ -34,10 +84,11 @@ async def travel_agent(request: AgentRequest):
             route_plan=result.get("route_plan", {}),
             budget_plan=result.get("budget_plan", {}),
             critique=result.get("critique", ""),
+            saved_memories=saved_memories,
         )
 
     except Exception as exc:
         raise HTTPException(
             status_code=500,
-            detail=f"Travel agent workflow error: {str(exc)}",
+            detail=f"Travel agent memory workflow error: {str(exc)}",
         )

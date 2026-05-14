@@ -30,10 +30,16 @@ def build_travel_graph():
 travel_agent_graph = build_travel_graph()
 
 
-async def run_travel_agent(user_request: str) -> TravelAgentState:
+async def run_travel_agent(
+    user_request: str,
+    user_id: str = "demo_user",
+    user_memories: str = "Chưa có thông tin ghi nhớ về người dùng.",
+) -> TravelAgentState:
     result = await travel_agent_graph.ainvoke(
         {
             "user_request": user_request,
+            "user_id": user_id,
+            "user_memories": user_memories,
         }
     )
 

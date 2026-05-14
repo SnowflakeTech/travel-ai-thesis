@@ -3,6 +3,8 @@ from typing import Any, TypedDict
 
 class TravelAgentState(TypedDict, total=False):
     user_request: str
+    user_id: str
+    user_memories: str
 
     trip_requirements: dict[str, Any]
     retrieved_contexts: list[dict[str, Any]]

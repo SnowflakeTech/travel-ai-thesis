@@ -72,11 +72,24 @@ export async function sendAgentMessage(message: string) {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ message }),
+    body: JSON.stringify({
+      user_id: "demo_user",
+      message,
+    }),
   });
 
   if (!response.ok) {
     throw new Error("Agent request failed");
+  }
+
+  return response.json();
+}
+
+export async function getUserMemories(userId: string = "demo_user") {
+  const response = await fetch(`${API_BASE_URL}/api/memory/${userId}`);
+
+  if (!response.ok) {
+    throw new Error("Get memory request failed");
   }
 
   return response.json();

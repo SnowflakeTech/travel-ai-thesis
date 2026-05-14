@@ -28,11 +28,22 @@ def _extract_json_object(text: str) -> dict:
 async def planner_agent(state: TravelAgentState) -> TravelAgentState:
     user_request = state["user_request"]
 
+    user_memories = state.get(
+        "user_memories",
+        "Chưa có thông tin ghi nhớ về người dùng.",
+    )
+
     prompt = f"""
 Bạn là Planner Agent trong hệ thống AI lập kế hoạch du lịch.
 
 Nhiệm vụ:
 Phân tích yêu cầu người dùng và trích xuất thông tin thành JSON hợp lệ.
+Nếu thông tin ghi nhớ về người dùng có liên quan, hãy dùng nó để bổ sung preferences, constraints hoặc travel_style.
+Không tự bịa thông tin không có trong yêu cầu người dùng hoặc memory.
+Nếu người dùng không nói rõ ngân sách, số người đi, phương tiện hoặc ràng buộc quan trọng, hãy đưa vào missing_information.
+
+Thông tin đã ghi nhớ về người dùng:
+{user_memories}
 
 Yêu cầu người dùng:
 {user_request}

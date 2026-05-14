@@ -36,6 +36,10 @@ class Settings(BaseSettings):
     ROUTE_MAX_PLACES: int = 6
     ROUTE_CACHE_DIR: str = ".cache/routes"
 
+    MEMORY_MAX_ITEMS: int = 20
+    MEMORY_EXTRACTION_MAX_OUTPUT_TOKENS: int = 500
+    MEMORY_ENABLE_LLM_EXTRACTION: bool = True
+    
     class Config:
         env_file = ".env"
 
