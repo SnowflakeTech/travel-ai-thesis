@@ -25,6 +25,17 @@ class Settings(BaseSettings):
     RAG_MAX_CONTEXT_CHARS: int = 4500
     RAG_SCORE_THRESHOLD: float = 0.35
 
+    ORS_API_KEY: str = ""
+    ORS_BASE_URL: str = "https://api.heigit.org/openrouteservice"
+
+    NOMINATIM_BASE_URL: str = "https://nominatim.openstreetmap.org"
+    NOMINATIM_USER_AGENT: str = "travel-ai-thesis-student-project/1.0"
+
+    ROUTE_PROVIDER: str = "ors"
+    ROUTE_PROFILE: str = "foot-walking"
+    ROUTE_MAX_PLACES: int = 6
+    ROUTE_CACHE_DIR: str = ".cache/routes"
+
     class Config:
         env_file = ".env"
 

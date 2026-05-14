@@ -1,187 +1,173 @@
 [
   {
-    "title": "Ha Giang",
+    "title": "Mã Pí Lèng Pass",
     "city": "Hà Giang",
-    "category": "destination",
-    "address": "Hà Giang, Việt Nam",
-    "best_time": "September through to November is a good time to visit this remote province, with cooler temperatures. In November, Ha Giang is hugely popular during the Buckwheat Flower Festival. April to June is pleasant and warm, July and August can be very hot with regular monsoons.",
-    "budget": "",
+    "category": "thiên nhiên",
+    "address": "Mèo Vạc, Hà Giang",
+    "best_time": "Ban ngày, ưu tiên sáng hoặc chiều khi thời tiết khô ráo",
+    "budget": "Tùy phương tiện di chuyển và dịch vụ cá nhân",
     "suitable_for": [
-      "road trip",
-      "thiên nhiên",
-      "khám phá",
-      "người thích cảnh núi"
+      "người thích thiên nhiên",
+      "người thích road trip",
+      "người thích ngắm cảnh núi",
+      "người thích chụp ảnh"
     ],
-    "description": "A border province and official Frontier Area, Ha Giang lies in the remote far northern region of the country. To visit this province is to journey back in time and encounter some of Vietnam’s most rugged and grand landscapes. Ha Giang is best experienced as a road trip on two wheels, soaking up the majesty of the landscape and the atmosphere of the remote towns and minority villages.",
-    "tips": "Thích hợp đi theo dạng road trip, cần kiểm tra thời tiết và chuẩn bị kỹ nếu di chuyển bằng xe máy.",
+    "description": "Mã Pí Lèng là một trong những cung đèo nổi bật nhất của Hà Giang, nổi tiếng với cảnh núi đá hùng vĩ và tầm nhìn xuống khu vực sông Nho Quế. Đây là điểm dừng quan trọng trong hành trình Hà Giang Loop, phù hợp với du khách yêu thiên nhiên, thích cung đường đèo và cảnh quan miền núi phía Bắc.",
+    "tips": "Nên di chuyển cẩn thận, tránh chạy xe khi trời tối hoặc thời tiết xấu. Nếu đi xe máy, cần tay lái vững và kiểm tra phương tiện trước khi lên đèo.",
     "source_url": "https://vietnam.travel/places-to-go/northern-vietnam/ha-giang",
-    "latitude": null,
-    "longitude": null,
-    "related_links": [
-      {
-        "title": "Ha Giang",
-        "url": "https://vietnam.travel/places-to-go/northern-vietnam/ha-giang"
-      },
-      {
-        "title": "The Ha Giang loop: a four-day road trip",
-        "url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip"
-      },
-      {
-        "title": "Roadside adventures in Ha Giang",
-        "url": "https://vietnam.travel/things-to-do/ha-giang-adventures"
-      },
-      {
-        "title": "Vietnam's best outdoor activities",
-        "url": "https://vietnam.travel/things-to-do/vietnams-best-outdoor-activities"
-      }
-    ]
+    "latitude": 23.2530182,
+    "longitude": 105.4190892
   },
   {
-    "title": "Ma Pi Leng Pass",
+    "title": "Sông Nho Quế",
     "city": "Hà Giang",
-    "category": "nature",
-    "address": "Hà Giang, Việt Nam",
-    "best_time": "Nên đi ban ngày, thời tiết khô ráo để ngắm cảnh và di chuyển an toàn.",
-    "budget": "",
+    "category": "thiên nhiên",
+    "address": "Khu vực Mã Pí Lèng, Hà Giang",
+    "best_time": "Sáng hoặc chiều, khi thời tiết trong và tầm nhìn tốt",
+    "budget": "Tùy dịch vụ trải nghiệm tại địa phương",
     "suitable_for": [
-      "road trip",
-      "ngắm cảnh",
-      "chụp ảnh",
-      "người thích cung đường đèo"
+      "người thích ngắm cảnh",
+      "người thích thiên nhiên",
+      "người thích chụp ảnh",
+      "nhóm bạn"
     ],
-    "description": "The roads of Ha Giang serve up the ultimate motorcycle adventures. The drive into Dong Van is impossibly beautiful, however Ma Pi Leng — where the road snakes past the Nho Que River — is the jewel in Ha Giang crown.",
-    "tips": "Nên đi chậm, giữ an toàn khi di chuyển bằng xe máy hoặc ô tô qua đèo.",
+    "description": "Sông Nho Quế là cảnh quan thường được nhắc đến cùng cung đường Mã Pí Lèng. Dòng sông nằm giữa địa hình núi đá, tạo nên khung cảnh đặc trưng của Hà Giang và là điểm nhấn trong nhiều lịch trình khám phá vùng cao nguyên đá.",
+    "tips": "Nên kiểm tra thời tiết trước khi đi vì sương mù hoặc mưa có thể ảnh hưởng đến tầm nhìn và trải nghiệm chụp ảnh.",
     "source_url": "https://vietnam.travel/places-to-go/northern-vietnam/ha-giang",
-    "latitude": null,
-    "longitude": null,
-    "related_links": [
-      {
-        "title": "Ha Giang",
-        "url": "https://vietnam.travel/places-to-go/northern-vietnam/ha-giang"
-      },
-      {
-        "title": "The Ha Giang loop: a four-day road trip",
-        "url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip"
-      },
-      {
-        "title": "Roadside adventures in Ha Giang",
-        "url": "https://vietnam.travel/things-to-do/ha-giang-adventures"
-      },
-      {
-        "title": "Vietnam's best outdoor activities",
-        "url": "https://vietnam.travel/things-to-do/vietnams-best-outdoor-activities"
-      }
-    ]
+    "latitude": 23.2597282,
+    "longitude": 105.4358626
   },
   {
-    "title": "Quan Ba Pass and Dong Van Karst Plateau Geopark",
+    "title": "Đồng Văn Karst Plateau Geopark",
     "city": "Hà Giang",
-    "category": "nature",
-    "address": "Hà Giang, Việt Nam",
-    "best_time": "September through to November is a good time to visit this remote province, with cooler temperatures. In November, Ha Giang is hugely popular during the Buckwheat Flower Festival. April to June is pleasant and warm, July and August can be very hot with regular monsoons.",
-    "budget": "",
+    "category": "thiên nhiên",
+    "address": "Đồng Văn, Hà Giang",
+    "best_time": "Từ tháng 9 đến tháng 11 hoặc mùa khô, khi thời tiết thuận lợi cho di chuyển",
+    "budget": "Tùy lịch trình và phương tiện di chuyển",
     "suitable_for": [
-      "trekking",
-      "thiên nhiên",
-      "địa chất",
-      "người thích núi đá"
+      "người thích địa chất",
+      "người thích thiên nhiên",
+      "người thích trekking",
+      "du khách yêu văn hóa bản địa"
     ],
-    "description": "Trekking opportunities are plentiful in Ha Giang. The Quan Ba Pass holds a lookout that lives up to its name: Heaven’s Gate. Quan Ba is also the gateway to the lofty limestone peaks and rock-strewn fields of Dong Van Karst Plateau Geopark.",
-    "tips": "Phù hợp với người thích trekking và khám phá cảnh quan núi đá.",
-    "source_url": "https://vietnam.travel/places-to-go/northern-vietnam/ha-giang",
-    "latitude": null,
-    "longitude": null,
-    "related_links": [
-      {
-        "title": "Ha Giang",
-        "url": "https://vietnam.travel/places-to-go/northern-vietnam/ha-giang"
-      },
-      {
-        "title": "The Ha Giang loop: a four-day road trip",
-        "url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip"
-      },
-      {
-        "title": "Roadside adventures in Ha Giang",
-        "url": "https://vietnam.travel/things-to-do/ha-giang-adventures"
-      },
-      {
-        "title": "Vietnam's best outdoor activities",
-        "url": "https://vietnam.travel/things-to-do/vietnams-best-outdoor-activities"
-      }
-    ]
+    "description": "Đồng Văn Karst Plateau Geopark là vùng cao nguyên đá nổi bật của Hà Giang, gắn với cảnh quan núi đá vôi, thung lũng, bản làng và các cung đường đèo. Khu vực này thường xuất hiện trong các hành trình Hà Giang Loop và phù hợp với du khách muốn khám phá thiên nhiên, địa chất và văn hóa vùng cao.",
+    "tips": "Nên dành nhiều thời gian hơn một ngày nếu muốn khám phá trọn vẹn khu vực Đồng Văn, Mèo Vạc và các điểm dọc tuyến.",
+    "source_url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip",
+    "latitude": 23.2384784,
+    "longitude": 105.2472621
+  },
+  {
+    "title": "Quản Bạ Heaven's Gate",
+    "city": "Hà Giang",
+    "category": "thiên nhiên",
+    "address": "Quản Bạ, Hà Giang",
+    "best_time": "Sáng hoặc chiều, khi thời tiết trong và ít sương mù",
+    "budget": "Tùy phương tiện di chuyển",
+    "suitable_for": [
+      "người thích ngắm cảnh",
+      "người thích road trip",
+      "người thích chụp ảnh",
+      "du khách lần đầu đến Hà Giang"
+    ],
+    "description": "Quản Bạ Heaven's Gate là điểm ngắm cảnh nổi bật trên tuyến đường từ thành phố Hà Giang đi Yên Minh và Đồng Văn. Khu vực này mở ra tầm nhìn về núi rừng, thung lũng và là một trong những điểm dừng đầu tiên giúp du khách cảm nhận địa hình đặc trưng của Hà Giang.",
+    "tips": "Nên dừng lại nghỉ ngắn, chụp ảnh và kiểm tra phương tiện trước khi tiếp tục các đoạn đường đèo phía sau.",
+    "source_url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip",
+    "latitude": 23.0569766,
+    "longitude": 104.8580006
   },
   {
     "title": "Sa Phin H'Mong Palace",
     "city": "Hà Giang",
-    "category": "culture",
-    "address": "Sà Phìn, Hà Giang, Việt Nam",
-    "best_time": "Có thể tham quan trong ngày, nên kết hợp với lịch trình Đồng Văn.",
-    "budget": "",
+    "category": "văn hóa",
+    "address": "Sà Phìn, Đồng Văn, Hà Giang",
+    "best_time": "Có thể tham quan ban ngày, nên kết hợp trong lịch trình Đồng Văn",
+    "budget": "Tùy phí tham quan tại thời điểm đi",
     "suitable_for": [
-      "văn hóa",
-      "lịch sử",
-      "kiến trúc",
-      "tham quan"
+      "người thích văn hóa",
+      "người thích lịch sử",
+      "người thích kiến trúc",
+      "du khách muốn tìm hiểu đời sống người H'Mong"
     ],
-    "description": "Near the border with China stands a H'Mong King Palace in the village of Sa Phin. Built in 1902 during the French occupation, the wood-framed palace is done in the traditional Chinese style and oozes character.",
-    "tips": "Nên dành thời gian tìm hiểu bối cảnh lịch sử và kiến trúc của dinh thự.",
+    "description": "Sa Phin H'Mong Palace, còn được biết đến là dinh thự họ Vương, là công trình gắn với lịch sử và văn hóa của cộng đồng H'Mong tại Hà Giang. Công trình có kiến trúc đặc trưng, kết hợp yếu tố bản địa và ảnh hưởng kiến trúc truyền thống, phù hợp với du khách quan tâm đến văn hóa vùng cao.",
+    "tips": "Nên đi cùng hướng dẫn viên địa phương hoặc đọc trước thông tin lịch sử để hiểu rõ hơn giá trị của công trình.",
     "source_url": "https://vietnam.travel/places-to-go/northern-vietnam/ha-giang",
-    "latitude": null,
-    "longitude": null,
-    "related_links": [
-      {
-        "title": "Ha Giang",
-        "url": "https://vietnam.travel/places-to-go/northern-vietnam/ha-giang"
-      },
-      {
-        "title": "The Ha Giang loop: a four-day road trip",
-        "url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip"
-      },
-      {
-        "title": "Roadside adventures in Ha Giang",
-        "url": "https://vietnam.travel/things-to-do/ha-giang-adventures"
-      },
-      {
-        "title": "Vietnam's best outdoor activities",
-        "url": "https://vietnam.travel/things-to-do/vietnams-best-outdoor-activities"
-      }
-    ]
+    "latitude": 23.2625297,
+    "longitude": 105.2530182
   },
   {
     "title": "Lung Cu Flag Tower",
     "city": "Hà Giang",
-    "category": "culture",
-    "address": "Lũng Cú, Hà Giang, Việt Nam",
-    "best_time": "Chiều muộn là thời điểm dễ chịu hơn để leo bậc thang.",
-    "budget": "",
+    "category": "văn hóa",
+    "address": "Lũng Cú, Đồng Văn, Hà Giang",
+    "best_time": "Buổi sáng hoặc chiều muộn, khi thời tiết dễ chịu hơn",
+    "budget": "Tùy phí tham quan tại thời điểm đi",
     "suitable_for": [
-      "tham quan",
-      "văn hóa",
-      "chụp ảnh",
-      "ngắm cảnh"
+      "người thích tham quan",
+      "người thích văn hóa",
+      "người thích chụp ảnh",
+      "du khách lần đầu đến Hà Giang"
     ],
-    "description": "Make time to journey north to Lung Cu, where a gigantic Vietnamese flag blows proudly at the border. The best time to arrive is late afternoon as the heat subsides, making the climb of 200 steps a little kinder.",
-    "tips": "Trang gốc gợi ý nên đến vào cuối buổi chiều vì thời tiết bớt nóng, việc leo khoảng 200 bậc sẽ nhẹ hơn.",
+    "description": "Lung Cu Flag Tower là điểm tham quan nổi bật ở vùng cực Bắc, thường được đưa vào các lịch trình khám phá Đồng Văn và Hà Giang Loop. Địa điểm này phù hợp với du khách muốn kết hợp trải nghiệm cảnh quan vùng biên với ý nghĩa văn hóa và biểu tượng địa lý.",
+    "tips": "Có thể phải leo bậc thang nên nên đi lúc trời mát, mang giày thoải mái và chuẩn bị nước uống.",
     "source_url": "https://vietnam.travel/places-to-go/northern-vietnam/ha-giang",
-    "latitude": null,
-    "longitude": null,
-    "related_links": [
-      {
-        "title": "Ha Giang",
-        "url": "https://vietnam.travel/places-to-go/northern-vietnam/ha-giang"
-      },
-      {
-        "title": "The Ha Giang loop: a four-day road trip",
-        "url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip"
-      },
-      {
-        "title": "Roadside adventures in Ha Giang",
-        "url": "https://vietnam.travel/things-to-do/ha-giang-adventures"
-      },
-      {
-        "title": "Vietnam's best outdoor activities",
-        "url": "https://vietnam.travel/things-to-do/vietnams-best-outdoor-activities"
-      }
-    ]
+    "latitude": 23.3644211,
+    "longitude": 105.3155799
+  },
+  {
+    "title": "Dong Van Ancient Town",
+    "city": "Hà Giang",
+    "category": "văn hóa",
+    "address": "Đồng Văn, Hà Giang",
+    "best_time": "Buổi tối hoặc sáng sớm, khi khu phố có không khí yên bình và dễ đi bộ",
+    "budget": "Tùy ăn uống và mua sắm cá nhân",
+    "suitable_for": [
+      "người thích phố cổ",
+      "người thích văn hóa địa phương",
+      "người thích đi bộ nhẹ nhàng",
+      "nhóm bạn"
+    ],
+    "description": "Dong Van Ancient Town là khu vực phù hợp để nghỉ chân trong hành trình Hà Giang Loop. Du khách có thể đi bộ nhẹ nhàng, cảm nhận không khí thị trấn vùng cao, thưởng thức đồ ăn địa phương và dùng nơi này làm điểm dừng trước khi tiếp tục đến Mèo Vạc hoặc các điểm tham quan lân cận.",
+    "tips": "Nên nghỉ qua đêm ở Đồng Văn nếu muốn chia nhỏ lịch trình và tránh di chuyển quá nhiều trong một ngày.",
+    "source_url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip",
+    "latitude": 23.2789139,
+    "longitude": 105.3615967
+  },
+  {
+    "title": "Sung La Valley",
+    "city": "Hà Giang",
+    "category": "thiên nhiên",
+    "address": "Sủng Là, Đồng Văn, Hà Giang",
+    "best_time": "Mùa hoa tam giác mạch hoặc những ngày thời tiết trong",
+    "budget": "Tùy lịch trình và dịch vụ cá nhân",
+    "suitable_for": [
+      "người thích thung lũng",
+      "người thích chụp ảnh",
+      "người thích văn hóa bản làng",
+      "người thích thiên nhiên"
+    ],
+    "description": "Sung La Valley là một thung lũng nổi bật ở Hà Giang, thường được nhắc đến cùng các cánh đồng hoa tam giác mạch và đời sống bản làng vùng cao. Đây là điểm phù hợp với du khách muốn trải nghiệm cảnh quan nhẹ nhàng hơn so với các cung đường đèo.",
+    "tips": "Nếu đi mùa hoa, nên đi sớm để tránh đông và có ánh sáng đẹp để chụp ảnh.",
+    "source_url": "https://vietnam.travel/things-to-do/buckwheat-bounty-ha-giang",
+    "latitude": 23.2386111,
+    "longitude": 105.2152778
+  },
+  {
+    "title": "Thach Son Than",
+    "city": "Hà Giang",
+    "category": "thiên nhiên",
+    "address": "Khu vực cao nguyên đá Đồng Văn, Hà Giang",
+    "best_time": "Mùa hoa tam giác mạch, đặc biệt từ khoảng tháng 10 đến tháng 12",
+    "budget": "Tùy lịch trình và dịch vụ cá nhân",
+    "suitable_for": [
+      "người thích hoa tam giác mạch",
+      "người thích chụp ảnh",
+      "người thích cảnh quan núi đá",
+      "du khách yêu thiên nhiên"
+    ],
+    "description": "Thach Son Than là một trong những khu vực được gợi ý để ngắm hoa tam giác mạch tại Hà Giang. Cảnh quan kết hợp giữa hoa, đường núi và cao nguyên đá tạo nên trải nghiệm đặc trưng của mùa thu ở vùng cực Bắc.",
+    "tips": "Nên kiểm tra mùa hoa trước khi đi vì thời điểm nở có thể thay đổi tùy thời tiết từng năm.",
+    "source_url": "https://vietnam.travel/things-to-do/buckwheat-bounty-ha-giang",
+    "latitude": 23.0805307,
+    "longitude": 104.9127712
   }
 ]

@@ -6,6 +6,7 @@ from app.api.routes.health import router as health_router
 from app.core.config import settings
 from app.core.logging import setup_logging
 from app.api.routes.chat import router as chat_router
+from app.api.routes.agent import router as agent_router
 
 setup_logging()
 
@@ -22,3 +23,4 @@ app.add_middleware(
 app.include_router(health_router, prefix="/api")
 app.include_router(db_health_router, prefix="/api")
 app.include_router(chat_router, prefix="/api")
+app.include_router(agent_router, prefix="/api")

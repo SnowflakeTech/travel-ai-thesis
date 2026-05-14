@@ -1,0 +1,113 @@
+[
+  {
+    "title": "Cao lầu",
+    "city": "Hội An",
+    "category": "ẩm thực",
+    "address": "Hội An, Quảng Nam",
+    "best_time": "Buổi trưa hoặc buổi tối",
+    "budget": "Tùy quán ăn địa phương",
+    "suitable_for": [
+      "người thích đặc sản Hội An",
+      "người thích ẩm thực miền Trung",
+      "du khách lần đầu đến Hội An"
+    ],
+    "description": "Cao lầu là món ăn đặc trưng gắn liền với Hội An. Món này thường gồm sợi mì dày, thịt heo, rau sống, nước xốt đậm vị và phần topping giòn. Điểm đặc biệt của cao lầu nằm ở nguyên liệu và cách chế biến mang tính địa phương, vì vậy đây là món rất nên thử khi đến Hội An.",
+    "tips": "Nên thử ở các quán địa phương trong phố cổ hoặc khu vực gần chợ. Món này phù hợp đưa vào lịch trình ăn trưa hoặc ăn tối.",
+    "source_url": "https://vietnam.travel/things-to-do/4-must-try-dishes-quang-nam",
+    "latitude": 15.877861,
+    "longitude": 108.328333
+  },
+  {
+    "title": "Bánh bao bánh vạc White Rose",
+    "city": "Hội An",
+    "category": "ẩm thực",
+    "address": "Hội An, Quảng Nam",
+    "best_time": "Buổi trưa hoặc buổi tối",
+    "budget": "Tùy quán ăn địa phương",
+    "suitable_for": [
+      "người thích món nhẹ",
+      "người thích đặc sản Hội An",
+      "người thích ẩm thực địa phương"
+    ],
+    "description": "Bánh bao bánh vạc, thường được gọi là White Rose dumplings, là món ăn nổi tiếng của Hội An. Bánh có hình dáng giống cánh hoa, làm từ bột gạo, nhân thường gồm tôm, thịt hoặc nấm, dùng cùng hành phi và nước chấm. Đây là món ăn thể hiện sự tinh tế của ẩm thực phố cổ.",
+    "tips": "Có thể dùng như món ăn nhẹ trong lịch trình đi bộ phố cổ. Nên ăn khi bánh còn nóng để cảm nhận rõ kết cấu mềm và phần hành phi thơm.",
+    "source_url": "https://vietnam.travel/things-to-do/explore-food-hoi-an",
+    "latitude": 15.881389,
+    "longitude": 108.329722
+  },
+  {
+    "title": "Bánh mì Hội An",
+    "city": "Hội An",
+    "category": "ẩm thực",
+    "address": "Hội An, Quảng Nam",
+    "best_time": "Buổi sáng, trưa hoặc ăn nhẹ trong ngày",
+    "budget": "Tùy điểm bán",
+    "suitable_for": [
+      "người thích ăn nhanh",
+      "người thích street food",
+      "du khách ngân sách thấp",
+      "nhóm bạn"
+    ],
+    "description": "Bánh mì Hội An là món ăn đường phố nổi tiếng, phù hợp với du khách muốn ăn nhanh nhưng vẫn có hương vị địa phương rõ nét. Bánh mì thường có vỏ giòn, nhân phong phú, rau, nước xốt và gia vị tạo nên hương vị đậm đà.",
+    "tips": "Phù hợp cho bữa sáng hoặc bữa ăn nhẹ giữa lịch trình. Nếu đi giờ cao điểm có thể phải xếp hàng ở các điểm nổi tiếng.",
+    "source_url": "https://vietnam.travel/things-to-do/explore-food-hoi-an",
+    "latitude": 15.878611,
+    "longitude": 108.331389
+  },
+  {
+    "title": "Mì Quảng",
+    "city": "Hội An",
+    "category": "ẩm thực",
+    "address": "Hội An và Quảng Nam",
+    "best_time": "Buổi sáng, trưa hoặc tối",
+    "budget": "Tùy quán ăn địa phương",
+    "suitable_for": [
+      "người thích món mì",
+      "người thích ẩm thực Quảng Nam",
+      "du khách muốn thử món địa phương"
+    ],
+    "description": "Mì Quảng là món ăn tiêu biểu của Quảng Nam, phổ biến ở Hội An và các khu vực lân cận. Món thường có sợi mì vàng, nước dùng ít nhưng đậm vị, dùng cùng thịt, tôm, trứng, rau sống, bánh tráng và đậu phộng. Đây là lựa chọn phù hợp cho du khách muốn trải nghiệm ẩm thực miền Trung.",
+    "tips": "Nên ăn cùng rau sống và bánh tráng để đúng vị. Có thể chọn mì gà, mì tôm thịt hoặc các phiên bản địa phương khác.",
+    "source_url": "https://vietnam.travel/things-to-do/4-must-try-dishes-quang-nam",
+    "latitude": 15.879444,
+    "longitude": 108.330278
+  },
+  {
+    "title": "Hoành thánh Hội An",
+    "city": "Hội An",
+    "category": "ẩm thực",
+    "address": "Hội An, Quảng Nam",
+    "best_time": "Buổi trưa hoặc buổi tối",
+    "budget": "Tùy quán ăn địa phương",
+    "suitable_for": [
+      "người thích món chiên",
+      "người thích đặc sản Hội An",
+      "nhóm bạn",
+      "du khách thích ăn nhẹ"
+    ],
+    "description": "Hoành thánh là một trong những món ăn thường được gợi ý khi khám phá ẩm thực Hội An. Món có thể được chế biến theo nhiều cách, trong đó hoành thánh chiên giòn dùng cùng xốt và topping là lựa chọn phổ biến với du khách.",
+    "tips": "Có thể gọi chung với cao lầu hoặc bánh bao bánh vạc để tạo thành bữa ăn trải nghiệm nhiều món Hội An.",
+    "source_url": "https://vietnam.travel/places-to-go/central-vietnam/hoi-an",
+    "latitude": 15.877222,
+    "longitude": 108.326389
+  },
+  {
+    "title": "Cơm gà Hội An",
+    "city": "Hội An",
+    "category": "ẩm thực",
+    "address": "Hội An, Quảng Nam",
+    "best_time": "Buổi trưa hoặc buổi tối",
+    "budget": "Tùy quán ăn địa phương",
+    "suitable_for": [
+      "người thích cơm gà",
+      "du khách muốn ăn no",
+      "gia đình",
+      "nhóm bạn"
+    ],
+    "description": "Cơm gà Hội An là món ăn phổ biến với cơm vàng, thịt gà xé hoặc chặt miếng, rau răm, hành tây và nước xốt. Món này dễ ăn, phù hợp với nhiều nhóm du khách và có thể đưa vào lịch trình ăn trưa sau khi tham quan phố cổ.",
+    "tips": "Nên chọn quán có lượng khách ổn định và ăn vào giờ trưa hoặc tối để món còn nóng.",
+    "source_url": "https://vietnam.travel/things-to-do/explore-food-hoi-an",
+    "latitude": 15.877528,
+    "longitude": 108.330333
+  }
+]

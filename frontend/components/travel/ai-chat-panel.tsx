@@ -10,7 +10,7 @@ import {
   UserRound,
 } from "lucide-react";
 
-import { sendChatMessageStream } from "@/lib/api";
+import { sendAgentMessage } from "@/lib/api";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
@@ -62,15 +62,22 @@ export function AiChatPanel() {
     setIsLoading(true);
 
     try {
-      await sendChatMessageStream(trimmedInput, (chunk) => {
-        setMessages((prev) =>
-          prev.map((msg, index) =>
-            index === assistantIndex
-              ? { ...msg, content: msg.content + chunk }
-              : msg
-          )
-        );
-      });
+      const data = await sendAgentMessage(trimmedInput);
+
+      setMessages((prev) =>
+        prev.map((msg, index) =>
+          index === assistantIndex
+            ? {
+                ...msg,
+                content:
+                  data.answer ||
+                  data.response ||
+                  data.message ||
+                  "Agent đã phản hồi nhưng không có trường answer trong dữ liệu trả về.",
+              }
+            : msg
+        )
+      );
     } catch {
       setMessages((prev) =>
         prev.map((msg, index) =>
@@ -78,7 +85,7 @@ export function AiChatPanel() {
             ? {
                 ...msg,
                 content:
-                  "Có lỗi khi gọi Gemini API. Bạn hãy kiểm tra backend, API key, quota free tier hoặc endpoint stream nhé.",
+                  "Có lỗi khi gọi Agent API. Bạn hãy kiểm tra backend, endpoint /api/agent/travel hoặc log server nhé.",
               }
             : msg
         )
@@ -203,7 +210,7 @@ export function AiChatPanel() {
             {isLoading && messages.length > 0 && (
               <div className="flex items-center gap-2 text-sm text-slate-400">
                 <span className="h-2 w-2 animate-pulse rounded-full bg-cyan-300" />
-                Gemini đang xử lý yêu cầu...
+                Agent đang xử lý yêu cầu...
               </div>
             )}
           </div>

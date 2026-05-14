@@ -1,0 +1,116 @@
+[
+  {
+    "title": "An Bang Beach",
+    "city": "Hội An",
+    "category": "biển",
+    "address": "An Bàng, Hội An, Quảng Nam",
+    "best_time": "Sáng sớm hoặc chiều mát",
+    "budget": "Tùy ăn uống, ghế nằm và dịch vụ cá nhân",
+    "suitable_for": [
+      "người thích biển",
+      "người thích thư giãn",
+      "gia đình",
+      "nhóm bạn"
+    ],
+    "description": "An Bang Beach là bãi biển nổi tiếng gần phố cổ Hội An, phù hợp để thư giãn, tắm biển, ăn hải sản hoặc nghỉ ngơi sau khi tham quan khu phố cổ. Bãi biển cách khu phố cổ không xa và thường được gợi ý như một lựa chọn nhẹ nhàng cho buổi sáng hoặc buổi chiều.",
+    "tips": "Nên đi sáng sớm hoặc chiều để tránh nắng gắt. Nếu muốn không gian yên tĩnh hơn, nên tránh khung giờ cao điểm.",
+    "source_url": "https://vietnam.travel/places-to-go/central-vietnam/hoi-an",
+    "latitude": 15.912384,
+    "longitude": 108.342417
+  },
+  {
+    "title": "Cham Islands",
+    "city": "Hội An",
+    "category": "biển đảo",
+    "address": "Cù Lao Chàm, Hội An, Quảng Nam",
+    "best_time": "Mùa biển êm, thường phù hợp hơn vào mùa khô",
+    "budget": "Tùy tour tàu, ăn uống và hoạt động biển",
+    "suitable_for": [
+      "người thích biển đảo",
+      "người thích lặn ngắm san hô",
+      "nhóm bạn",
+      "người thích thiên nhiên"
+    ],
+    "description": "Cham Islands, hay Cù Lao Chàm, là cụm đảo ngoài khơi Hội An, thường được gợi ý cho du khách muốn kết hợp phố cổ với trải nghiệm biển đảo. Khu vực này phù hợp cho chuyến đi trong ngày với các hoạt động như đi tàu, tắm biển, khám phá đảo và trải nghiệm thiên nhiên biển.",
+    "tips": "Nên kiểm tra thời tiết và điều kiện biển trước khi đặt tour. Nếu dễ say sóng, nên chuẩn bị thuốc chống say.",
+    "source_url": "https://vietnam.travel/places-to-go/central-vietnam/hoi-an",
+    "latitude": 15.918902,
+    "longitude": 108.504265
+  },
+  {
+    "title": "Tra Que Vegetable Village",
+    "city": "Hội An",
+    "category": "làng nghề",
+    "address": "Trà Quế, Hội An, Quảng Nam",
+    "best_time": "Sáng sớm hoặc chiều mát",
+    "budget": "Tùy tour trải nghiệm hoặc ăn uống tại địa phương",
+    "suitable_for": [
+      "nguyên thích nông thôn",
+      "người thích đạp xe",
+      "người thích trải nghiệm địa phương",
+      "gia đình"
+    ],
+    "description": "Tra Que Vegetable Village là làng rau gần Hội An, thường được gợi ý trong các hành trình đạp xe, lớp học nấu ăn và trải nghiệm nông thôn. Du khách có thể quan sát vườn rau, tìm hiểu nguyên liệu địa phương và kết hợp với các hoạt động ẩm thực.",
+    "tips": "Nên đi bằng xe đạp vào sáng sớm hoặc chiều mát. Có thể kết hợp Trà Quế với lớp học nấu ăn để trải nghiệm đầy đủ hơn.",
+    "source_url": "https://vietnam.travel/things-to-do/top-things-to-do-hoi-an",
+    "latitude": 15.901582,
+    "longitude": 108.337583
+  },
+  {
+    "title": "Thanh Ha Pottery Village",
+    "city": "Hội An",
+    "category": "làng nghề",
+    "address": "Thanh Hà, Hội An, Quảng Nam",
+    "best_time": "Buổi sáng hoặc chiều",
+    "budget": "Tùy vé tham quan và hoạt động trải nghiệm",
+    "suitable_for": [
+      "người thích làng nghề",
+      "người thích gốm",
+      "gia đình",
+      "người thích văn hóa thủ công"
+    ],
+    "description": "Thanh Ha Pottery Village là làng gốm truyền thống gần Hội An, nơi du khách có thể tìm hiểu nghề làm gốm, quan sát kỹ thuật thủ công và trải nghiệm không gian làng nghề. Đây là điểm phù hợp nếu muốn bổ sung hoạt động văn hóa ngoài khu phố cổ.",
+    "tips": "Nên đi vào ban ngày để dễ xem hoạt động làm gốm. Có thể kết hợp mua sản phẩm nhỏ làm quà lưu niệm.",
+    "source_url": "https://vietnam.travel/things-to-do/7-things-to-do-hoi-an",
+    "latitude": 15.877843,
+    "longitude": 108.303214
+  },
+  {
+    "title": "My Son Sanctuary",
+    "city": "Hội An",
+    "category": "di sản",
+    "address": "Duy Phú, Duy Xuyên, Quảng Nam",
+    "best_time": "Buổi sáng để tránh nắng",
+    "budget": "Tùy vé tham quan và phương tiện di chuyển",
+    "suitable_for": [
+      "người thích di sản",
+      "người thích lịch sử",
+      "người thích kiến trúc Chăm",
+      "du khách muốn đi ngoài Hội An"
+    ],
+    "description": "My Son Sanctuary là khu đền tháp Chăm nằm cách Hội An khoảng 40 km, được UNESCO công nhận là di sản văn hóa. Các công trình còn lại trong thung lũng phản ánh lịch sử, kiến trúc và tín ngưỡng của vương quốc Chăm, phù hợp cho chuyến đi nửa ngày hoặc một ngày từ Hội An.",
+    "tips": "Nên đi buổi sáng để tránh nắng và chuẩn bị nước uống. Địa điểm nằm ngoài Hội An nên cần tính thêm thời gian di chuyển.",
+    "source_url": "https://vietnam.travel/places-to-go/central-vietnam/hoi-an",
+    "latitude": 15.764124,
+    "longitude": 108.124618
+  },
+  {
+    "title": "Cam Thanh Coconut Village",
+    "city": "Hội An",
+    "category": "trải nghiệm",
+    "address": "Cẩm Thanh, Hội An, Quảng Nam",
+    "best_time": "Sáng hoặc chiều mát",
+    "budget": "Tùy tour thuyền thúng và dịch vụ địa phương",
+    "suitable_for": [
+      "gia đình",
+      "nhóm bạn",
+      "người thích trải nghiệm sông nước",
+      "người thích hoạt động nhẹ"
+    ],
+    "description": "Cam Thanh Coconut Village là khu vực nổi tiếng với trải nghiệm sông nước và thuyền thúng gần Hội An. Du khách có thể đi thuyền trong rừng dừa nước, tìm hiểu đời sống ven sông và kết hợp với các hoạt động nấu ăn hoặc làng quê.",
+    "tips": "Nên hỏi rõ giá và nội dung tour trước khi tham gia. Nếu không thích hoạt động quá náo nhiệt, nên chọn khung giờ ít khách.",
+    "source_url": "https://vietnam.travel/things-to-do/7-things-to-do-hoi-an",
+    "latitude": 15.867542,
+    "longitude": 108.356417
+  }
+]

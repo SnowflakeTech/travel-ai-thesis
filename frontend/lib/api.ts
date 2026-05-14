@@ -65,3 +65,19 @@ export async function sendChatMessageStream(
     onChunk(chunk);
   }
 }
+
+export async function sendAgentMessage(message: string) {
+  const response = await fetch(`${API_BASE_URL}/api/agent/travel`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ message }),
+  });
+
+  if (!response.ok) {
+    throw new Error("Agent request failed");
+  }
+
+  return response.json();
+}

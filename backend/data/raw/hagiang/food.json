@@ -1,0 +1,147 @@
+[
+  {
+    "title": "Bánh cuốn Đồng Văn",
+    "city": "Hà Giang",
+    "category": "ẩm thực",
+    "address": "Đồng Văn, Hà Giang",
+    "best_time": "Buổi sáng",
+    "budget": "Tùy quán ăn địa phương",
+    "suitable_for": [
+      "người thích ăn sáng địa phương",
+      "người thích ẩm thực vùng cao",
+      "nhóm bạn",
+      "du khách nghỉ tại Đồng Văn"
+    ],
+    "description": "Bánh cuốn Đồng Văn là món ăn sáng được gợi ý trong hành trình khám phá Hà Giang. Món thường gồm bánh cuốn mềm, nhân thịt hoặc mộc nhĩ, ăn cùng nước dùng nóng, phù hợp để bắt đầu ngày mới trước khi tiếp tục đi đường đèo.",
+    "tips": "Nên ăn vào buổi sáng khi món còn nóng và kết hợp với lịch trình đi bộ nhẹ quanh Đồng Văn.",
+    "source_url": "https://vietnam.travel/things-to-do/ha-giang-adventures",
+    "latitude": 23.279167,
+    "longitude": 105.361944
+  },
+  {
+    "title": "Cháo ấu tẩu",
+    "city": "Hà Giang",
+    "category": "ẩm thực",
+    "address": "Hà Giang, Việt Nam",
+    "best_time": "Buổi tối hoặc khi thời tiết lạnh",
+    "budget": "Tùy quán ăn địa phương",
+    "suitable_for": [
+      "người thích món nóng",
+      "người thích đặc sản địa phương",
+      "du khách muốn trải nghiệm ẩm thực Hà Giang"
+    ],
+    "description": "Cháo ấu tẩu là món ăn đặc trưng của Hà Giang, có vị béo và hơi đắng nhẹ từ củ ấu tẩu, thường được nấu cùng gạo nếp, nước hầm xương, trứng, thịt băm và rau thơm. Đây là món phù hợp trong thời tiết lạnh của vùng núi.",
+    "tips": "Ấu tẩu cần được chế biến đúng cách, nên ăn tại quán địa phương uy tín và không tự chế biến nếu không hiểu rõ nguyên liệu.",
+    "source_url": "https://vietnam.travel/things-to-do/local-unpacked-one-kind-cuisine-ha-giang-karst-plateau",
+    "latitude": 22.824722,
+    "longitude": 104.984167
+  },
+  {
+    "title": "Thắng cố",
+    "city": "Hà Giang",
+    "category": "ẩm thực",
+    "address": "Các chợ và quán ăn vùng cao Hà Giang",
+    "best_time": "Buổi trưa hoặc trong các dịp chợ phiên",
+    "budget": "Tùy quán ăn và khẩu phần",
+    "suitable_for": [
+      "người thích ẩm thực truyền thống",
+      "người thích trải nghiệm văn hóa bản địa",
+      "du khách muốn thử món đặc trưng vùng cao"
+    ],
+    "description": "Thắng cố là món ăn truyền thống gắn với văn hóa của người Mông. Món có nước dùng nấu từ xương, thịt và các loại gia vị đặc trưng như hồi, thảo quả, lá chanh. Ngày nay, một số nơi có biến thể dùng thịt trâu, bò hoặc lợn để phù hợp hơn với du khách.",
+    "tips": "Hương vị khá đặc trưng nên phù hợp với du khách muốn trải nghiệm văn hóa ẩm thực bản địa. Nên hỏi kỹ nguyên liệu trước khi dùng.",
+    "source_url": "https://vietnam.travel/things-to-do/local-unpacked-one-kind-cuisine-ha-giang-karst-plateau",
+    "latitude": 23.278333,
+    "longitude": 105.360833
+  },
+  {
+    "title": "Xôi ngũ sắc",
+    "city": "Hà Giang",
+    "category": "ẩm thực",
+    "address": "Hà Giang, Việt Nam",
+    "best_time": "Buổi sáng hoặc trong các dịp lễ hội, chợ phiên",
+    "budget": "Tùy điểm bán",
+    "suitable_for": [
+      "người thích món truyền thống",
+      "người thích màu sắc văn hóa",
+      "gia đình",
+      "du khách muốn thử đặc sản vùng cao"
+    ],
+    "description": "Xôi ngũ sắc là món ăn truyền thống có màu sắc bắt mắt, thường dùng gạo nếp và màu tự nhiên từ các loại lá, củ, quả. Món ăn thể hiện nét văn hóa ẩm thực của cộng đồng vùng cao và thường xuất hiện trong các dịp lễ hội hoặc bữa ăn truyền thống.",
+    "tips": "Có thể ăn cùng muối vừng, giò hoặc các món ăn kèm tùy địa phương.",
+    "source_url": "https://vietnam.travel/things-to-do/five-colour-sticky-rice-quintessence-vietnamese-cuisine",
+    "latitude": 23.278611,
+    "longitude": 105.361111
+  },
+  {
+    "title": "Bánh tam giác mạch",
+    "city": "Hà Giang",
+    "category": "ẩm thực",
+    "address": "Đồng Văn và các khu vực có hoa tam giác mạch tại Hà Giang",
+    "best_time": "Mùa hoa tam giác mạch hoặc khi ghé chợ địa phương",
+    "budget": "Tùy điểm bán",
+    "suitable_for": [
+      "người thích đặc sản Hà Giang",
+      "người thích món ăn từ tam giác mạch",
+      "người thích trải nghiệm mùa hoa"
+    ],
+    "description": "Bánh tam giác mạch là món ăn gắn với cây tam giác mạch, một biểu tượng của Hà Giang. Hạt tam giác mạch có thể được dùng để làm nhiều món như bánh, cháo, mì, bún khô hoặc rượu, tạo nên nét riêng trong ẩm thực vùng cao.",
+    "tips": "Nên thử khi đi vào mùa hoa tam giác mạch hoặc ghé các khu chợ, điểm bán đặc sản địa phương.",
+    "source_url": "https://vietnam.travel/things-to-do/buckwheat-bounty-ha-giang",
+    "latitude": 23.238611,
+    "longitude": 105.215278
+  },
+  {
+    "title": "Rượu ngô men lá",
+    "city": "Hà Giang",
+    "category": "ẩm thực",
+    "address": "Hà Giang, Việt Nam",
+    "best_time": "Trong bữa ăn địa phương hoặc khi trải nghiệm văn hóa vùng cao",
+    "budget": "Tùy điểm bán và loại rượu",
+    "suitable_for": [
+      "du khách muốn tìm hiểu văn hóa địa phương",
+      "người quan tâm ẩm thực truyền thống"
+    ],
+    "description": "Rượu ngô men lá là một trong những đặc sản thường được nhắc đến trong văn hóa ẩm thực Hà Giang. Thức uống này gắn với nguyên liệu địa phương và phương pháp lên men truyền thống của cộng đồng vùng cao.",
+    "tips": "Chỉ nên dùng có chừng mực và không sử dụng nếu phải lái xe đường đèo.",
+    "source_url": "https://vietnam.travel/things-to-do/local-unpacked-one-kind-cuisine-ha-giang-karst-plateau",
+    "latitude": 23.279722,
+    "longitude": 105.360278
+  },
+  {
+    "title": "Bánh chưng gù",
+    "city": "Hà Giang",
+    "category": "ẩm thực",
+    "address": "Hà Giang, Việt Nam",
+    "best_time": "Có thể mua làm quà hoặc ăn trong các bữa truyền thống",
+    "budget": "Tùy điểm bán",
+    "suitable_for": [
+      "người thích đặc sản địa phương",
+      "du khách mua quà",
+      "người thích món truyền thống"
+    ],
+    "description": "Bánh chưng gù là món ăn nổi tiếng của người Dao Đỏ và vùng Hà Giang. Bánh thường dùng gạo nếp nương, đỗ xanh, thịt lợn bản địa và lá riềng để gói, sau đó được luộc trong nhiều giờ theo cách truyền thống.",
+    "tips": "Phù hợp để mua làm quà nếu được đóng gói cẩn thận và bảo quản đúng cách.",
+    "source_url": "https://vietnam.travel/things-to-do/local-unpacked-one-kind-cuisine-ha-giang-karst-plateau",
+    "latitude": 22.823611,
+    "longitude": 104.983333
+  },
+  {
+    "title": "Mèn mén",
+    "city": "Hà Giang",
+    "category": "ẩm thực",
+    "address": "Hà Giang, Việt Nam",
+    "best_time": "Trong bữa ăn địa phương hoặc khi ghé chợ vùng cao",
+    "budget": "Tùy điểm bán",
+    "suitable_for": [
+      "người thích ẩm thực truyền thống",
+      "người muốn tìm hiểu đời sống vùng cao",
+      "du khách trải nghiệm chợ phiên"
+    ],
+    "description": "Mèn mén là món ăn làm từ bột ngô hấp, gắn với đời sống ẩm thực của cộng đồng vùng núi phía Bắc. Tại Hà Giang, món này thường được nhắc đến cùng các trải nghiệm chợ phiên và văn hóa ẩm thực bản địa.",
+    "tips": "Món có hương vị mộc mạc, nên thử cùng các món địa phương khác để cảm nhận rõ hơn bữa ăn vùng cao.",
+    "source_url": "https://vietnam.travel/festival-event/international-tourism-and-culinary-culture-festival-ha-giang",
+    "latitude": 23.238333,
+    "longitude": 105.247222
+  }
+]
