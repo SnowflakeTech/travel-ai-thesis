@@ -8,6 +8,7 @@ from app.core.logging import setup_logging
 from app.api.routes.chat import router as chat_router
 from app.api.routes.agent import router as agent_router
 from app.api.routes.memory import router as memory_router
+from app.api.routes.interactive import router as interactive_router
 
 setup_logging()
 
@@ -26,3 +27,4 @@ app.include_router(db_health_router, prefix="/api")
 app.include_router(chat_router, prefix="/api")
 app.include_router(agent_router, prefix="/api")
 app.include_router(memory_router, prefix="/api")
+app.include_router(interactive_router, prefix="/api")

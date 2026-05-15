@@ -1,0 +1,115 @@
+[
+  {
+    "title": "Hanoi Old Quarter",
+    "city": "Hà Nội",
+    "category": "phố cổ",
+    "address": "Quận Hoàn Kiếm, Hà Nội",
+    "best_time": "Sáng sớm hoặc buổi tối",
+    "budget": "Miễn phí nếu chỉ đi bộ tham quan, chi phí tùy ăn uống và mua sắm",
+    "suitable_for": [
+      "người thích phố cổ",
+      "người thích đi bộ nhẹ nhàng",
+      "người thích ẩm thực đường phố",
+      "du khách lần đầu đến Hà Nội"
+    ],
+    "description": "Hanoi Old Quarter là khu phố cổ nổi tiếng của Hà Nội với mạng lưới phố nhỏ, nhà ống, cửa hàng truyền thống, quán ăn đường phố và nhịp sống đô thị đặc trưng. Khu vực này phù hợp để đi bộ chậm, quan sát kiến trúc cũ, thưởng thức phở, bún chả, bia hơi và cảm nhận không khí lâu đời của thủ đô.",
+    "tips": "Nên đi bộ vào sáng sớm để đỡ đông hoặc buổi tối để cảm nhận không khí phố cổ. Cần chú ý xe máy khi băng qua đường.",
+    "source_url": "https://vietnam.travel/places-to-go/northern-vietnam/ha-noi",
+    "latitude": 21.033333,
+    "longitude": 105.850000
+  },
+  {
+    "title": "Hoan Kiem Lake",
+    "city": "Hà Nội",
+    "category": "tham quan",
+    "address": "Hoàn Kiếm, Hà Nội",
+    "best_time": "Sáng sớm hoặc chiều tối",
+    "budget": "Miễn phí nếu đi dạo quanh hồ",
+    "suitable_for": [
+      "người thích đi bộ nhẹ nhàng",
+      "người thích hồ nước",
+      "người thích chụp ảnh",
+      "gia đình"
+    ],
+    "description": "Hoan Kiem Lake là hồ trung tâm và mang tính biểu tượng của Hà Nội. Khu vực quanh hồ có lối đi bộ, cây xanh, Tháp Rùa, cầu Thê Húc và đền Ngọc Sơn. Đây là điểm phù hợp để đi dạo nhẹ nhàng, quan sát đời sống người dân và bắt đầu hành trình khám phá phố cổ.",
+    "tips": "Nên đi vào sáng sớm để thấy người dân tập thể dục hoặc buổi tối cuối tuần khi khu vực quanh hồ có phố đi bộ.",
+    "source_url": "https://vietnam.travel/things-to-do/hanoi-world-leading-city-break-2022",
+    "latitude": 21.028767,
+    "longitude": 105.852361
+  },
+  {
+    "title": "Ngoc Son Temple",
+    "city": "Hà Nội",
+    "category": "văn hóa",
+    "address": "Đảo Ngọc, Hồ Hoàn Kiếm, Hà Nội",
+    "best_time": "Sáng hoặc chiều",
+    "budget": "Tùy vé tham quan tại thời điểm đi",
+    "suitable_for": [
+      "người thích văn hóa",
+      "người thích lịch sử",
+      "người thích tham quan nhẹ nhàng",
+      "du khách lần đầu đến Hà Nội"
+    ],
+    "description": "Ngoc Son Temple nằm trên đảo nhỏ trong hồ Hoàn Kiếm và được nối với bờ bằng cầu Thê Húc màu đỏ. Đây là điểm tham quan văn hóa nổi bật trong khu vực trung tâm Hà Nội, thường được kết hợp với lịch trình đi bộ quanh hồ và phố cổ.",
+    "tips": "Nên kết hợp tham quan đền Ngọc Sơn, cầu Thê Húc và hồ Hoàn Kiếm trong cùng một buổi để tiết kiệm thời gian.",
+    "source_url": "https://vietnam.travel/things-to-do/hanoi-world-leading-city-break-2022",
+    "latitude": 21.030656,
+    "longitude": 105.852444
+  },
+  {
+    "title": "The Huc Bridge",
+    "city": "Hà Nội",
+    "category": "tham quan",
+    "address": "Hồ Hoàn Kiếm, Hà Nội",
+    "best_time": "Sáng sớm hoặc chiều tối",
+    "budget": "Tùy vé tham quan khu đền Ngọc Sơn nếu vào bên trong",
+    "suitable_for": [
+      "người thích chụp ảnh",
+      "người thích đi bộ nhẹ nhàng",
+      "du khách lần đầu đến Hà Nội"
+    ],
+    "description": "The Huc Bridge là cây cầu đỏ nối bờ hồ Hoàn Kiếm với đền Ngọc Sơn. Cây cầu là một trong những hình ảnh quen thuộc của Hà Nội, phù hợp để chụp ảnh và kết hợp trong hành trình tham quan khu vực hồ Hoàn Kiếm.",
+    "tips": "Nếu muốn ảnh ít người, nên đi vào sáng sớm hoặc tránh giờ cao điểm cuối tuần.",
+    "source_url": "https://vietnam.travel/things-to-do/hanoi-world-leading-city-break-2022",
+    "latitude": 21.030556,
+    "longitude": 105.852222
+  },
+  {
+    "title": "Bach Ma Temple",
+    "city": "Hà Nội",
+    "category": "văn hóa",
+    "address": "76 Hàng Buồm, Hoàn Kiếm, Hà Nội",
+    "best_time": "Ban ngày",
+    "budget": "Tùy chính sách tham quan tại thời điểm đi",
+    "suitable_for": [
+      "người thích văn hóa",
+      "người thích lịch sử",
+      "người thích phố cổ",
+      "người thích di tích"
+    ],
+    "description": "Bach Ma Temple là một trong những di tích lâu đời trong khu phố cổ Hà Nội, gắn với lịch sử Thăng Long và tín ngưỡng thờ thần Long Đỗ. Không gian đền phù hợp với du khách muốn tìm hiểu chiều sâu văn hóa của khu Old Quarter thay vì chỉ đi dạo và ăn uống.",
+    "tips": "Nên giữ trang phục lịch sự và nói nhỏ khi vào không gian thờ tự.",
+    "source_url": "https://vietnam.travel/things-to-do/hanoi-six-heritage-sites",
+    "latitude": 21.035972,
+    "longitude": 105.852417
+  },
+  {
+    "title": "Ta Hien Street",
+    "city": "Hà Nội",
+    "category": "trải nghiệm",
+    "address": "Tạ Hiện, Hoàn Kiếm, Hà Nội",
+    "best_time": "Buổi tối",
+    "budget": "Tùy ăn uống và đồ uống cá nhân",
+    "suitable_for": [
+      "nhóm bạn",
+      "người thích không khí phố đêm",
+      "người thích trải nghiệm địa phương",
+      "du khách muốn khám phá phố cổ buổi tối"
+    ],
+    "description": "Ta Hien Street là tuyến phố nổi tiếng trong khu phố cổ, thường được biết đến với không khí sôi động buổi tối, các quán ăn, quán bia và hoạt động giao lưu của du khách. Đây là trải nghiệm phù hợp với nhóm bạn hơn là người tìm không gian yên tĩnh.",
+    "tips": "Nếu không thích nơi đông người, chỉ nên đi ngang qua để trải nghiệm không khí hoặc chọn thời điểm sớm hơn buổi tối muộn.",
+    "source_url": "https://vietnam.travel/places-to-go/northern-vietnam/ha-noi",
+    "latitude": 1.035222,
+    "longitude": 105.851611
+  }
+]

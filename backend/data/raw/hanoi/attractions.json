@@ -1,0 +1,135 @@
+[
+  {
+    "title": "Temple of Literature",
+    "city": "Hà Nội",
+    "category": "di tích",
+    "address": "58 Quốc Tử Giám, Đống Đa, Hà Nội",
+    "best_time": "Sáng hoặc chiều mát",
+    "budget": "Tùy vé tham quan tại thời điểm đi",
+    "suitable_for": [
+      "người thích lịch sử",
+      "người thích văn hóa",
+      "người thích kiến trúc truyền thống",
+      "gia đình"
+    ],
+    "description": "Temple of Literature, hay Văn Miếu - Quốc Tử Giám, là một trong những di tích văn hóa quan trọng của Hà Nội. Công trình gắn với truyền thống giáo dục Nho học, có sân vườn, nhà bia, kiến trúc cổ và không gian yên tĩnh. Đây là điểm phù hợp cho lịch trình văn hóa, lịch sử và chụp ảnh nhẹ nhàng.",
+    "tips": "Nên đi vào buổi sáng hoặc chiều mát để tham quan thoải mái. Nếu đi mùa thi hoặc dịp lễ, khu vực có thể đông học sinh, sinh viên.",
+    "source_url": "https://vietnam.travel/things-to-do/11-must-see-attractions-ha-noi",
+    "latitude": 21.028522,
+    "longitude": 105.835561
+  },
+  {
+    "title": "Ho Chi Minh Mausoleum",
+    "city": "Hà Nội",
+    "category": "di tích",
+    "address": "Quảng trường Ba Đình, Hà Nội",
+    "best_time": "Buổi sáng",
+    "budget": "Tùy khu vực tham quan và chính sách tại thời điểm đi",
+    "suitable_for": [
+      "người thích lịch sử",
+      "người thích tham quan chính trị - văn hóa",
+      "gia đình",
+      "du khách lần đầu đến Hà Nội"
+    ],
+    "description": "Ho Chi Minh Mausoleum là công trình quan trọng tại quảng trường Ba Đình, gắn với Chủ tịch Hồ Chí Minh và lịch sử hiện đại Việt Nam. Khu vực xung quanh có nhiều điểm tham quan như Phủ Chủ tịch, nhà sàn, ao cá và chùa Một Cột, phù hợp cho lịch trình nửa ngày về lịch sử.",
+    "tips": "Nên kiểm tra lịch mở cửa trước khi đi vì khu vực có quy định tham quan riêng. Cần mặc trang phục lịch sự.",
+    "source_url": "https://vietnam.travel/things-to-do/11-must-see-attractions-ha-noi",
+    "latitude": 21.036783,
+    "longitude": 105.834633
+  },
+  {
+    "title": "Imperial Citadel of Thang Long",
+    "city": "Hà Nội",
+    "category": "di sản",
+    "address": "19C Hoàng Diệu, Ba Đình, Hà Nội",
+    "best_time": "Sáng hoặc chiều",
+    "budget": "Tùy vé tham quan tại thời điểm đi",
+    "suitable_for": [
+      "người thích di sản",
+      "người thích lịch sử",
+      "người thích khảo cổ",
+      "du khách yêu văn hóa"
+    ],
+    "description": "Imperial Citadel of Thang Long là di sản văn hóa quan trọng của Hà Nội, phản ánh chiều sâu lịch sử của kinh thành Thăng Long qua nhiều thời kỳ. Khu di tích có các công trình, nền móng khảo cổ và không gian trưng bày, phù hợp với du khách muốn tìm hiểu lịch sử thủ đô một cách hệ thống.",
+    "tips": "Nên dành thời gian đọc bảng thông tin trong khu di tích để hiểu rõ hơn bối cảnh lịch sử.",
+    "source_url": "https://vietnam.travel/things-to-do/11-must-see-attractions-ha-noi",
+    "latitude": 21.034789,
+    "longitude": 105.841172
+  },
+  {
+    "title": "Hoa Lo Prison Relic",
+    "city": "Hà Nội",
+    "category": "di tích",
+    "address": "1 Hỏa Lò, Hoàn Kiếm, Hà Nội",
+    "best_time": "Ban ngày",
+    "budget": "Tùy vé tham quan tại thời điểm đi",
+    "suitable_for": [
+      "người thích lịch sử",
+      "người thích bảo tàng",
+      "người muốn tìm hiểu thời kỳ chiến tranh",
+      "du khách trưởng thành"
+    ],
+    "description": "Hoa Lo Prison Relic là di tích lịch sử nằm ở trung tâm Hà Nội, từng được dùng làm nhà tù trong thời Pháp thuộc và sau đó gắn với nhiều câu chuyện lịch sử khác nhau. Không gian trưng bày phù hợp với du khách muốn tìm hiểu một khía cạnh nghiêm túc hơn của lịch sử Hà Nội.",
+    "tips": "Nội dung trưng bày có thể khá nặng về lịch sử, nên phù hợp hơn với người lớn hoặc du khách quan tâm đến chủ đề này.",
+    "source_url": "https://vietnam.travel/things-to-do/11-must-see-attractions-ha-noi",
+    "latitude": 21.025255,
+    "longitude": 105.846564
+  },
+  {
+    "title": "Vietnam Museum of Ethnology",
+    "city": "Hà Nội",
+    "category": "bảo tàng",
+    "address": "Nguyễn Văn Huyên, Cầu Giấy, Hà Nội",
+    "best_time": "Sáng hoặc chiều",
+    "budget": "Tùy vé tham quan tại thời điểm đi",
+    "suitable_for": [
+      "người thích văn hóa dân tộc",
+      "gia đình",
+      "người thích bảo tàng",
+      "du khách muốn hiểu văn hóa Việt Nam"
+    ],
+    "description": "Vietnam Museum of Ethnology là bảo tàng giới thiệu văn hóa của các dân tộc Việt Nam thông qua hiện vật, hình ảnh, mô hình nhà truyền thống và không gian trưng bày ngoài trời. Đây là điểm phù hợp cho gia đình, sinh viên và du khách muốn có cái nhìn rộng hơn về đa dạng văn hóa Việt Nam.",
+    "tips": "Nên dành ít nhất nửa buổi nếu muốn xem cả khu trưng bày trong nhà và ngoài trời.",
+    "source_url": "https://vietnam.travel/things-to-do/11-must-see-attractions-ha-noi",
+    "latitude": 21.040583,
+    "longitude": 105.798444
+  },
+  {
+    "title": "West Lake",
+    "city": "Hà Nội",
+    "category": "tham quan",
+    "address": "Tây Hồ, Hà Nội",
+    "best_time": "Chiều hoàng hôn hoặc sáng sớm",
+    "budget": "Miễn phí nếu đi dạo, chi phí tùy cafe và ăn uống",
+    "suitable_for": [
+      "người thích hồ nước",
+      "người thích cafe chill",
+      "người thích đi dạo nhẹ",
+      "cặp đôi"
+    ],
+    "description": "West Lake là hồ lớn ở Hà Nội, phù hợp để đi dạo, ngắm hoàng hôn, uống cafe hoặc kết hợp tham quan các điểm lân cận. Không gian quanh hồ thoáng hơn khu phố cổ nên phù hợp với người muốn lịch trình nhẹ nhàng và thư giãn.",
+    "tips": "Nên đi vào chiều muộn để ngắm hoàng hôn và chọn quán cafe quanh hồ nếu muốn nghỉ chân.",
+    "source_url": "https://vietnam.travel/things-to-do/hanoi-world-leading-city-break-2022",
+    "latitude": 21.056031,
+    "longitude": 105.819389
+  },
+  {
+    "title": "One Pillar Pagoda",
+    "city": "Hà Nội",
+    "category": "văn hóa",
+    "address": "Khu vực Ba Đình, Hà Nội",
+    "best_time": "Buổi sáng hoặc chiều",
+    "budget": "Tùy chính sách tham quan khu vực",
+    "suitable_for": [
+      "người thích kiến trúc",
+      "người thích văn hóa",
+      "người thích tham quan nhẹ",
+      "du khách lần đầu đến Hà Nội"
+    ],
+    "description": "One Pillar Pagoda là công trình kiến trúc Phật giáo nổi tiếng ở Hà Nội, thường được kết hợp trong lịch trình tham quan khu Ba Đình và Lăng Chủ tịch Hồ Chí Minh. Chùa có hình thức kiến trúc đặc biệt, phù hợp để tham quan ngắn và chụp ảnh.",
+    "tips": "Nên kết hợp với Ho Chi Minh Mausoleum vì hai điểm nằm gần nhau.",
+    "source_url": "https://vietnam.travel/things-to-do/11-must-see-attractions-ha-noi",
+    "latitude": 21.035850,
+    "longitude": 105.833544
+  }
+]

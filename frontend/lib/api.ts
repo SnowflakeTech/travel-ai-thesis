@@ -1,3 +1,5 @@
+import type { AgentResponse, UserPreferences } from "@/types/travel";
+
 const API_BASE_URL =
   process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
 
@@ -21,52 +23,9 @@ export async function checkDatabaseHealth() {
   return response.json();
 }
 
-export async function sendChatMessage(message: string) {
-  const response = await fetch(`${API_BASE_URL}/api/chat`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ message }),
-  });
-
-  if (!response.ok) {
-    throw new Error("Chat request failed");
-  }
-
-  return response.json();
-}
-
-export async function sendChatMessageStream(
-  message: string,
-  onChunk: (chunk: string) => void
-) {
-  const response = await fetch(`${API_BASE_URL}/api/chat/stream`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ message }),
-  });
-
-  if (!response.ok || !response.body) {
-    throw new Error("Streaming request failed");
-  }
-
-  const reader = response.body.getReader();
-  const decoder = new TextDecoder("utf-8");
-
-  while (true) {
-    const { value, done } = await reader.read();
-
-    if (done) break;
-
-    const chunk = decoder.decode(value, { stream: true });
-    onChunk(chunk);
-  }
-}
-
-export async function sendAgentMessage(message: string) {
+export async function sendAgentMessage(
+  message: string
+): Promise<AgentResponse> {
   const response = await fetch(`${API_BASE_URL}/api/agent/travel`, {
     method: "POST",
     headers: {
@@ -85,11 +44,66 @@ export async function sendAgentMessage(message: string) {
   return response.json();
 }
 
+export async function regenerateDay(day: number, originalRequest: string) {
+  const response = await fetch(`${API_BASE_URL}/api/agent/regenerate-day`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      user_id: "demo_user",
+      day,
+      original_request: originalRequest,
+    }),
+  });
+
+  if (!response.ok) {
+    throw new Error("Regenerate day failed");
+  }
+
+  return response.json();
+}
+
+export async function optimizeRoute(originalRequest: string) {
+  const response = await fetch(`${API_BASE_URL}/api/agent/optimize-route`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      user_id: "demo_user",
+      original_request: originalRequest,
+    }),
+  });
+
+  if (!response.ok) {
+    throw new Error("Optimize route failed");
+  }
+
+  return response.json();
+}
+
+export async function savePreferences(preferences: UserPreferences) {
+  const response = await fetch(`${API_BASE_URL}/api/preferences/demo_user`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(preferences),
+  });
+
+  if (!response.ok) {
+    throw new Error("Save preferences failed");
+  }
+
+  return response.json();
+}
+
 export async function getUserMemories(userId: string = "demo_user") {
   const response = await fetch(`${API_BASE_URL}/api/memory/${userId}`);
 
   if (!response.ok) {
-    throw new Error("Get memory request failed");
+    throw new Error("Get memory failed");
   }
 
   return response.json();

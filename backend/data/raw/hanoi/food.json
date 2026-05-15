@@ -1,0 +1,151 @@
+[
+  {
+    "title": "Phở Hà Nội",
+    "city": "Hà Nội",
+    "category": "ẩm thực",
+    "address": "Hà Nội, Việt Nam",
+    "best_time": "Buổi sáng hoặc bất kỳ thời điểm nào trong ngày",
+    "budget": "Tùy quán ăn địa phương",
+    "suitable_for": [
+      "người thích món nước",
+      "du khách lần đầu đến Hà Nội",
+      "người thích ẩm thực truyền thống"
+    ],
+    "description": "Phở Hà Nội là món ăn biểu tượng của thủ đô, nổi bật với nước dùng thơm, bánh phở mềm, thịt bò hoặc gà và các loại rau thơm. Đây là món rất phù hợp để bắt đầu hành trình khám phá Hà Nội, đặc biệt vào buổi sáng.",
+    "tips": "Nên thử phở ở các quán địa phương lâu năm hoặc khu phố cổ để cảm nhận hương vị truyền thống.",
+    "source_url": "https://vietnam.travel/things-to-do/10-must-try-hanoi-dishes",
+    "latitude": 21.0306,
+    "longitude": 105.8472
+  },
+  {
+    "title": "Bún chả",
+    "city": "Hà Nội",
+    "category": "ẩm thực",
+    "address": "Hà Nội, Việt Nam",
+    "best_time": "Buổi trưa",
+    "budget": "Tùy quán ăn địa phương",
+    "suitable_for": [
+      "người thích thịt nướng",
+      "người thích món bún",
+      "du khách muốn thử đặc sản Hà Nội",
+      "nhóm bạn"
+    ],
+    "description": "Bún chả là món ăn đặc trưng của Hà Nội gồm bún, thịt lợn nướng, chả viên, nước chấm chua ngọt, rau sống và đồ ăn kèm. Món này thường được ăn vào buổi trưa và là lựa chọn phổ biến cho du khách muốn thử ẩm thực địa phương.",
+    "tips": "Nên ăn khi thịt nướng còn nóng. Có thể gọi thêm nem rán nếu quán có phục vụ.",
+    "source_url": "https://vietnam.travel/things-to-do/10-must-try-hanoi-dishes",
+    "latitude": 21.0288,
+    "longitude": 105.8504
+  },
+  {
+    "title": "Chả cá",
+    "city": "Hà Nội",
+    "category": "ẩm thực",
+    "address": "Hà Nội, Việt Nam",
+    "best_time": "Buổi trưa hoặc tối",
+    "budget": "Tùy nhà hàng và khẩu phần",
+    "suitable_for": [
+      "người thích món cá",
+      "người thích ẩm thực Hà Nội",
+      "gia đình",
+      "nhóm bạn"
+    ],
+    "description": "Chả cá là món nổi tiếng của Hà Nội, thường gồm cá tẩm ướp nghệ, thì là, hành lá, ăn cùng bún, lạc rang và mắm tôm hoặc nước chấm tùy khẩu vị. Món này phù hợp cho bữa trưa hoặc tối khi du khách muốn ăn một bữa có tính trải nghiệm rõ hơn.",
+    "tips": "Nếu không quen mắm tôm, nên hỏi quán về lựa chọn nước chấm khác.",
+    "source_url": "https://vietnam.travel/things-to-do/10-must-try-hanoi-dishes",
+    "latitude": 21.0371,
+    "longitude": 105.8479
+  },
+  {
+    "title": "Cà phê trứng",
+    "city": "Hà Nội",
+    "category": "cafe",
+    "address": "Hà Nội, Việt Nam",
+    "best_time": "Buổi sáng, chiều hoặc sau bữa tối",
+    "budget": "Tùy quán cafe",
+    "suitable_for": [
+      "người thích cafe",
+      "người thích trải nghiệm đặc sản",
+      "người thích cafe chill",
+      "du khách lần đầu đến Hà Nội"
+    ],
+    "description": "Cà phê trứng là thức uống nổi tiếng của Hà Nội, kết hợp cà phê với lớp kem trứng béo nhẹ, tạo hương vị ngọt, thơm và đặc trưng. Đây là trải nghiệm phù hợp để nghỉ chân khi tham quan phố cổ hoặc khu vực hồ Hoàn Kiếm.",
+    "tips": "Nên thử tại các quán cafe lâu năm trong khu phố cổ hoặc gần hồ Hoàn Kiếm.",
+    "source_url": "https://vietnam.travel/things-to-do/10-must-try-hanoi-dishes",
+    "latitude": 21.0341,
+    "longitude": 105.8532
+  },
+  {
+    "title": "Bánh cuốn",
+    "city": "Hà Nội",
+    "category": "ẩm thực",
+    "address": "Hà Nội, Việt Nam",
+    "best_time": "Buổi sáng",
+    "budget": "Tùy quán ăn địa phương",
+    "suitable_for": [
+      "người thích ăn sáng nhẹ",
+      "người thích món truyền thống",
+      "du khách muốn thử món địa phương"
+    ],
+    "description": "Bánh cuốn Hà Nội là món ăn sáng quen thuộc gồm lớp bánh mỏng làm từ bột gạo, nhân thịt băm và mộc nhĩ, ăn cùng hành phi, chả và nước chấm. Món này nhẹ bụng, phù hợp cho lịch trình bắt đầu ngày mới.",
+    "tips": "Nên ăn khi bánh còn nóng để cảm nhận rõ độ mềm của bánh và mùi thơm của hành phi.",
+    "source_url": "https://vietnam.travel/things-to-do/10-must-try-hanoi-dishes",
+    "latitude": 21.0355,
+    "longitude": 105.8509
+  },
+  {
+    "title": "Bún riêu",
+    "city": "Hà Nội",
+    "category": "ẩm thực",
+    "address": "Hà Nội, Việt Nam",
+    "best_time": "Buổi sáng, trưa hoặc chiều",
+    "budget": "Tùy quán ăn địa phương",
+    "suitable_for": [
+      "người thích món nước",
+      "người thích vị chua nhẹ",
+      "người thích ẩm thực đường phố",
+      "du khách muốn đổi vị"
+    ],
+    "description": "Bún riêu là món bún nước phổ biến ở Hà Nội, thường có nước dùng vị chua nhẹ từ cà chua, riêu cua, đậu, rau sống và các món ăn kèm. Đây là lựa chọn phù hợp nếu du khách muốn thử một món nước khác ngoài phở.",
+    "tips": "Nên hỏi trước thành phần nếu không ăn được mắm tôm hoặc hải sản.",
+    "source_url": "https://vietnam.travel/things-to-do/10-must-try-hanoi-dishes",
+    "latitude": 21.0319,
+    "longitude": 105.8456
+  },
+  {
+    "title": "Bia hơi Hà Nội",
+    "city": "Hà Nội",
+    "category": "ẩm thực",
+    "address": "Khu phố cổ và nhiều khu vực tại Hà Nội",
+    "best_time": "Chiều tối",
+    "budget": "Tùy quán và món ăn kèm",
+    "suitable_for": [
+      "nhóm bạn",
+      "người thích trải nghiệm địa phương",
+      "người muốn khám phá phố cổ buổi tối"
+    ],
+    "description": "Bia hơi Hà Nội là trải nghiệm ăn uống bình dân và quen thuộc trong đời sống đô thị, đặc biệt ở khu phố cổ. Du khách thường kết hợp bia hơi với các món ăn nhẹ, ngồi vỉa hè và cảm nhận không khí phố xá buổi tối.",
+    "tips": "Chỉ nên dùng có chừng mực và không sử dụng nếu cần lái xe hoặc di chuyển xa.",
+    "source_url": "https://vietnam.travel/places-to-go/northern-vietnam/ha-noi",
+    "latitude": 21.0352,
+    "longitude": 105.8522
+  },
+  {
+    "title": "Bánh mì Hà Nội",
+    "city": "Hà Nội",
+    "category": "ẩm thực",
+    "address": "Hà Nội, Việt Nam",
+    "best_time": "Buổi sáng hoặc ăn nhẹ trong ngày",
+    "budget": "Tùy điểm bán",
+    "suitable_for": [
+      "người thích ăn nhanh",
+      "du khách ngân sách thấp",
+      "người thích street food",
+      "nhóm bạn"
+    ],
+    "description": "Bánh mì Hà Nội là lựa chọn ăn nhanh phổ biến, dễ tìm ở phố cổ và nhiều khu vực trong thành phố. Món phù hợp cho du khách muốn tiết kiệm thời gian nhưng vẫn trải nghiệm ẩm thực đường phố.",
+    "tips": "Phù hợp cho bữa sáng hoặc bữa ăn nhẹ giữa lịch trình tham quan.",
+    "source_url": "https://vietnam.travel/places-to-go/northern-vietnam/ha-noi",
+    "latitude": 21.0321,
+    "longitude": 105.8528
+  }
+]
