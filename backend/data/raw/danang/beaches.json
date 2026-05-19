@@ -5,12 +5,113 @@
     "category": "biển",
     "address": "Võ Nguyên Giáp, Đà Nẵng",
     "best_time": "Sáng sớm hoặc chiều mát",
-    "budget": "Miễn phí",
-    "suitable_for": ["gia đình", "nhóm bạn", "người thích biển"],
-    "description": "Bãi biển Mỹ Khê là một trong những bãi biển nổi tiếng của Đà Nẵng, phù hợp để tắm biển, đi dạo, ngắm bình minh hoặc thư giãn vào buổi chiều.",
-    "tips": "Nên đi sáng sớm để ngắm bình minh và tránh nắng gắt.",
-    "source_url": "",
-    "latitude": 16.0611,
-    "longitude": 108.2468
+    "budget": "Miễn phí nếu chỉ tắm biển, đi dạo và ngắm cảnh",
+    "suitable_for": [
+      "người thích biển",
+      "người thích đi bộ nhẹ nhàng",
+      "gia đình",
+      "nhóm bạn",
+      "du khách ngân sách thấp"
+    ],
+    "description": "Bãi biển Mỹ Khê là một trong những bãi biển nổi bật nhất của Đà Nẵng, có bãi cát dài, không gian rộng và phù hợp để tắm biển, đi dạo, ngắm bình minh hoặc thư giãn vào buổi chiều. Khu vực này dễ kết hợp với lịch trình nghỉ dưỡng nhẹ nhàng vì nằm gần trung tâm thành phố và có nhiều dịch vụ ăn uống, lưu trú xung quanh.",
+    "tips": "Nên đi sáng sớm để ngắm bình minh hoặc chiều mát để tránh nắng gắt. Nếu chỉ đi dạo và tắm biển cơ bản thì chi phí thấp.",
+    "source_url": "https://vietnam.travel/places-to-go/central-vietnam/da-nang",
+    "latitude": 16.061111,
+    "longitude": 108.246833
+  },
+  {
+    "title": "Bãi biển Non Nước",
+    "city": "Đà Nẵng",
+    "category": "biển",
+    "address": "Ngũ Hành Sơn, Đà Nẵng",
+    "best_time": "Sáng sớm hoặc chiều mát",
+    "budget": "Miễn phí nếu chỉ đi dạo và tắm biển, chi phí tùy dịch vụ cá nhân",
+    "suitable_for": [
+      "người thích biển",
+      "người thích nghỉ dưỡng",
+      "gia đình",
+      "cặp đôi"
+    ],
+    "description": "Bãi biển Non Nước nằm gần khu vực Ngũ Hành Sơn, phù hợp với du khách muốn kết hợp biển và tham quan trong cùng một ngày. Không gian biển rộng, thích hợp để đi dạo, thư giãn hoặc nghỉ ngơi sau khi khám phá Marble Mountains.",
+    "tips": "Có thể kết hợp Non Nước với Marble Mountains để tiết kiệm thời gian di chuyển.",
+    "source_url": "https://vietnam.travel/things-to-do/must-visit-places-in-da-nang",
+    "latitude": 16.002833,
+    "longitude": 108.263722
+  },
+  {
+    "title": "Bán đảo Sơn Trà",
+    "city": "Đà Nẵng",
+    "category": "biển",
+    "address": "Sơn Trà, Đà Nẵng",
+    "best_time": "Sáng hoặc chiều, khi thời tiết trong và dễ quan sát cảnh biển",
+    "budget": "Tùy phương tiện di chuyển và điểm dừng",
+    "suitable_for": [
+      "người thích biển",
+      "người thích thiên nhiên",
+      "người thích ngắm cảnh",
+      "người thích chụp ảnh"
+    ],
+    "description": "Bán đảo Sơn Trà là khu vực thiên nhiên nổi bật của Đà Nẵng, nơi có rừng, đường ven biển, các điểm ngắm cảnh và tầm nhìn rộng ra thành phố. Đây là lựa chọn phù hợp cho du khách muốn kết hợp biển với thiên nhiên, đi dạo nhẹ hoặc ngắm cảnh từ trên cao.",
+    "tips": "Nên đi ban ngày và kiểm tra thời tiết trước khi lên các đoạn đường cao. Nếu tự chạy xe, cần đi chậm và cẩn thận.",
+    "source_url": "https://vietnam.travel/places-to-go/central-vietnam/da-nang",
+    "latitude": 16.118944,
+    "longitude": 108.273333
+  },
+  {
+    "title": "Bãi Bắc Sơn Trà",
+    "city": "Đà Nẵng",
+    "category": "biển",
+    "address": "Bán đảo Sơn Trà, Đà Nẵng",
+    "best_time": "Sáng hoặc chiều mát",
+    "budget": "Tùy dịch vụ nghỉ dưỡng và phương tiện di chuyển",
+    "suitable_for": [
+      "người thích biển yên tĩnh",
+      "người thích thiên nhiên",
+      "cặp đôi",
+      "người thích nghỉ dưỡng"
+    ],
+    "description": "Bãi Bắc thuộc khu vực Sơn Trà, phù hợp với du khách muốn tìm không gian biển yên tĩnh hơn khu vực trung tâm. Khu vực này gắn với cảnh quan bán đảo, biển xanh và các điểm nghỉ dưỡng ven biển.",
+    "tips": "Phù hợp hơn với lịch trình nghỉ dưỡng hoặc đi ngắm cảnh, nên kiểm tra đường đi và phương tiện trước khi đến.",
+    "source_url": "https://vietnam.travel/things-to-do/da-nang-travel-guides",
+    "latitude": 16.133722,
+    "longitude": 108.306333
+  },
+  {
+    "title": "Bãi Rạng Sơn Trà",
+    "city": "Đà Nẵng",
+    "category": "biển",
+    "address": "Hoàng Sa, Sơn Trà, Đà Nẵng",
+    "best_time": "Sáng hoặc chiều mát",
+    "budget": "Tùy dịch vụ địa phương",
+    "suitable_for": [
+      "người thích biển",
+      "người thích chụp ảnh",
+      "nhóm bạn",
+      "người thích điểm ít đông hơn"
+    ],
+    "description": "Bãi Rạng là một điểm biển thuộc khu vực Sơn Trà, có cảnh quan đá, nước biển và không gian phù hợp cho các hoạt động thư giãn hoặc chụp ảnh. Đây là lựa chọn có thể kết hợp với lịch trình khám phá bán đảo Sơn Trà.",
+    "tips": "Nên đi lúc trời đẹp và tránh các khung giờ nắng gắt. Cần chú ý an toàn nếu di chuyển gần khu vực đá ven biển.",
+    "source_url": "https://vietnam.travel/things-to-do/da-nang-travel-guides",
+    "latitude": 16.113139,
+    "longitude": 108.300444
+  },
+  {
+    "title": "Bãi biển Phạm Văn Đồng",
+    "city": "Đà Nẵng",
+    "category": "biển",
+    "address": "Phạm Văn Đồng, Sơn Trà, Đà Nẵng",
+    "best_time": "Sáng sớm hoặc chiều tối",
+    "budget": "Miễn phí nếu chỉ đi dạo và ngắm biển",
+    "suitable_for": [
+      "người thích biển",
+      "người thích đi bộ nhẹ",
+      "du khách ở gần trung tâm",
+      "người thích lịch trình ngắn"
+    ],
+    "description": "Bãi biển Phạm Văn Đồng nằm gần khu vực trung tâm ven biển Đà Nẵng, thuận tiện để đi dạo, tắm biển hoặc nghỉ ngơi trong lịch trình ngắn. Khu vực này phù hợp với du khách muốn trải nghiệm biển mà không cần di chuyển xa.",
+    "tips": "Có thể kết hợp với Mỹ Khê hoặc các quán ăn ven biển trong cùng một buổi.",
+    "source_url": "https://vietnam.travel/places-to-go/central-vietnam/da-nang",
+    "latitude": 16.073611,
+    "longitude": 108.244833
   }
 ]

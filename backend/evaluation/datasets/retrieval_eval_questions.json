@@ -1,0 +1,87 @@
+[
+  {
+    "id": "R001",
+    "question": "Gợi ý cafe chill ở Đà Lạt, ngân sách vừa phải.",
+    "city": "Đà Lạt",
+    "expected_categories": ["cafe"],
+    "expected_source_files": ["dalat/cafes.json"],
+    "expected_keywords": ["cafe", "chill", "Đà Lạt"]
+  },
+  {
+    "id": "R002",
+    "question": "Tôi muốn đi Đà Lạt gần thiên nhiên, hồ nước và không khí yên bình.",
+    "city": "Đà Lạt",
+    "expected_categories": ["thiên nhiên", "nature", "tham quan"],
+    "expected_source_files": ["dalat/nature.json", "dalat/attractions.json"],
+    "expected_keywords": ["thiên nhiên", "hồ", "Đà Lạt"]
+  },
+  {
+    "id": "R003",
+    "question": "Tôi muốn đi Đà Nẵng tắm biển và lịch trình nhẹ nhàng.",
+    "city": "Đà Nẵng",
+    "expected_categories": ["biển", "tham quan"],
+    "expected_source_files": ["danang/beaches.json", "danang/attractions.json"],
+    "expected_keywords": ["biển", "Đà Nẵng"]
+  },
+  {
+    "id": "R004",
+    "question": "Gợi ý quán ăn và món ngon ở Đà Nẵng.",
+    "city": "Đà Nẵng",
+    "expected_categories": ["ẩm thực", "food"],
+    "expected_source_files": ["danang/food.json"],
+    "expected_keywords": ["ăn", "món", "Đà Nẵng"]
+  },
+  {
+    "id": "R005",
+    "question": "Tôi muốn khám phá phố cổ Hội An, đi bộ nhẹ nhàng và trải nghiệm văn hóa.",
+    "city": "Hội An",
+    "expected_categories": ["phố cổ", "tham quan", "trải nghiệm", "văn hóa"],
+    "expected_source_files": ["hoian/old_town.json", "hoian/experiences.json", "hoian/attractions.json"],
+    "expected_keywords": ["phố cổ", "Hội An", "văn hóa"]
+  },
+  {
+    "id": "R006",
+    "question": "Gợi ý món ăn địa phương ở Hội An.",
+    "city": "Hội An",
+    "expected_categories": ["ẩm thực", "food"],
+    "expected_source_files": ["hoian/food.json"],
+    "expected_keywords": ["món ăn", "địa phương", "Hội An"]
+  },
+  {
+    "id": "R007",
+    "question": "Tôi muốn đi Hà Giang 4 ngày, thích thiên nhiên, road trip và đặc sản địa phương.",
+    "city": "Hà Giang",
+    "expected_categories": ["lịch trình", "thiên nhiên", "trải nghiệm", "ẩm thực"],
+    "expected_source_files": [
+      "hagiang/itinerary_samples.json",
+      "hagiang/attractions.json",
+      "hagiang/adventures.json",
+      "hagiang/food.json"
+    ],
+    "expected_keywords": ["Hà Giang", "road trip", "thiên nhiên", "đặc sản"]
+  },
+  {
+    "id": "R008",
+    "question": "Gợi ý trải nghiệm phiêu lưu và cung đường đẹp ở Hà Giang.",
+    "city": "Hà Giang",
+    "expected_categories": ["trải nghiệm", "adventure", "thiên nhiên"],
+    "expected_source_files": ["hagiang/adventures.json", "hagiang/attractions.json"],
+    "expected_keywords": ["cung đường", "Hà Giang", "trải nghiệm"]
+  },
+  {
+    "id": "R009",
+    "question": "Tôi muốn khám phá phố cổ Hà Nội và văn hóa địa phương.",
+    "city": "Hà Nội",
+    "expected_categories": ["phố cổ", "văn hóa", "tham quan"],
+    "expected_source_files": ["hanoi/old_quarter.json", "hanoi/culture.json", "hanoi/attractions.json"],
+    "expected_keywords": ["phố cổ", "Hà Nội", "văn hóa"]
+  },
+  {
+    "id": "R010",
+    "question": "Gợi ý món ăn nổi tiếng ở Hà Nội.",
+    "city": "Hà Nội",
+    "expected_categories": ["ẩm thực", "food"],
+    "expected_source_files": ["hanoi/food.json"],
+    "expected_keywords": ["món ăn", "Hà Nội"]
+  }
+]

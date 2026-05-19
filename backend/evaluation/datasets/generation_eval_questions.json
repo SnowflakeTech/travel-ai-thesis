@@ -1,0 +1,32 @@
+[
+  {
+    "id": "G001",
+    "question": "Tôi muốn đi Đà Lạt 2 ngày 1 đêm, thích cafe chill, thiên nhiên và ngân sách tiết kiệm.",
+    "city": "Đà Lạt",
+    "evaluation_focus": ["relevance", "groundedness", "budget", "personalization"]
+  },
+  {
+    "id": "G002",
+    "question": "Tôi muốn đi Đà Nẵng 1 ngày, thích biển, ăn uống địa phương và lịch trình nhẹ nhàng.",
+    "city": "Đà Nẵng",
+    "evaluation_focus": ["route", "food", "groundedness"]
+  },
+  {
+    "id": "G003",
+    "question": "Tôi muốn khám phá Hội An 2 ngày, thích phố cổ, văn hóa và trải nghiệm nhẹ nhàng.",
+    "city": "Hội An",
+    "evaluation_focus": ["culture", "old_town", "coherence"]
+  },
+  {
+    "id": "G004",
+    "question": "Tôi muốn đi Hà Giang 4 ngày, thích thiên nhiên, road trip và muốn ăn đặc sản địa phương.",
+    "city": "Hà Giang",
+    "evaluation_focus": ["multi_day", "road_trip", "food", "hallucination_control"]
+  },
+  {
+    "id": "G005",
+    "question": "Tôi muốn khám phá Hà Nội 2 ngày, thích phố cổ, văn hóa và món ăn địa phương.",
+    "city": "Hà Nội",
+    "evaluation_focus": ["old_quarter", "culture", "food"]
+  }
+]

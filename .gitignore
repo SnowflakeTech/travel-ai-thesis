@@ -39,3 +39,7 @@ Thumbs.db
 # Docker volumes / local data
 postgres_data/
 qdrant_data/
+
+# Docker env files
+backend/.env.docker
+frontend/.env.docker

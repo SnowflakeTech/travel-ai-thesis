@@ -41,12 +41,36 @@ export type RoutePlan = {
   };
 };
 
+export type GroundingGuard = {
+  has_retrieved_contexts?: boolean;
+  allowed_place_names?: string[];
+  route_provider?: string;
+  is_route_estimate_only?: boolean;
+  warnings?: string[];
+  policy?: {
+    only_use_retrieved_places?: boolean;
+    no_realtime_claims?: boolean;
+    must_disclose_missing_data?: boolean;
+    must_disclose_route_estimate?: boolean;
+  };
+};
+
+export type PostProcessingGuard = {
+  was_modified?: boolean;
+  removed_items?: string[];
+  warnings?: string[];
+  blocked_items?: string[];
+  guard_applied?: boolean;
+};
+
 export type AgentResponse = {
   answer: string;
   trip_requirements: Record<string, unknown>;
   retrieved_contexts: RetrievedContext[];
   route_plan: RoutePlan;
   budget_plan: Record<string, unknown>;
+  grounding_guard?: GroundingGuard;
+  post_processing_guard?: PostProcessingGuard;
   critique: string;
   saved_memories?: {
     id: number;

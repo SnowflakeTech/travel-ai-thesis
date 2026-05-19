@@ -1,11 +1,12 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
 
+from app.core.security import verify_demo_api_key
 from app.db.session import get_db
 from app.memory.service import deactivate_memory, get_user_memories
 
 
-router = APIRouter()
+router = APIRouter(dependencies=[Depends(verify_demo_api_key)])
 
 
 @router.get("/memory/{user_id}")

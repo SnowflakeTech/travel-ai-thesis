@@ -12,5 +12,7 @@ class TravelAgentState(TypedDict, total=False):
     route_plan: dict[str, Any]
     budget_plan: dict[str, Any]
 
+    grounding_guard: dict[str, Any]
+
     critique: str
     final_answer: str

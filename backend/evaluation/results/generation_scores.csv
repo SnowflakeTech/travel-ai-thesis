@@ -1,0 +1,11 @@
+id,method,relevance,groundedness,hallucination_control,practicality,coherence,note
+G001,basic_rag,4,4,4,3,4,
+G001,agentic_rag,5,4,5,4,5,
+G002,basic_rag,4,4,4,3,4,
+G002,agentic_rag,5,4,5,4,5,
+G003,basic_rag,4,4,4,3,4,
+G003,agentic_rag,5,4,5,4,5,
+G004,basic_rag,3,4,4,3,3,
+G004,agentic_rag,5,4,5,5,4,
+G005,basic_rag,4,4,4,3,4,
+G005,agentic_rag,5,4,5,4,5

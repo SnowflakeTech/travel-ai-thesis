@@ -1,0 +1,752 @@
+[
+  {
+    "id": "R001",
+    "question": "Gợi ý cafe chill ở Đà Lạt, ngân sách vừa phải.",
+    "expected_city": "Đà Lạt",
+    "expected_categories": [
+      "cafe"
+    ],
+    "expected_source_files": [
+      "dalat/cafes.json"
+    ],
+    "retrieved": [
+      {
+        "title": "An Cafe",
+        "city": "Đà Lạt",
+        "category": "cafe",
+        "source_file": "data/raw/dalat/cafes.json",
+        "score": 0.7369,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Tiệm Cà Phê Túi Mơ To",
+        "city": "Đà Lạt",
+        "category": "cafe",
+        "source_file": "data/raw/dalat/cafes.json",
+        "score": 0.7042,
+        "search_mode": "city_category_search"
+      }
+    ],
+    "city_match": 1.0,
+    "category_match": 1.0,
+    "source_file_match": 1.0,
+    "hit_at_3": 1,
+    "hit_at_5": 1
+  },
+  {
+    "id": "R002",
+    "question": "Tôi muốn đi Đà Lạt gần thiên nhiên, hồ nước và không khí yên bình.",
+    "expected_city": "Đà Lạt",
+    "expected_categories": [
+      "thiên nhiên",
+      "nature",
+      "tham quan"
+    ],
+    "expected_source_files": [
+      "dalat/nature.json",
+      "dalat/attractions.json"
+    ],
+    "retrieved": [
+      {
+        "title": "Hồ Xuân Hương",
+        "city": "Đà Lạt",
+        "category": "thiên nhiên",
+        "source_file": "data/raw/dalat/attractions.json",
+        "score": 0.7087,
+        "search_mode": "city_category_search"
+      }
+    ],
+    "city_match": 1.0,
+    "category_match": 1.0,
+    "source_file_match": 1.0,
+    "hit_at_3": 1,
+    "hit_at_5": 1
+  },
+  {
+    "id": "R003",
+    "question": "Tôi muốn đi Đà Nẵng tắm biển và lịch trình nhẹ nhàng.",
+    "expected_city": "Đà Nẵng",
+    "expected_categories": [
+      "biển",
+      "tham quan"
+    ],
+    "expected_source_files": [
+      "danang/beaches.json",
+      "danang/attractions.json"
+    ],
+    "retrieved": [
+      {
+        "title": "Bãi biển Non Nước",
+        "city": "Đà Nẵng",
+        "category": "biển",
+        "source_file": "data/raw/danang/beaches.json",
+        "score": 0.6881,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Bãi biển Mỹ Khê",
+        "city": "Đà Nẵng",
+        "category": "biển",
+        "source_file": "data/raw/danang/beaches.json",
+        "score": 0.6848,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Bãi biển Phạm Văn Đồng",
+        "city": "Đà Nẵng",
+        "category": "biển",
+        "source_file": "data/raw/danang/beaches.json",
+        "score": 0.6832,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Bãi Bắc Sơn Trà",
+        "city": "Đà Nẵng",
+        "category": "biển",
+        "source_file": "data/raw/danang/beaches.json",
+        "score": 0.6821,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Bán đảo Sơn Trà",
+        "city": "Đà Nẵng",
+        "category": "biển",
+        "source_file": "data/raw/danang/beaches.json",
+        "score": 0.6495,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Bãi Rạng Sơn Trà",
+        "city": "Đà Nẵng",
+        "category": "biển",
+        "source_file": "data/raw/danang/beaches.json",
+        "score": 0.6486,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Bãi biển Mỹ Khê",
+        "city": "Đà Nẵng",
+        "category": "biển",
+        "source_file": "data/raw/danang/beaches.json",
+        "score": 0.6361,
+        "search_mode": "city_category_search"
+      }
+    ],
+    "city_match": 1.0,
+    "category_match": 1.0,
+    "source_file_match": 1.0,
+    "hit_at_3": 1,
+    "hit_at_5": 1
+  },
+  {
+    "id": "R004",
+    "question": "Gợi ý quán ăn và món ngon ở Đà Nẵng.",
+    "expected_city": "Đà Nẵng",
+    "expected_categories": [
+      "ẩm thực",
+      "food"
+    ],
+    "expected_source_files": [
+      "danang/food.json"
+    ],
+    "retrieved": [
+      {
+        "title": "Hải sản Đà Nẵng",
+        "city": "Đà Nẵng",
+        "category": "ẩm thực",
+        "source_file": "data/raw/danang/food.json",
+        "score": 0.7,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Bánh xèo Đà Nẵng",
+        "city": "Đà Nẵng",
+        "category": "ẩm thực",
+        "source_file": "data/raw/danang/food.json",
+        "score": 0.6757,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Nem lụi Đà Nẵng",
+        "city": "Đà Nẵng",
+        "category": "ẩm thực",
+        "source_file": "data/raw/danang/food.json",
+        "score": 0.6741,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Bún chả cá Đà Nẵng",
+        "city": "Đà Nẵng",
+        "category": "ẩm thực",
+        "source_file": "data/raw/danang/food.json",
+        "score": 0.6568,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Mì Quảng Đà Nẵng",
+        "city": "Đà Nẵng",
+        "category": "ẩm thực",
+        "source_file": "data/raw/danang/food.json",
+        "score": 0.6551,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Bún mắm nêm Đà Nẵng",
+        "city": "Đà Nẵng",
+        "category": "ẩm thực",
+        "source_file": "data/raw/danang/food.json",
+        "score": 0.6456,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Bánh mì Đà Nẵng",
+        "city": "Đà Nẵng",
+        "category": "ẩm thực",
+        "source_file": "data/raw/danang/food.json",
+        "score": 0.6444,
+        "search_mode": "city_category_search"
+      }
+    ],
+    "city_match": 1.0,
+    "category_match": 1.0,
+    "source_file_match": 1.0,
+    "hit_at_3": 1,
+    "hit_at_5": 1
+  },
+  {
+    "id": "R005",
+    "question": "Tôi muốn khám phá phố cổ Hội An, đi bộ nhẹ nhàng và trải nghiệm văn hóa.",
+    "expected_city": "Hội An",
+    "expected_categories": [
+      "phố cổ",
+      "tham quan",
+      "trải nghiệm",
+      "văn hóa"
+    ],
+    "expected_source_files": [
+      "hoian/old_town.json",
+      "hoian/experiences.json",
+      "hoian/attractions.json"
+    ],
+    "retrieved": [
+      {
+        "title": "Đạp xe qua Cam Thanh và Trà Quế",
+        "city": "Hội An",
+        "category": "trải nghiệm",
+        "source_file": "data/raw/hoian/experiences.json",
+        "score": 0.6345,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Đi thuyền trên sông Thu Bồn",
+        "city": "Hội An",
+        "category": "trải nghiệm",
+        "source_file": "data/raw/hoian/experiences.json",
+        "score": 0.6147,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Japanese Covered Bridge",
+        "city": "Hội An",
+        "category": "văn hóa",
+        "source_file": "data/raw/hoian/old_town.json",
+        "score": 0.7026,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Tan Ky Old House",
+        "city": "Hội An",
+        "category": "văn hóa",
+        "source_file": "data/raw/hoian/old_town.json",
+        "score": 0.6655,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Phuc Kien Assembly Hall",
+        "city": "Hội An",
+        "category": "văn hóa",
+        "source_file": "data/raw/hoian/old_town.json",
+        "score": 0.6571,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "An Bang Beach",
+        "city": "Hội An",
+        "category": "biển",
+        "source_file": "data/raw/hoian/attractions.json",
+        "score": 0.6294,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Cafe-hopping ở Hội An",
+        "city": "Hội An",
+        "category": "cafe",
+        "source_file": "data/raw/hoian/experiences.json",
+        "score": 0.69,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Hoành thánh Hội An",
+        "city": "Hội An",
+        "category": "ẩm thực",
+        "source_file": "data/raw/hoian/food.json",
+        "score": 0.6294,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Bánh mì Hội An",
+        "city": "Hội An",
+        "category": "ẩm thực",
+        "source_file": "data/raw/hoian/food.json",
+        "score": 0.6178,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Hoi An Ancient Town",
+        "city": "Hội An",
+        "category": "phố cổ",
+        "source_file": "data/raw/hoian/old_town.json",
+        "score": 0.6945,
+        "search_mode": "broad_city_search"
+      }
+    ],
+    "city_match": 1.0,
+    "category_match": 0.6,
+    "source_file_match": 0.8,
+    "hit_at_3": 1,
+    "hit_at_5": 1
+  },
+  {
+    "id": "R006",
+    "question": "Gợi ý món ăn địa phương ở Hội An.",
+    "expected_city": "Hội An",
+    "expected_categories": [
+      "ẩm thực",
+      "food"
+    ],
+    "expected_source_files": [
+      "hoian/food.json"
+    ],
+    "retrieved": [
+      {
+        "title": "Cao lầu",
+        "city": "Hội An",
+        "category": "ẩm thực",
+        "source_file": "data/raw/hoian/food.json",
+        "score": 0.6919,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Hoành thánh Hội An",
+        "city": "Hội An",
+        "category": "ẩm thực",
+        "source_file": "data/raw/hoian/food.json",
+        "score": 0.6878,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Bánh mì Hội An",
+        "city": "Hội An",
+        "category": "ẩm thực",
+        "source_file": "data/raw/hoian/food.json",
+        "score": 0.6875,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Cơm gà Hội An",
+        "city": "Hội An",
+        "category": "ẩm thực",
+        "source_file": "data/raw/hoian/food.json",
+        "score": 0.6751,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Mì Quảng",
+        "city": "Hội An",
+        "category": "ẩm thực",
+        "source_file": "data/raw/hoian/food.json",
+        "score": 0.6683,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Bánh bao bánh vạc White Rose",
+        "city": "Hội An",
+        "category": "ẩm thực",
+        "source_file": "data/raw/hoian/food.json",
+        "score": 0.6621,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Bánh bao bánh vạc White Rose",
+        "city": "Hội An",
+        "category": "ẩm thực",
+        "source_file": "data/raw/hoian/food.json",
+        "score": 0.6493,
+        "search_mode": "city_category_search"
+      }
+    ],
+    "city_match": 1.0,
+    "category_match": 1.0,
+    "source_file_match": 1.0,
+    "hit_at_3": 1,
+    "hit_at_5": 1
+  },
+  {
+    "id": "R007",
+    "question": "Tôi muốn đi Hà Giang 4 ngày, thích thiên nhiên, road trip và đặc sản địa phương.",
+    "expected_city": "Hà Giang",
+    "expected_categories": [
+      "lịch trình",
+      "thiên nhiên",
+      "trải nghiệm",
+      "ẩm thực"
+    ],
+    "expected_source_files": [
+      "hagiang/itinerary_samples.json",
+      "hagiang/attractions.json",
+      "hagiang/adventures.json",
+      "hagiang/food.json"
+    ],
+    "retrieved": [
+      {
+        "title": "Ha Giang Loop 4 ngày",
+        "city": "Hà Giang",
+        "category": "lịch trình mẫu",
+        "source_file": "data/raw/hagiang/itinerary_samples.json",
+        "score": 0.7644,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Ha Giang Loop 4 ngày",
+        "city": "Hà Giang",
+        "category": "lịch trình mẫu",
+        "source_file": "data/raw/hagiang/itinerary_samples.json",
+        "score": 0.7401,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Ngày 1 Hà Giang City đến Yên Minh",
+        "city": "Hà Giang",
+        "category": "lịch trình mẫu",
+        "source_file": "data/raw/hagiang/itinerary_samples.json",
+        "score": 0.6638,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Mã Pí Lèng Pass",
+        "city": "Hà Giang",
+        "category": "thiên nhiên",
+        "source_file": "data/raw/hagiang/attractions.json",
+        "score": 0.5991,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Đồng Văn Karst Plateau Geopark",
+        "city": "Hà Giang",
+        "category": "thiên nhiên",
+        "source_file": "data/raw/hagiang/attractions.json",
+        "score": 0.6538,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Đồng Văn Karst Plateau Geopark",
+        "city": "Hà Giang",
+        "category": "thiên nhiên",
+        "source_file": "data/raw/hagiang/attractions.json",
+        "score": 0.6198,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Trekking ở Hà Giang",
+        "city": "Hà Giang",
+        "category": "trải nghiệm",
+        "source_file": "data/raw/hagiang/adventures.json",
+        "score": 0.6714,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Ha Giang Motorbike Loop",
+        "city": "Hà Giang",
+        "category": "trải nghiệm",
+        "source_file": "data/raw/hagiang/adventures.json",
+        "score": 0.6156,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Ngắm hoa tam giác mạch Hà Giang",
+        "city": "Hà Giang",
+        "category": "trải nghiệm",
+        "source_file": "data/raw/hagiang/adventures.json",
+        "score": 0.6086,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Dong Van Ancient Town",
+        "city": "Hà Giang",
+        "category": "văn hóa",
+        "source_file": "data/raw/hagiang/attractions.json",
+        "score": 0.6436,
+        "search_mode": "broad_city_search"
+      }
+    ],
+    "city_match": 1.0,
+    "category_match": 0.9,
+    "source_file_match": 1.0,
+    "hit_at_3": 1,
+    "hit_at_5": 1
+  },
+  {
+    "id": "R008",
+    "question": "Gợi ý trải nghiệm phiêu lưu và cung đường đẹp ở Hà Giang.",
+    "expected_city": "Hà Giang",
+    "expected_categories": [
+      "trải nghiệm",
+      "adventure",
+      "thiên nhiên"
+    ],
+    "expected_source_files": [
+      "hagiang/adventures.json",
+      "hagiang/attractions.json"
+    ],
+    "retrieved": [
+      {
+        "title": "Trekking ở Hà Giang",
+        "city": "Hà Giang",
+        "category": "trải nghiệm",
+        "source_file": "data/raw/hagiang/adventures.json",
+        "score": 0.7093,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Ha Giang Motorbike Loop",
+        "city": "Hà Giang",
+        "category": "trải nghiệm",
+        "source_file": "data/raw/hagiang/adventures.json",
+        "score": 0.6751,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Ha Giang Motorbike Loop",
+        "city": "Hà Giang",
+        "category": "trải nghiệm",
+        "source_file": "data/raw/hagiang/adventures.json",
+        "score": 0.6339,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Ngắm hoa tam giác mạch Hà Giang",
+        "city": "Hà Giang",
+        "category": "trải nghiệm",
+        "source_file": "data/raw/hagiang/adventures.json",
+        "score": 0.6278,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Trải nghiệm ẩm thực vùng cao Hà Giang",
+        "city": "Hà Giang",
+        "category": "trải nghiệm",
+        "source_file": "data/raw/hagiang/adventures.json",
+        "score": 0.6201,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Khám phá văn hóa tại Dong Van",
+        "city": "Hà Giang",
+        "category": "trải nghiệm",
+        "source_file": "data/raw/hagiang/adventures.json",
+        "score": 0.6118,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Khám phá văn hóa tại Dong Van",
+        "city": "Hà Giang",
+        "category": "trải nghiệm",
+        "source_file": "data/raw/hagiang/adventures.json",
+        "score": 0.6103,
+        "search_mode": "city_category_search"
+      }
+    ],
+    "city_match": 1.0,
+    "category_match": 1.0,
+    "source_file_match": 1.0,
+    "hit_at_3": 1,
+    "hit_at_5": 1
+  },
+  {
+    "id": "R009",
+    "question": "Tôi muốn khám phá phố cổ Hà Nội và văn hóa địa phương.",
+    "expected_city": "Hà Nội",
+    "expected_categories": [
+      "phố cổ",
+      "văn hóa",
+      "tham quan"
+    ],
+    "expected_source_files": [
+      "hanoi/old_quarter.json",
+      "hanoi/culture.json",
+      "hanoi/attractions.json"
+    ],
+    "retrieved": [
+      {
+        "title": "Hanoi Weekend Itinerary",
+        "city": "Hà Nội",
+        "category": "lịch trình mẫu",
+        "source_file": "data/raw/hanoi/culture.json",
+        "score": 0.5868,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Ta Hien Street",
+        "city": "Hà Nội",
+        "category": "trải nghiệm",
+        "source_file": "data/raw/hanoi/old_quarter.json",
+        "score": 0.595,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Bach Ma Temple",
+        "city": "Hà Nội",
+        "category": "văn hóa",
+        "source_file": "data/raw/hanoi/old_quarter.json",
+        "score": 0.5874,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Hoan Kiem Lake",
+        "city": "Hà Nội",
+        "category": "tham quan",
+        "source_file": "data/raw/hanoi/old_quarter.json",
+        "score": 0.5676,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Hanoi Cafe Culture",
+        "city": "Hà Nội",
+        "category": "cafe",
+        "source_file": "data/raw/hanoi/culture.json",
+        "score": 0.6464,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Hanoi Cafe Culture",
+        "city": "Hà Nội",
+        "category": "cafe",
+        "source_file": "data/raw/hanoi/culture.json",
+        "score": 0.5977,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Bia hơi Hà Nội",
+        "city": "Hà Nội",
+        "category": "ẩm thực",
+        "source_file": "data/raw/hanoi/food.json",
+        "score": 0.5984,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Phở Hà Nội",
+        "city": "Hà Nội",
+        "category": "ẩm thực",
+        "source_file": "data/raw/hanoi/food.json",
+        "score": 0.5762,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Hanoi Old Quarter",
+        "city": "Hà Nội",
+        "category": "phố cổ",
+        "source_file": "data/raw/hanoi/old_quarter.json",
+        "score": 0.6401,
+        "search_mode": "broad_city_search"
+      },
+      {
+        "title": "Hanoi Street Food Walk",
+        "city": "Hà Nội",
+        "category": "trải nghiệm ẩm thực",
+        "source_file": "data/raw/hanoi/culture.json",
+        "score": 0.6358,
+        "search_mode": "broad_city_search"
+      }
+    ],
+    "city_match": 1.0,
+    "category_match": 0.3,
+    "source_file_match": 0.8,
+    "hit_at_3": 1,
+    "hit_at_5": 1
+  },
+  {
+    "id": "R010",
+    "question": "Gợi ý món ăn nổi tiếng ở Hà Nội.",
+    "expected_city": "Hà Nội",
+    "expected_categories": [
+      "ẩm thực",
+      "food"
+    ],
+    "expected_source_files": [
+      "hanoi/food.json"
+    ],
+    "retrieved": [
+      {
+        "title": "Phở Hà Nội",
+        "city": "Hà Nội",
+        "category": "ẩm thực",
+        "source_file": "data/raw/hanoi/food.json",
+        "score": 0.6685,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Bún chả",
+        "city": "Hà Nội",
+        "category": "ẩm thực",
+        "source_file": "data/raw/hanoi/food.json",
+        "score": 0.646,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Chả cá",
+        "city": "Hà Nội",
+        "category": "ẩm thực",
+        "source_file": "data/raw/hanoi/food.json",
+        "score": 0.6337,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Bánh cuốn",
+        "city": "Hà Nội",
+        "category": "ẩm thực",
+        "source_file": "data/raw/hanoi/food.json",
+        "score": 0.6326,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Bún riêu",
+        "city": "Hà Nội",
+        "category": "ẩm thực",
+        "source_file": "data/raw/hanoi/food.json",
+        "score": 0.6295,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Bánh mì Hà Nội",
+        "city": "Hà Nội",
+        "category": "ẩm thực",
+        "source_file": "data/raw/hanoi/food.json",
+        "score": 0.6269,
+        "search_mode": "city_category_search"
+      },
+      {
+        "title": "Cà phê trứng",
+        "city": "Hà Nội",
+        "category": "cafe",
+        "source_file": "data/raw/hanoi/food.json",
+        "score": 0.5837,
+        "search_mode": "city_category_search"
+      }
+    ],
+    "city_match": 1.0,
+    "category_match": 0.857,
+    "source_file_match": 1.0,
+    "hit_at_3": 1,
+    "hit_at_5": 1
+  }
+]

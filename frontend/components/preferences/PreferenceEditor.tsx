@@ -2,7 +2,10 @@
 
 import { useState } from "react";
 import { savePreferences } from "@/lib/api";
+import { classifyAppError } from "@/lib/error-handler";
+import type { AppError } from "@/types/error";
 import type { UserPreferences } from "@/types/travel";
+import { ErrorAlert } from "@/components/travel/ErrorAlert";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { SlidersHorizontal } from "lucide-react";
@@ -17,6 +20,7 @@ export function PreferenceEditor() {
   });
 
   const [status, setStatus] = useState("");
+  const [error, setError] = useState<AppError | null>(null);
 
   function updateField(key: keyof UserPreferences, value: string) {
     setPreferences((prev) => ({
@@ -27,12 +31,23 @@ export function PreferenceEditor() {
 
   async function handleSave() {
     setStatus("Đang lưu...");
+    setError(null);
 
     try {
       await savePreferences(preferences);
       setStatus("Đã lưu sở thích vào memory.");
-    } catch {
-      setStatus("Lưu thất bại. Vui lòng kiểm tra backend.");
+    } catch (err) {
+      const classifiedError = classifyAppError(err);
+
+      setError({
+        ...classifiedError,
+        code: "MEMORY_SAVE_FAILED",
+        title: "Không lưu được sở thích",
+        message:
+          "Hệ thống chưa lưu được sở thích vào memory. Có thể database hoặc memory API đang gặp lỗi.",
+      });
+
+      setStatus("");
     }
   }
 
@@ -91,7 +106,19 @@ export function PreferenceEditor() {
           Lưu sở thích
         </Button>
 
-        {status && <p className="text-sm text-slate-400">{status}</p>}
+        {status && (
+          <p className="rounded-xl border border-emerald-400/20 bg-emerald-400/10 px-3 py-2 text-sm text-emerald-200">
+            {status}
+          </p>
+        )}
+
+        {error && (
+          <ErrorAlert
+            error={error}
+            onClose={() => setError(null)}
+            onRetry={handleSave}
+          />
+        )}
       </div>
     </div>
   );

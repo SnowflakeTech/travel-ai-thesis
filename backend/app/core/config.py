@@ -8,14 +8,21 @@ class Settings(BaseSettings):
     DATABASE_URL: str
     BACKEND_CORS_ORIGINS: str = "http://localhost:3000"
 
+    # Demo authentication
+    DEMO_API_KEY: str = ""
+    ENABLE_DEMO_AUTH: bool = True
+
+    # Gemini
     GEMINI_API_KEY: str
     GEMINI_MODEL: str = "gemini-2.5-flash"
     GEMINI_TEMPERATURE: float = 0.4
     GEMINI_MAX_OUTPUT_TOKENS: int = 700
     GEMINI_THINKING_BUDGET: int = 0
 
+    # Chat
     CHAT_MAX_INPUT_CHARS: int = 1200
 
+    # RAG / Qdrant
     QDRANT_URL: str = "http://localhost:6333"
     QDRANT_COLLECTION: str = "travel_knowledge"
     EMBEDDING_MODEL: str = "BAAI/bge-m3"
@@ -25,9 +32,11 @@ class Settings(BaseSettings):
     RAG_MAX_CONTEXT_CHARS: int = 4500
     RAG_SCORE_THRESHOLD: float = 0.35
 
+    # Route service
     ORS_API_KEY: str = ""
-    ORS_BASE_URL: str = "https://api.heigit.org/openrouteservice"
+    ORS_BASE_URL: str = "https://api.openrouteservice.org"
 
+    # Geocoding
     NOMINATIM_BASE_URL: str = "https://nominatim.openstreetmap.org"
     NOMINATIM_USER_AGENT: str = "travel-ai-thesis-student-project/1.0"
 
@@ -36,10 +45,11 @@ class Settings(BaseSettings):
     ROUTE_MAX_PLACES: int = 6
     ROUTE_CACHE_DIR: str = ".cache/routes"
 
+    # Memory
     MEMORY_MAX_ITEMS: int = 20
     MEMORY_EXTRACTION_MAX_OUTPUT_TOKENS: int = 500
     MEMORY_ENABLE_LLM_EXTRACTION: bool = True
-    
+
     class Config:
         env_file = ".env"
 

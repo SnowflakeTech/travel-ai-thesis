@@ -3,11 +3,12 @@ from pydantic import BaseModel
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.agents.travel_graph import run_travel_agent
+from app.core.security import verify_demo_api_key
 from app.db.session import get_db
 from app.memory.service import get_user_memory_text, save_or_update_memory
 
 
-router = APIRouter()
+router = APIRouter(dependencies=[Depends(verify_demo_api_key)])
 
 
 class RegenerateDayRequest(BaseModel):
@@ -63,7 +64,12 @@ Yêu cầu mới:
             "answer": result.get("final_answer", ""),
             "route_plan": result.get("route_plan", {}),
             "budget_plan": result.get("budget_plan", {}),
+            "grounding_guard": result.get("grounding_guard", {}),
+            "post_processing_guard": result.get("post_processing_guard", {}),
         }
+
+    except HTTPException:
+        raise
 
     except Exception as exc:
         raise HTTPException(
@@ -105,7 +111,12 @@ Hãy tối ưu lại lịch trình theo tiêu chí:
             "answer": result.get("final_answer", ""),
             "route_plan": result.get("route_plan", {}),
             "budget_plan": result.get("budget_plan", {}),
+            "grounding_guard": result.get("grounding_guard", {}),
+            "post_processing_guard": result.get("post_processing_guard", {}),
         }
+
+    except HTTPException:
+        raise
 
     except Exception as exc:
         raise HTTPException(
@@ -120,37 +131,47 @@ async def save_user_preferences(
     request: PreferencesRequest,
     db: AsyncSession = Depends(get_db),
 ):
-    saved = []
+    try:
+        saved = []
 
-    preferences = [
-        ("travel_style", request.travelStyle),
-        ("budget_preference", request.budgetLevel),
-        ("mobility_constraint", request.walkingLevel),
-        ("travel_preference", request.favoritePlaces),
-        ("travel_dislike", request.avoidPlaces),
-    ]
+        preferences = [
+            ("travel_style", request.travelStyle),
+            ("budget_preference", request.budgetLevel),
+            ("mobility_constraint", request.walkingLevel),
+            ("travel_preference", request.favoritePlaces),
+            ("travel_dislike", request.avoidPlaces),
+        ]
 
-    for memory_type, content in preferences:
-        if content.strip():
-            memory = await save_or_update_memory(
-                db=db,
-                user_id=user_id,
-                memory_type=memory_type,
-                content=content.strip(),
-                source_message="manual_preferences_editor",
-                confidence=0.95,
-            )
+        for memory_type, content in preferences:
+            if content.strip():
+                memory = await save_or_update_memory(
+                    db=db,
+                    user_id=user_id,
+                    memory_type=memory_type,
+                    content=content.strip(),
+                    source_message="manual_preferences_editor",
+                    confidence=0.95,
+                )
 
-            saved.append(
-                {
-                    "id": memory.id,
-                    "memory_type": memory.memory_type,
-                    "content": memory.content,
-                    "confidence": memory.confidence,
-                }
-            )
+                saved.append(
+                    {
+                        "id": memory.id,
+                        "memory_type": memory.memory_type,
+                        "content": memory.content,
+                        "confidence": memory.confidence,
+                    }
+                )
 
-    return {
-        "status": "ok",
-        "saved": saved,
-    }
+        return {
+            "status": "ok",
+            "saved": saved,
+        }
+
+    except HTTPException:
+        raise
+
+    except Exception as exc:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Save preferences memory error: {str(exc)}",
+        )

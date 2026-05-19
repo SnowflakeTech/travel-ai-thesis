@@ -1,0 +1,2149 @@
+[
+  {
+    "id": "G001",
+    "method": "basic_rag",
+    "question": "Tôi muốn đi Đà Lạt 2 ngày 1 đêm, thích cafe chill, thiên nhiên và ngân sách tiết kiệm.",
+    "city": "Đà Lạt",
+    "evaluation_focus": [
+      "relevance",
+      "groundedness",
+      "budget",
+      "personalization"
+    ],
+    "answer": "Chào bạn, tôi là Travel AI Planner. Dưới đây là lịch trình Đà Lạt 2 ngày 1 đêm dành cho bạn, ưu tiên cafe chill, thiên nhiên và ngân sách tiết kiệm.\n\n**Tóm tắt nhu cầu:**\nBạn muốn du lịch Đà Lạt 2 ngày 1 đêm, ưu tiên trải nghiệm cafe chill, khám phá thiên nhiên và có ngân sách tiết kiệm.\n\n**Lịch trình đề xuất:**\n\n**Ngày 1: Thiên nhiên và Cafe Chill**\n*   **Sáng:**\n    *   **Hồ Xuân Hương:** Bắt đầu ngày mới bằng việc đi dạo quanh Hồ Xuân Hương vào sáng sớm để tận hưởng không khí trong lành và cảnh quan thiên nhiên. Đây là địa điểm miễn phí, phù hợp với người thích đi bộ.\n*   **Trưa:**\n    *   **Ăn trưa:** (Hệ thống chưa có đủ dữ liệu về nhà hàng tiết kiệm)\n*   **Chiều:**\n    *   **Tiệm Cà Phê Túi Mơ To:** Ghé Tiệm Cà Phê Túi Mơ To vào chiều hoàng hôn để thưởng thức cafe trong không gian nhiều cây xanh, view thung lũng. Quán này phù hợp với người thích cafe chill và chụp ảnh.\n*   **Tối:**\n    *   **Quảng trường Lâm Viên:** Dạo chơi tại Quảng trường Lâm Viên vào buổi tối để ngắm cảnh và chụp ảnh. Đây là địa điểm miễn phí và dễ kết hợp với Hồ Xuân Hương.\n\n**Ngày 2: Cafe Trung tâm và Khám phá**\n*   **Sáng:**\n    *   **An Cafe:** Thưởng thức bữa sáng nhẹ và cafe tại An Cafe. Quán có không gian xanh mát, gần trung tâm, tiện lợi cho việc di chuyển.\n*   **Trưa:**\n    *   **Ăn trưa:** (Hệ thống chưa có đủ dữ liệu về nhà hàng tiết kiệm)\n*   **Chiều:**\n    *   **Mua sắm/Tham quan tự do:** (Hệ thống chưa có đủ dữ liệu về địa điểm mua sắm/tham quan tiết kiệm khác)\n\n**Vì sao phù hợp:**\nLịch trình này tập trung vào các địa điểm thiên nhiên miễn phí như Hồ Xuân Hương và Quảng trường Lâm Viên, kết hợp với các quán cafe có không gian chill như Tiệm Cà Phê Túi Mơ To và An Cafe. Các địa điểm này đều có trong ngữ cảnh du lịch, phù hợp với sở thích của bạn và giúp tiết kiệm chi phí.\n\n**Lưu ý ngân sách và di chuyển:**\n*   **Ngân sách:** Hồ Xuân Hương và Quảng trường Lâm Viên là miễn phí. Chi phí cho cafe tại An Cafe khoảng 40.000-90.000 VND/người và Tiệm Cà Phê Túi Mơ To khoảng 50.000-100.000 VND/người.\n*   **Di chuyển:** Hồ Xuân Hương, Quảng trường Lâm Viên và An Cafe nằm gần trung tâm, bạn có thể đi bộ hoặc thuê xe máy để tiết kiệm chi phí di chuyển. Tiệm Cà Phê Túi Mơ To nằm ở Hẻm 31 Sào Nam, có thể cần đi xe máy hoặc taxi.\n\nĐể tôi có thể giúp bạn tốt hơn, bạn có muốn tìm thêm gợi ý về phương tiện di chuyển hoặc chỗ ở tiết kiệm không?",
+    "retrieved_contexts": [
+      {
+        "score": 0.6114,
+        "search_mode": "broad_city_search",
+        "title": "Hồ Xuân Hương",
+        "city": "Đà Lạt",
+        "category": "thiên nhiên",
+        "address": "Trung tâm thành phố Đà Lạt",
+        "best_time": "Sáng sớm hoặc chiều mát",
+        "budget": "Miễn phí",
+        "suitable_for": [
+          "người thích đi bộ",
+          "cặp đôi",
+          "gia đình"
+        ],
+        "tips": "Có thể kết hợp đi bộ quanh hồ và ghé quảng trường.",
+        "source_url": "",
+        "source_file": "data/raw/dalat/attractions.json",
+        "latitude": null,
+        "longitude": null,
+        "text": "Tên địa điểm: Hồ Xuân Hương\nThành phố: Đà Lạt\nLoại hình: thiên nhiên\nĐịa chỉ: Trung tâm thành phố Đà Lạt\nThời điểm phù hợp: Sáng sớm hoặc chiều mát\nNgân sách tham khảo: Miễn phí\nPhù hợp với: người thích đi bộ, cặp đôi, gia đình\nMô tả: Hồ Xuân Hương phù hợp để đi dạo, đạp xe hoặc thư giãn. Đây là địa điểm trung tâm, dễ kết hợp với Quảng trường Lâm Viên, chợ Đà Lạt và các quán cafe gần đó.\nLưu ý: Có thể kết hợp đi bộ quanh hồ và ghé quảng trường."
+      },
+      {
+        "score": 0.5608,
+        "search_mode": "broad_city_search",
+        "title": "Quảng trường Lâm Viên",
+        "city": "Đà Lạt",
+        "category": "tham quan",
+        "address": "Đường Trần Quốc Toản, Đà Lạt",
+        "best_time": "Chiều mát hoặc buổi tối",
+        "budget": "Miễn phí",
+        "suitable_for": [
+          "gia đình",
+          "cặp đôi",
+          "nhóm bạn"
+        ],
+        "tips": "Nên đi chiều mát để dễ chụp ảnh và dạo quanh hồ.",
+        "source_url": "",
+        "source_file": "data/raw/dalat/attractions.json",
+        "latitude": null,
+        "longitude": null,
+        "text": "Tên địa điểm: Quảng trường Lâm Viên\nThành phố: Đà Lạt\nLoại hình: tham quan\nĐịa chỉ: Đường Trần Quốc Toản, Đà Lạt\nThời điểm phù hợp: Chiều mát hoặc buổi tối\nNgân sách tham khảo: Miễn phí\nPhù hợp với: gia đình, cặp đôi, nhóm bạn\nMô tả: Quảng trường Lâm Viên là địa điểm biểu tượng của Đà Lạt, phù hợp để đi dạo, chụp ảnh và kết hợp tham quan Hồ Xuân Hương. Đây là điểm đến dễ di chuyển và không tốn chi phí.\nLưu ý: Nên đi chiều mát để dễ chụp ảnh và dạ..."
+      },
+      {
+        "score": 0.7185,
+        "search_mode": "broad_city_search",
+        "title": "An Cafe",
+        "city": "Đà Lạt",
+        "category": "cafe",
+        "address": "63Bis đường 3 tháng 2, Đà Lạt",
+        "best_time": "Buổi sáng hoặc đầu giờ chiều",
+        "budget": "40000-90000 VND/người",
+        "suitable_for": [
+          "gia đình",
+          "bạn bè",
+          "người thích không gian xanh"
+        ],
+        "tips": "Phù hợp để ghé giữa lịch trình vì gần trung tâm.",
+        "source_url": "",
+        "source_file": "data/raw/dalat/cafes.json",
+        "latitude": null,
+        "longitude": null,
+        "text": "Tên địa điểm: An Cafe\nThành phố: Đà Lạt\nLoại hình: cafe\nĐịa chỉ: 63Bis đường 3 tháng 2, Đà Lạt\nThời điểm phù hợp: Buổi sáng hoặc đầu giờ chiều\nNgân sách tham khảo: 40000-90000 VND/người\nPhù hợp với: gia đình, bạn bè, người thích không gian xanh\nMô tả: An Cafe có không gian nhiều cây xanh, nằm gần trung tâm, thuận tiện di chuyển. Quán phù hợp để nghỉ chân, trò chuyện và thưởng thức đồ uống trong lịch trình nhẹ nhàng.\nLưu ý: Phù hợp để ghé giữa lịc..."
+      },
+      {
+        "score": 0.7004,
+        "search_mode": "broad_city_search",
+        "title": "Tiệm Cà Phê Túi Mơ To",
+        "city": "Đà Lạt",
+        "category": "cafe",
+        "address": "Hẻm 31 Sào Nam, Đà Lạt",
+        "best_time": "Sáng sớm hoặc chiều hoàng hôn",
+        "budget": "50000-100000 VND/người",
+        "suitable_for": [
+          "cặp đôi",
+          "bạn bè",
+          "người thích cafe chill"
+        ],
+        "tips": "Nên đi vào sáng sớm hoặc chiều muộn để có ánh sáng đẹp.",
+        "source_url": "",
+        "source_file": "data/raw/dalat/cafes.json",
+        "latitude": null,
+        "longitude": null,
+        "text": "Tên địa điểm: Tiệm Cà Phê Túi Mơ To\nThành phố: Đà Lạt\nLoại hình: cafe\nĐịa chỉ: Hẻm 31 Sào Nam, Đà Lạt\nThời điểm phù hợp: Sáng sớm hoặc chiều hoàng hôn\nNgân sách tham khảo: 50000-100000 VND/người\nPhù hợp với: cặp đôi, bạn bè, người thích cafe chill\nMô tả: Tiệm Cà Phê Túi Mơ To là quán cafe nổi tiếng với không gian nhiều cây xanh, view thung lũng và phong cách nhẹ nhàng. Phù hợp với người thích chụp ảnh, uống cafe chậm và trải nghiệm không khí Đà L..."
+      }
+    ]
+  },
+  {
+    "id": "G001",
+    "method": "agentic_rag",
+    "question": "Tôi muốn đi Đà Lạt 2 ngày 1 đêm, thích cafe chill, thiên nhiên và ngân sách tiết kiệm.",
+    "city": "Đà Lạt",
+    "evaluation_focus": [
+      "relevance",
+      "groundedness",
+      "budget",
+      "personalization"
+    ],
+    "answer": "Chào bạn, với yêu cầu đi Đà Lạt 2 ngày 1 đêm, thích cafe chill, thiên nhiên và ngân sách tiết kiệm, đây là gợi ý lịch trình dành cho bạn:\n\n**Tóm tắt nhu cầu:**\nBạn muốn khám phá Đà Lạt trong 2 ngày 1 đêm, ưu tiên các địa điểm thiên nhiên, quán cafe có không gian chill và mong muốn một chuyến đi tiết kiệm.\n\n**Lịch trình theo ngày:**\n\n**Ngày 1: Khám phá trung tâm và cafe chill**\n*   **Sáng:** Dạo quanh **Hồ Xuân Hương** để tận hưởng không khí trong lành và cảnh quan thiên nhiên.\n*   **Chiều:** Ghé thăm **Quảng trường Lâm Viên** để chụp ảnh và thư giãn.\n*   **Tối:** Thưởng thức không gian xanh mát tại **An Cafe**, một quán cafe gần trung tâm.\n\n**Ngày 2: Cafe view đẹp và kết thúc hành trình**\n*   **Sáng:** Trải nghiệm không gian chill với view thung lũng tại **Tiệm Cà Phê Túi Mơ To**.\n*   **Chiều:** Tùy chọn mua sắm đặc sản hoặc quay lại các điểm yêu thích trước khi kết thúc chuyến đi.\n\n**Ngân sách tham khảo:**\n*   Các điểm tham quan như Hồ Xuân Hương và Quảng trường Lâm Viên đều miễn phí.\n*   Chi phí cho cafe tại An Cafe khoảng 40.000 - 90.000 VND/người.\n*   Chi phí cho cafe tại Tiệm Cà Phê Túi Mơ To khoảng 50.000 - 100.000 VND/người.\n\n**Lưu ý quan trọng:**\n*   Bạn có thể đi bộ hoặc thuê xe máy để di chuyển giữa các địa điểm nhằm tiết kiệm chi phí.\n*   Nên đi Hồ Xuân Hương vào sáng sớm hoặc chiều mát để có trải nghiệm tốt nhất.\n*   Tiệm Cà Phê Túi Mơ To phù hợp để đi vào sáng sớm hoặc chiều hoàng hôn để có ánh sáng đẹp.\n\n**Lưu ý về dữ liệu:**\n*   Hệ thống hiện chưa có đủ dữ liệu về các món ăn đặc sản địa phương.\n*   Khoảng cách giữa các địa điểm trong lịch trình chỉ là ước lượng theo đường thẳng, không phải tuyến đường thực tế.\n\n## Lưu ý về dữ liệu\n- Khoảng cách và thời gian di chuyển chỉ là ước lượng theo dữ liệu hiện có, chưa phải tuyến đường thực tế.\n- Tuyến đường đang dùng Haversine fallback. Khoảng cách chỉ là ước lượng theo đường thẳng, không phải tuyến đường thực tế.",
+    "retrieved_contexts": [
+      {
+        "score": 0.6114,
+        "search_mode": "broad_city_search",
+        "title": "Hồ Xuân Hương",
+        "city": "Đà Lạt",
+        "category": "thiên nhiên",
+        "address": "Trung tâm thành phố Đà Lạt",
+        "best_time": "Sáng sớm hoặc chiều mát",
+        "budget": "Miễn phí",
+        "suitable_for": [
+          "người thích đi bộ",
+          "cặp đôi",
+          "gia đình"
+        ],
+        "tips": "Có thể kết hợp đi bộ quanh hồ và ghé quảng trường.",
+        "source_url": "",
+        "source_file": "data/raw/dalat/attractions.json",
+        "latitude": null,
+        "longitude": null,
+        "text": "Tên địa điểm: Hồ Xuân Hương\nThành phố: Đà Lạt\nLoại hình: thiên nhiên\nĐịa chỉ: Trung tâm thành phố Đà Lạt\nThời điểm phù hợp: Sáng sớm hoặc chiều mát\nNgân sách tham khảo: Miễn phí\nPhù hợp với: người thích đi bộ, cặp đôi, gia đình\nMô tả: Hồ Xuân Hương phù hợp để đi dạo, đạp xe hoặc thư giãn. Đây là địa điểm trung tâm, dễ kết hợp với Quảng trường Lâm Viên, chợ Đà Lạt và các quán cafe gần đó.\nLưu ý: Có thể kết hợp đi bộ quanh hồ và ghé quảng trường."
+      },
+      {
+        "score": 0.5608,
+        "search_mode": "broad_city_search",
+        "title": "Quảng trường Lâm Viên",
+        "city": "Đà Lạt",
+        "category": "tham quan",
+        "address": "Đường Trần Quốc Toản, Đà Lạt",
+        "best_time": "Chiều mát hoặc buổi tối",
+        "budget": "Miễn phí",
+        "suitable_for": [
+          "gia đình",
+          "cặp đôi",
+          "nhóm bạn"
+        ],
+        "tips": "Nên đi chiều mát để dễ chụp ảnh và dạo quanh hồ.",
+        "source_url": "",
+        "source_file": "data/raw/dalat/attractions.json",
+        "latitude": null,
+        "longitude": null,
+        "text": "Tên địa điểm: Quảng trường Lâm Viên\nThành phố: Đà Lạt\nLoại hình: tham quan\nĐịa chỉ: Đường Trần Quốc Toản, Đà Lạt\nThời điểm phù hợp: Chiều mát hoặc buổi tối\nNgân sách tham khảo: Miễn phí\nPhù hợp với: gia đình, cặp đôi, nhóm bạn\nMô tả: Quảng trường Lâm Viên là địa điểm biểu tượng của Đà Lạt, phù hợp để đi dạo, chụp ảnh và kết hợp tham quan Hồ Xuân Hương. Đây là điểm đến dễ di chuyển và không tốn chi phí.\nLưu ý: Nên đi chiều mát để dễ chụp ảnh và dạ..."
+      },
+      {
+        "score": 0.7185,
+        "search_mode": "broad_city_search",
+        "title": "An Cafe",
+        "city": "Đà Lạt",
+        "category": "cafe",
+        "address": "63Bis đường 3 tháng 2, Đà Lạt",
+        "best_time": "Buổi sáng hoặc đầu giờ chiều",
+        "budget": "40000-90000 VND/người",
+        "suitable_for": [
+          "gia đình",
+          "bạn bè",
+          "người thích không gian xanh"
+        ],
+        "tips": "Phù hợp để ghé giữa lịch trình vì gần trung tâm.",
+        "source_url": "",
+        "source_file": "data/raw/dalat/cafes.json",
+        "latitude": null,
+        "longitude": null,
+        "text": "Tên địa điểm: An Cafe\nThành phố: Đà Lạt\nLoại hình: cafe\nĐịa chỉ: 63Bis đường 3 tháng 2, Đà Lạt\nThời điểm phù hợp: Buổi sáng hoặc đầu giờ chiều\nNgân sách tham khảo: 40000-90000 VND/người\nPhù hợp với: gia đình, bạn bè, người thích không gian xanh\nMô tả: An Cafe có không gian nhiều cây xanh, nằm gần trung tâm, thuận tiện di chuyển. Quán phù hợp để nghỉ chân, trò chuyện và thưởng thức đồ uống trong lịch trình nhẹ nhàng.\nLưu ý: Phù hợp để ghé giữa lịc..."
+      },
+      {
+        "score": 0.7004,
+        "search_mode": "broad_city_search",
+        "title": "Tiệm Cà Phê Túi Mơ To",
+        "city": "Đà Lạt",
+        "category": "cafe",
+        "address": "Hẻm 31 Sào Nam, Đà Lạt",
+        "best_time": "Sáng sớm hoặc chiều hoàng hôn",
+        "budget": "50000-100000 VND/người",
+        "suitable_for": [
+          "cặp đôi",
+          "bạn bè",
+          "người thích cafe chill"
+        ],
+        "tips": "Nên đi vào sáng sớm hoặc chiều muộn để có ánh sáng đẹp.",
+        "source_url": "",
+        "source_file": "data/raw/dalat/cafes.json",
+        "latitude": null,
+        "longitude": null,
+        "text": "Tên địa điểm: Tiệm Cà Phê Túi Mơ To\nThành phố: Đà Lạt\nLoại hình: cafe\nĐịa chỉ: Hẻm 31 Sào Nam, Đà Lạt\nThời điểm phù hợp: Sáng sớm hoặc chiều hoàng hôn\nNgân sách tham khảo: 50000-100000 VND/người\nPhù hợp với: cặp đôi, bạn bè, người thích cafe chill\nMô tả: Tiệm Cà Phê Túi Mơ To là quán cafe nổi tiếng với không gian nhiều cây xanh, view thung lũng và phong cách nhẹ nhàng. Phù hợp với người thích chụp ảnh, uống cafe chậm và trải nghiệm không khí Đà L..."
+      }
+    ],
+    "route_plan": {
+      "strategy": "Ưu tiên tọa độ có sẵn trong JSON, sau đó geocoding bằng Nominatim nếu cần, rồi tính tuyến bằng ORS hoặc Haversine fallback.",
+      "ordered_places": [],
+      "missing_coordinate_places": [
+        "Hồ Xuân Hương",
+        "Quảng trường Lâm Viên",
+        "An Cafe",
+        "Tiệm Cà Phê Túi Mơ To"
+      ],
+      "route_summary": {
+        "provider": "haversine_fallback",
+        "profile": "walking_estimate",
+        "total_distance_km": 0.0,
+        "total_duration_minutes": 0,
+        "segments": [],
+        "note": "Khoảng cách được ước lượng theo đường thẳng, không phải tuyến đường thực tế."
+      }
+    },
+    "budget_plan": {
+      "user_budget_vnd": null,
+      "place_budget_notes": [
+        {
+          "title": "Hồ Xuân Hương",
+          "budget": "Miễn phí",
+          "category": "thiên nhiên"
+        },
+        {
+          "title": "Quảng trường Lâm Viên",
+          "budget": "Miễn phí",
+          "category": "tham quan"
+        },
+        {
+          "title": "An Cafe",
+          "budget": "40000-90000 VND/người",
+          "category": "cafe"
+        },
+        {
+          "title": "Tiệm Cà Phê Túi Mơ To",
+          "budget": "50000-100000 VND/người",
+          "category": "cafe"
+        }
+      ],
+      "assessment": "Ngân sách được đánh giá dựa trên dữ liệu mô tả trong knowledge base. Hệ thống không khẳng định giá hiện tại nếu dữ liệu không có nguồn thời gian thực."
+    },
+    "grounding_guard": {
+      "has_retrieved_contexts": true,
+      "allowed_place_names": [
+        "Hồ Xuân Hương",
+        "Quảng trường Lâm Viên",
+        "An Cafe",
+        "Tiệm Cà Phê Túi Mơ To"
+      ],
+      "route_provider": "haversine_fallback",
+      "is_route_estimate_only": true,
+      "real_time_risk_keywords": [
+        "giá vé hiện tại",
+        "giá chính xác",
+        "giờ mở cửa hiện tại",
+        "đang mở cửa",
+        "đang đóng cửa",
+        "đông khách hiện tại",
+        "tình trạng đông",
+        "thời tiết hiện tại",
+        "kẹt xe",
+        "còn phòng",
+        "vé máy bay",
+        "giá khách sạn hiện tại"
+      ],
+      "warnings": [
+        "Tuyến đường đang dùng Haversine fallback. Khoảng cách chỉ là ước lượng theo đường thẳng, không phải tuyến đường thực tế."
+      ],
+      "policy": {
+        "only_use_retrieved_places": true,
+        "no_realtime_claims": true,
+        "must_disclose_missing_data": true,
+        "must_disclose_route_estimate": true
+      }
+    }
+  },
+  {
+    "id": "G002",
+    "method": "basic_rag",
+    "question": "Tôi muốn đi Đà Nẵng 1 ngày, thích biển, ăn uống địa phương và lịch trình nhẹ nhàng.",
+    "city": "Đà Nẵng",
+    "evaluation_focus": [
+      "route",
+      "food",
+      "groundedness"
+    ],
+    "answer": "Chào bạn, tôi là Travel AI Planner. Dưới đây là lịch trình đề xuất cho chuyến đi Đà Nẵng 1 ngày của bạn, tập trung vào biển, ăn uống địa phương và lịch trình nhẹ nhàng.\n\n**Tóm tắt nhu cầu:**\nBạn muốn đi Đà Nẵng 1 ngày, thích biển, ăn uống địa phương và lịch trình nhẹ nhàng.\n\n**Lịch trình đề xuất:**\n\n*   **Buổi sáng (Sáng sớm - Trưa):**\n    *   **Địa điểm:** Bãi biển Mỹ Khê (Võ Nguyên Giáp, Đà Nẵng)\n    *   **Hoạt động:** Tắm biển, đi dạo và ngắm cảnh bình minh (nếu bạn dậy sớm).\n    *   **Ăn uống:** Thưởng thức bữa sáng với các món ăn địa phương gần khu vực biển Mỹ Khê.\n\n*   **Buổi chiều (Chiều mát):**\n    *   **Địa điểm:** Bãi biển Non Nước (Ngũ Hành Sơn, Đà Nẵng)\n    *   **Hoạt động:** Đi dạo, tắm biển hoặc thư giãn trên bãi cát.\n    *   **Lưu ý:** Có thể kết hợp với tham quan Ngũ Hành Sơn nếu bạn muốn, nhưng để giữ lịch trình nhẹ nhàng, bạn có thể chỉ tập trung vào biển.\n\n*   **Buổi tối:**\n    *   **Địa điểm:** Khu vực gần Bãi biển Phạm Văn Đồng (Phạm Văn Đồng, Sơn Trà, Đà Nẵng)\n    *   **Hoạt động:** Đi dạo nhẹ nhàng ven biển và thưởng thức bữa tối với các món ăn địa phương tại các quán ăn ven biển.\n\n**Vì sao phù hợp:**\nLịch trình này tập trung vào các bãi biển nổi bật của Đà Nẵng như Mỹ Khê, Non Nước và Phạm Văn Đồng, đáp ứng sở thích \"thích biển\" của bạn. Các hoạt động chủ yếu là đi dạo, tắm biển và ngắm cảnh, giúp bạn có một ngày nhẹ nhàng. Việc kết hợp ăn uống địa phương gần các bãi biển cũng giúp bạn trải nghiệm ẩm thực mà không cần di chuyển quá xa.\n\n**Lưu ý ngân sách và di chuyển:**\n\n*   **Ngân sách:** Các hoạt động tắm biển và đi dạo tại các bãi biển đều miễn phí. Chi phí phát sinh chủ yếu từ ăn uống và di chuyển.\n*   **Di chuyển:** Để di chuyển giữa các bãi biển và các điểm ăn uống, bạn có thể sử dụng taxi, xe máy hoặc các ứng dụng gọi xe. Bãi biển Phạm Văn Đồng nằm gần trung tâm hơn, thuận tiện cho việc di chuyển buổi tối.\n\nNếu bạn muốn khám phá thêm các lựa chọn ăn uống địa phương cụ thể, vui lòng cho tôi biết thêm về sở thích ẩm thực của bạn.",
+    "retrieved_contexts": [
+      {
+        "score": 0.6824,
+        "search_mode": "broad_city_search",
+        "title": "Bãi biển Non Nước",
+        "city": "Đà Nẵng",
+        "category": "biển",
+        "address": "Ngũ Hành Sơn, Đà Nẵng",
+        "best_time": "Sáng sớm hoặc chiều mát",
+        "budget": "Miễn phí nếu chỉ đi dạo và tắm biển, chi phí tùy dịch vụ cá nhân",
+        "suitable_for": [
+          "người thích biển",
+          "người thích nghỉ dưỡng",
+          "gia đình",
+          "cặp đôi"
+        ],
+        "tips": "Có thể kết hợp Non Nước với Marble Mountains để tiết kiệm thời gian di chuyển.",
+        "source_url": "https://vietnam.travel/things-to-do/must-visit-places-in-da-nang",
+        "source_file": "data/raw/danang/beaches.json",
+        "latitude": 16.002833,
+        "longitude": 108.263722,
+        "text": "Tên địa điểm: Bãi biển Non Nước\nThành phố: Đà Nẵng\nLoại hình: biển\nĐịa chỉ: Ngũ Hành Sơn, Đà Nẵng\nThời điểm phù hợp: Sáng sớm hoặc chiều mát\nNgân sách tham khảo: Miễn phí nếu chỉ đi dạo và tắm biển, chi phí tùy dịch vụ cá nhân\nPhù hợp với: người thích biển, người thích nghỉ dưỡng, gia đình, cặp đôi\nMô tả: Bãi biển Non Nước nằm gần khu vực Ngũ Hành Sơn, phù hợp với du khách muốn kết hợp biển và tham quan trong cùng một ngày. Không gian biển rộng,..."
+      },
+      {
+        "score": 0.6815,
+        "search_mode": "broad_city_search",
+        "title": "Bãi biển Mỹ Khê",
+        "city": "Đà Nẵng",
+        "category": "biển",
+        "address": "Võ Nguyên Giáp, Đà Nẵng",
+        "best_time": "Sáng sớm hoặc chiều mát",
+        "budget": "Miễn phí nếu chỉ tắm biển, đi dạo và ngắm cảnh",
+        "suitable_for": [
+          "người thích biển",
+          "người thích đi bộ nhẹ nhàng",
+          "gia đình",
+          "nhóm bạn",
+          "du khách ngân sách thấp"
+        ],
+        "tips": "Nên đi sáng sớm để ngắm bình minh hoặc chiều mát để tránh nắng gắt. Nếu chỉ đi dạo và tắm biển cơ bản thì chi phí thấp.",
+        "source_url": "https://vietnam.travel/places-to-go/central-vietnam/da-nang",
+        "source_file": "data/raw/danang/beaches.json",
+        "latitude": 16.061111,
+        "longitude": 108.246833,
+        "text": "Tên địa điểm: Bãi biển Mỹ Khê\nThành phố: Đà Nẵng\nLoại hình: biển\nĐịa chỉ: Võ Nguyên Giáp, Đà Nẵng\nThời điểm phù hợp: Sáng sớm hoặc chiều mát\nNgân sách tham khảo: Miễn phí nếu chỉ tắm biển, đi dạo và ngắm cảnh\nPhù hợp với: người thích biển, người thích đi bộ nhẹ nhàng, gia đình, nhóm bạn, du khách ngân sách thấp\nMô tả: Bãi biển Mỹ Khê là một trong những bãi biển nổi bật nhất của Đà Nẵng, có bãi cát dài, không gian rộng và phù hợp để tắm biển, đi d..."
+      },
+      {
+        "score": 0.6775,
+        "search_mode": "broad_city_search",
+        "title": "Bãi biển Phạm Văn Đồng",
+        "city": "Đà Nẵng",
+        "category": "biển",
+        "address": "Phạm Văn Đồng, Sơn Trà, Đà Nẵng",
+        "best_time": "Sáng sớm hoặc chiều tối",
+        "budget": "Miễn phí nếu chỉ đi dạo và ngắm biển",
+        "suitable_for": [
+          "người thích biển",
+          "người thích đi bộ nhẹ",
+          "du khách ở gần trung tâm",
+          "người thích lịch trình ngắn"
+        ],
+        "tips": "Có thể kết hợp với Mỹ Khê hoặc các quán ăn ven biển trong cùng một buổi.",
+        "source_url": "https://vietnam.travel/places-to-go/central-vietnam/da-nang",
+        "source_file": "data/raw/danang/beaches.json",
+        "latitude": 16.073611,
+        "longitude": 108.244833,
+        "text": "Tên địa điểm: Bãi biển Phạm Văn Đồng\nThành phố: Đà Nẵng\nLoại hình: biển\nĐịa chỉ: Phạm Văn Đồng, Sơn Trà, Đà Nẵng\nThời điểm phù hợp: Sáng sớm hoặc chiều tối\nNgân sách tham khảo: Miễn phí nếu chỉ đi dạo và ngắm biển\nPhù hợp với: người thích biển, người thích đi bộ nhẹ, du khách ở gần trung tâm, người thích lịch trình ngắn\nMô tả: Bãi biển Phạm Văn Đồng nằm gần khu vực trung tâm ven biển Đà Nẵng, thuận tiện để đi dạo, tắm biển hoặc nghỉ ngơi trong lị..."
+      },
+      {
+        "score": 0.6511,
+        "search_mode": "broad_city_search",
+        "title": "Han River",
+        "city": "Đà Nẵng",
+        "category": "tham quan",
+        "address": "Sông Hàn, Đà Nẵng",
+        "best_time": "Buổi tối",
+        "budget": "Miễn phí nếu chỉ đi dạo ven sông",
+        "suitable_for": [
+          "người thích đi bộ nhẹ",
+          "người thích ngắm cảnh thành phố",
+          "cặp đôi",
+          "nhóm bạn"
+        ],
+        "tips": "Có thể kết hợp với Dragon Bridge, Love Bridge hoặc các điểm ăn uống trung tâm trong cùng một buổi tối.",
+        "source_url": "https://vietnam.travel/things-to-do/must-do-da-nang-an-insider-list",
+        "source_file": "data/raw/danang/attractions.json",
+        "latitude": 16.068214,
+        "longitude": 108.224161,
+        "text": "Tên địa điểm: Han River\nThành phố: Đà Nẵng\nLoại hình: tham quan\nĐịa chỉ: Sông Hàn, Đà Nẵng\nThời điểm phù hợp: Buổi tối\nNgân sách tham khảo: Miễn phí nếu chỉ đi dạo ven sông\nPhù hợp với: người thích đi bộ nhẹ, người thích ngắm cảnh thành phố, cặp đôi, nhóm bạn\nMô tả: Sông Hàn là trục cảnh quan quan trọng của Đà Nẵng, gắn với các cây cầu nổi tiếng và không khí đô thị hiện đại. Đi dạo ven sông vào buổi tối là lựa chọn nhẹ nhàng, phù hợp với du khách..."
+      },
+      {
+        "score": 0.6805,
+        "search_mode": "broad_city_search",
+        "title": "Danang Beach Cafe Experience",
+        "city": "Đà Nẵng",
+        "category": "cafe",
+        "address": "Khu vực Mỹ Khê và ven biển Đà Nẵng",
+        "best_time": "Sáng sớm hoặc chiều mát",
+        "budget": "Tùy quán cafe và đồ uống",
+        "suitable_for": [
+          "người thích cafe chill",
+          "người thích biển",
+          "người thích lịch trình nhẹ",
+          "du khách muốn nghỉ gần biển"
+        ],
+        "tips": "Nên đi sáng hoặc chiều để tránh nắng gắt, có thể kết hợp đi dạo biển trước hoặc sau khi uống cafe.",
+        "source_url": "https://vietnam.travel/places-to-go/central-vietnam/da-nang",
+        "source_file": "data/raw/danang/cafes.json",
+        "latitude": 16.061111,
+        "longitude": 108.246833,
+        "text": "Tên địa điểm: Danang Beach Cafe Experience\nThành phố: Đà Nẵng\nLoại hình: cafe\nĐịa chỉ: Khu vực Mỹ Khê và ven biển Đà Nẵng\nThời điểm phù hợp: Sáng sớm hoặc chiều mát\nNgân sách tham khảo: Tùy quán cafe và đồ uống\nPhù hợp với: người thích cafe chill, người thích biển, người thích lịch trình nhẹ, du khách muốn nghỉ gần biển\nMô tả: Cafe ven biển Đà Nẵng là lựa chọn phù hợp cho du khách thích không khí thư giãn, gần biển và dễ kết hợp với lịch trình Mỹ..."
+      },
+      {
+        "score": 0.66,
+        "search_mode": "broad_city_search",
+        "title": "Boulevard Gelato & Coffee",
+        "city": "Đà Nẵng",
+        "category": "cafe",
+        "address": "Đà Nẵng, Việt Nam",
+        "best_time": "Chiều hoặc tối",
+        "budget": "Tùy đồ uống, gelato và món gọi thêm",
+        "suitable_for": [
+          "người thích cafe",
+          "người thích món ngọt",
+          "gia đình",
+          "nhóm bạn"
+        ],
+        "tips": "Phù hợp với lịch trình thư giãn, đặc biệt sau khi đi bộ hoặc tham quan ngoài trời.",
+        "source_url": "https://vietnam.travel/things-to-do/must-do-da-nang-an-insider-list",
+        "source_file": "data/raw/danang/cafes.json",
+        "latitude": 16.068889,
+        "longitude": 108.223889,
+        "text": "Tên địa điểm: Boulevard Gelato & Coffee\nThành phố: Đà Nẵng\nLoại hình: cafe\nĐịa chỉ: Đà Nẵng, Việt Nam\nThời điểm phù hợp: Chiều hoặc tối\nNgân sách tham khảo: Tùy đồ uống, gelato và món gọi thêm\nPhù hợp với: người thích cafe, người thích món ngọt, gia đình, nhóm bạn\nMô tả: Boulevard Gelato & Coffee phù hợp với du khách muốn nghỉ chân trong ngày, dùng cafe, đồ uống hoặc món ngọt. Đây là lựa chọn nhẹ nhàng cho lịch trình thành phố hoặc sau khi đi biể..."
+      },
+      {
+        "score": 0.6571,
+        "search_mode": "broad_city_search",
+        "title": "Danang Rooftop Cafe Experience",
+        "city": "Đà Nẵng",
+        "category": "cafe",
+        "address": "Khu vực ven biển và trung tâm Đà Nẵng",
+        "best_time": "Chiều muộn hoặc tối",
+        "budget": "Tùy quán và đồ uống",
+        "suitable_for": [
+          "người thích cafe chill",
+          "người thích ngắm cảnh",
+          "người thích rooftop",
+          "cặp đôi"
+        ],
+        "tips": "Nên chọn khung giờ chiều muộn để tránh nắng và có ánh sáng đẹp.",
+        "source_url": "https://vietnam.travel/things-to-do/must-do-da-nang-an-insider-list",
+        "source_file": "data/raw/danang/cafes.json",
+        "latitude": 16.061944,
+        "longitude": 108.223056,
+        "text": "Tên địa điểm: Danang Rooftop Cafe Experience\nThành phố: Đà Nẵng\nLoại hình: cafe\nĐịa chỉ: Khu vực ven biển và trung tâm Đà Nẵng\nThời điểm phù hợp: Chiều muộn hoặc tối\nNgân sách tham khảo: Tùy quán và đồ uống\nPhù hợp với: người thích cafe chill, người thích ngắm cảnh, người thích rooftop, cặp đôi\nMô tả: Trải nghiệm rooftop cafe ở Đà Nẵng phù hợp với du khách muốn ngắm biển, thành phố hoặc sông Hàn từ trên cao. Đây là hoạt động nhẹ nhàng, dễ đưa vào..."
+      },
+      {
+        "score": 0.7049,
+        "search_mode": "broad_city_search",
+        "title": "Hải sản Đà Nẵng",
+        "city": "Đà Nẵng",
+        "category": "ẩm thực",
+        "address": "Khu vực ven biển Đà Nẵng",
+        "best_time": "Buổi tối",
+        "budget": "Tùy loại hải sản, quán ăn và thời điểm",
+        "suitable_for": [
+          "người thích hải sản",
+          "gia đình",
+          "nhóm bạn",
+          "người thích ăn ven biển"
+        ],
+        "tips": "Nên hỏi giá trước khi gọi món và chọn quán có niêm yết giá rõ ràng.",
+        "source_url": "https://vietnam.travel/places-to-go/central-vietnam/da-nang",
+        "source_file": "data/raw/danang/food.json",
+        "latitude": 16.064444,
+        "longitude": 108.246944,
+        "text": "Tên địa điểm: Hải sản Đà Nẵng\nThành phố: Đà Nẵng\nLoại hình: ẩm thực\nĐịa chỉ: Khu vực ven biển Đà Nẵng\nThời điểm phù hợp: Buổi tối\nNgân sách tham khảo: Tùy loại hải sản, quán ăn và thời điểm\nPhù hợp với: người thích hải sản, gia đình, nhóm bạn, người thích ăn ven biển\nMô tả: Hải sản là lựa chọn phổ biến khi đến Đà Nẵng, đặc biệt ở các khu vực gần biển như Mỹ Khê, Sơn Trà hoặc ven đường Võ Nguyên Giáp. Du khách có thể chọn các món như tôm, mực, cá,..."
+      },
+      {
+        "score": 0.6891,
+        "search_mode": "broad_city_search",
+        "title": "Bánh mì Đà Nẵng",
+        "city": "Đà Nẵng",
+        "category": "ẩm thực",
+        "address": "Đà Nẵng, Việt Nam",
+        "best_time": "Buổi sáng hoặc ăn nhẹ trong ngày",
+        "budget": "Tùy điểm bán",
+        "suitable_for": [
+          "người thích ăn nhanh",
+          "du khách ngân sách thấp",
+          "người thích street food",
+          "người cần bữa nhẹ"
+        ],
+        "tips": "Phù hợp để ăn nhanh trước khi đi biển, tham quan hoặc di chuyển giữa các điểm.",
+        "source_url": "https://vietnam.travel/places-to-go/central-vietnam/da-nang",
+        "source_file": "data/raw/danang/food.json",
+        "latitude": 16.066389,
+        "longitude": 108.223889,
+        "text": "Tên địa điểm: Bánh mì Đà Nẵng\nThành phố: Đà Nẵng\nLoại hình: ẩm thực\nĐịa chỉ: Đà Nẵng, Việt Nam\nThời điểm phù hợp: Buổi sáng hoặc ăn nhẹ trong ngày\nNgân sách tham khảo: Tùy điểm bán\nPhù hợp với: người thích ăn nhanh, du khách ngân sách thấp, người thích street food, người cần bữa nhẹ\nMô tả: Bánh mì là lựa chọn tiện lợi cho bữa sáng hoặc bữa nhẹ tại Đà Nẵng. Món dễ tìm, phù hợp với lịch trình di chuyển nhiều hoặc du khách muốn tiết kiệm chi phí.\nLư..."
+      },
+      {
+        "score": 0.6653,
+        "search_mode": "broad_city_search",
+        "title": "Bún chả cá Đà Nẵng",
+        "city": "Đà Nẵng",
+        "category": "ẩm thực",
+        "address": "Đà Nẵng, Việt Nam",
+        "best_time": "Buổi sáng hoặc trưa",
+        "budget": "Tùy quán ăn địa phương",
+        "suitable_for": [
+          "người thích món nước",
+          "người thích hải sản",
+          "người thích ăn sáng địa phương",
+          "du khách muốn đổi vị"
+        ],
+        "tips": "Nên ăn lúc còn nóng và có thể thêm rau sống, mắm ruốc hoặc gia vị tùy khẩu vị.",
+        "source_url": "https://vietnam.travel/things-to-do/must-do-da-nang-an-insider-list",
+        "source_file": "data/raw/danang/food.json",
+        "latitude": 16.066944,
+        "longitude": 108.214444,
+        "text": "Tên địa điểm: Bún chả cá Đà Nẵng\nThành phố: Đà Nẵng\nLoại hình: ẩm thực\nĐịa chỉ: Đà Nẵng, Việt Nam\nThời điểm phù hợp: Buổi sáng hoặc trưa\nNgân sách tham khảo: Tùy quán ăn địa phương\nPhù hợp với: người thích món nước, người thích hải sản, người thích ăn sáng địa phương, du khách muốn đổi vị\nMô tả: Bún chả cá là món nước phổ biến ở Đà Nẵng, thường có nước dùng thanh, chả cá, bún, rau sống và các món ăn kèm. Món này phù hợp cho bữa sáng hoặc bữa trưa..."
+      }
+    ]
+  },
+  {
+    "id": "G002",
+    "method": "agentic_rag",
+    "question": "Tôi muốn đi Đà Nẵng 1 ngày, thích biển, ăn uống địa phương và lịch trình nhẹ nhàng.",
+    "city": "Đà Nẵng",
+    "evaluation_focus": [
+      "route",
+      "food",
+      "groundedness"
+    ],
+    "answer": "Chào bạn, với yêu cầu đi Đà Nẵng 1 ngày, thích biển, ăn uống địa phương và lịch trình nhẹ nhàng, đây là gợi ý dành cho bạn:\n\n**Lịch trình theo ngày**\n\n*   **Ngày 1: Khám phá biển và ẩm thực Đà Nẵng**\n    *   **Buổi sáng:** Bắt đầu ngày mới tại **Bãi biển Mỹ Khê** để tận hưởng không khí trong lành và đi dạo trên bãi cát dài. Sau đó, bạn có thể ghé **Danang Beach Cafe Experience** để thưởng thức cafe ven biển.\n    *   **Buổi trưa:** Thưởng thức **Bún chả cá Đà Nẵng** hoặc **Bánh mì Đà Nẵng** cho bữa trưa nhẹ nhàng.\n    *   **Buổi chiều:** Tiếp tục thư giãn tại **Bãi biển Phạm Văn Đồng** hoặc **Bãi biển Non Nước** tùy theo sở thích.\n    *   **Buổi tối:** Dạo mát ven **Han River** để ngắm cảnh thành phố về đêm và thưởng thức **Hải sản Đà Nẵng** tại khu vực ven biển. Bạn cũng có thể ghé **Boulevard Gelato & Coffee** để tráng miệng hoặc uống cafe.\n\n**Gợi ý đặc sản địa phương**\n\n*   Hải sản Đà Nẵng\n*   Bánh mì Đà Nẵng\n*   Bún chả cá Đà Nẵng\n\n**Ngân sách tham khảo**\n\n*   Các bãi biển như Bãi biển Mỹ Khê, Bãi biển Phạm Văn Đồng, Bãi biển Non Nước và Han River đều miễn phí nếu chỉ đi dạo và ngắm cảnh.\n*   Chi phí cho cafe và đồ ăn như Danang Beach Cafe Experience, Boulevard Gelato & Coffee, Hải sản Đà Nẵng, Bánh mì Đà Nẵng và Bún chả cá Đà Nẵng sẽ tùy thuộc vào quán và món bạn chọn.\n\n**Lưu ý quan trọng**\n\n*   Nên đi các bãi biển vào sáng sớm hoặc chiều mát để tránh nắng gắt.\n*   Khi ăn hải sản, bạn nên hỏi giá trước để có trải nghiệm tốt nhất.\n\n**Lưu ý về dữ liệu**\n\n*   Hệ thống hiện chưa có đủ dữ liệu để khẳng định chi tiết về giá vé, giờ mở cửa, tình trạng đông khách, thời tiết hoặc kẹt xe.",
+    "retrieved_contexts": [
+      {
+        "score": 0.6824,
+        "search_mode": "broad_city_search",
+        "title": "Bãi biển Non Nước",
+        "city": "Đà Nẵng",
+        "category": "biển",
+        "address": "Ngũ Hành Sơn, Đà Nẵng",
+        "best_time": "Sáng sớm hoặc chiều mát",
+        "budget": "Miễn phí nếu chỉ đi dạo và tắm biển, chi phí tùy dịch vụ cá nhân",
+        "suitable_for": [
+          "người thích biển",
+          "người thích nghỉ dưỡng",
+          "gia đình",
+          "cặp đôi"
+        ],
+        "tips": "Có thể kết hợp Non Nước với Marble Mountains để tiết kiệm thời gian di chuyển.",
+        "source_url": "https://vietnam.travel/things-to-do/must-visit-places-in-da-nang",
+        "source_file": "data/raw/danang/beaches.json",
+        "latitude": 16.002833,
+        "longitude": 108.263722,
+        "text": "Tên địa điểm: Bãi biển Non Nước\nThành phố: Đà Nẵng\nLoại hình: biển\nĐịa chỉ: Ngũ Hành Sơn, Đà Nẵng\nThời điểm phù hợp: Sáng sớm hoặc chiều mát\nNgân sách tham khảo: Miễn phí nếu chỉ đi dạo và tắm biển, chi phí tùy dịch vụ cá nhân\nPhù hợp với: người thích biển, người thích nghỉ dưỡng, gia đình, cặp đôi\nMô tả: Bãi biển Non Nước nằm gần khu vực Ngũ Hành Sơn, phù hợp với du khách muốn kết hợp biển và tham quan trong cùng một ngày. Không gian biển rộng,..."
+      },
+      {
+        "score": 0.6815,
+        "search_mode": "broad_city_search",
+        "title": "Bãi biển Mỹ Khê",
+        "city": "Đà Nẵng",
+        "category": "biển",
+        "address": "Võ Nguyên Giáp, Đà Nẵng",
+        "best_time": "Sáng sớm hoặc chiều mát",
+        "budget": "Miễn phí nếu chỉ tắm biển, đi dạo và ngắm cảnh",
+        "suitable_for": [
+          "người thích biển",
+          "người thích đi bộ nhẹ nhàng",
+          "gia đình",
+          "nhóm bạn",
+          "du khách ngân sách thấp"
+        ],
+        "tips": "Nên đi sáng sớm để ngắm bình minh hoặc chiều mát để tránh nắng gắt. Nếu chỉ đi dạo và tắm biển cơ bản thì chi phí thấp.",
+        "source_url": "https://vietnam.travel/places-to-go/central-vietnam/da-nang",
+        "source_file": "data/raw/danang/beaches.json",
+        "latitude": 16.061111,
+        "longitude": 108.246833,
+        "text": "Tên địa điểm: Bãi biển Mỹ Khê\nThành phố: Đà Nẵng\nLoại hình: biển\nĐịa chỉ: Võ Nguyên Giáp, Đà Nẵng\nThời điểm phù hợp: Sáng sớm hoặc chiều mát\nNgân sách tham khảo: Miễn phí nếu chỉ tắm biển, đi dạo và ngắm cảnh\nPhù hợp với: người thích biển, người thích đi bộ nhẹ nhàng, gia đình, nhóm bạn, du khách ngân sách thấp\nMô tả: Bãi biển Mỹ Khê là một trong những bãi biển nổi bật nhất của Đà Nẵng, có bãi cát dài, không gian rộng và phù hợp để tắm biển, đi d..."
+      },
+      {
+        "score": 0.6775,
+        "search_mode": "broad_city_search",
+        "title": "Bãi biển Phạm Văn Đồng",
+        "city": "Đà Nẵng",
+        "category": "biển",
+        "address": "Phạm Văn Đồng, Sơn Trà, Đà Nẵng",
+        "best_time": "Sáng sớm hoặc chiều tối",
+        "budget": "Miễn phí nếu chỉ đi dạo và ngắm biển",
+        "suitable_for": [
+          "người thích biển",
+          "người thích đi bộ nhẹ",
+          "du khách ở gần trung tâm",
+          "người thích lịch trình ngắn"
+        ],
+        "tips": "Có thể kết hợp với Mỹ Khê hoặc các quán ăn ven biển trong cùng một buổi.",
+        "source_url": "https://vietnam.travel/places-to-go/central-vietnam/da-nang",
+        "source_file": "data/raw/danang/beaches.json",
+        "latitude": 16.073611,
+        "longitude": 108.244833,
+        "text": "Tên địa điểm: Bãi biển Phạm Văn Đồng\nThành phố: Đà Nẵng\nLoại hình: biển\nĐịa chỉ: Phạm Văn Đồng, Sơn Trà, Đà Nẵng\nThời điểm phù hợp: Sáng sớm hoặc chiều tối\nNgân sách tham khảo: Miễn phí nếu chỉ đi dạo và ngắm biển\nPhù hợp với: người thích biển, người thích đi bộ nhẹ, du khách ở gần trung tâm, người thích lịch trình ngắn\nMô tả: Bãi biển Phạm Văn Đồng nằm gần khu vực trung tâm ven biển Đà Nẵng, thuận tiện để đi dạo, tắm biển hoặc nghỉ ngơi trong lị..."
+      },
+      {
+        "score": 0.6511,
+        "search_mode": "broad_city_search",
+        "title": "Han River",
+        "city": "Đà Nẵng",
+        "category": "tham quan",
+        "address": "Sông Hàn, Đà Nẵng",
+        "best_time": "Buổi tối",
+        "budget": "Miễn phí nếu chỉ đi dạo ven sông",
+        "suitable_for": [
+          "người thích đi bộ nhẹ",
+          "người thích ngắm cảnh thành phố",
+          "cặp đôi",
+          "nhóm bạn"
+        ],
+        "tips": "Có thể kết hợp với Dragon Bridge, Love Bridge hoặc các điểm ăn uống trung tâm trong cùng một buổi tối.",
+        "source_url": "https://vietnam.travel/things-to-do/must-do-da-nang-an-insider-list",
+        "source_file": "data/raw/danang/attractions.json",
+        "latitude": 16.068214,
+        "longitude": 108.224161,
+        "text": "Tên địa điểm: Han River\nThành phố: Đà Nẵng\nLoại hình: tham quan\nĐịa chỉ: Sông Hàn, Đà Nẵng\nThời điểm phù hợp: Buổi tối\nNgân sách tham khảo: Miễn phí nếu chỉ đi dạo ven sông\nPhù hợp với: người thích đi bộ nhẹ, người thích ngắm cảnh thành phố, cặp đôi, nhóm bạn\nMô tả: Sông Hàn là trục cảnh quan quan trọng của Đà Nẵng, gắn với các cây cầu nổi tiếng và không khí đô thị hiện đại. Đi dạo ven sông vào buổi tối là lựa chọn nhẹ nhàng, phù hợp với du khách..."
+      },
+      {
+        "score": 0.6805,
+        "search_mode": "broad_city_search",
+        "title": "Danang Beach Cafe Experience",
+        "city": "Đà Nẵng",
+        "category": "cafe",
+        "address": "Khu vực Mỹ Khê và ven biển Đà Nẵng",
+        "best_time": "Sáng sớm hoặc chiều mát",
+        "budget": "Tùy quán cafe và đồ uống",
+        "suitable_for": [
+          "người thích cafe chill",
+          "người thích biển",
+          "người thích lịch trình nhẹ",
+          "du khách muốn nghỉ gần biển"
+        ],
+        "tips": "Nên đi sáng hoặc chiều để tránh nắng gắt, có thể kết hợp đi dạo biển trước hoặc sau khi uống cafe.",
+        "source_url": "https://vietnam.travel/places-to-go/central-vietnam/da-nang",
+        "source_file": "data/raw/danang/cafes.json",
+        "latitude": 16.061111,
+        "longitude": 108.246833,
+        "text": "Tên địa điểm: Danang Beach Cafe Experience\nThành phố: Đà Nẵng\nLoại hình: cafe\nĐịa chỉ: Khu vực Mỹ Khê và ven biển Đà Nẵng\nThời điểm phù hợp: Sáng sớm hoặc chiều mát\nNgân sách tham khảo: Tùy quán cafe và đồ uống\nPhù hợp với: người thích cafe chill, người thích biển, người thích lịch trình nhẹ, du khách muốn nghỉ gần biển\nMô tả: Cafe ven biển Đà Nẵng là lựa chọn phù hợp cho du khách thích không khí thư giãn, gần biển và dễ kết hợp với lịch trình Mỹ..."
+      },
+      {
+        "score": 0.66,
+        "search_mode": "broad_city_search",
+        "title": "Boulevard Gelato & Coffee",
+        "city": "Đà Nẵng",
+        "category": "cafe",
+        "address": "Đà Nẵng, Việt Nam",
+        "best_time": "Chiều hoặc tối",
+        "budget": "Tùy đồ uống, gelato và món gọi thêm",
+        "suitable_for": [
+          "người thích cafe",
+          "người thích món ngọt",
+          "gia đình",
+          "nhóm bạn"
+        ],
+        "tips": "Phù hợp với lịch trình thư giãn, đặc biệt sau khi đi bộ hoặc tham quan ngoài trời.",
+        "source_url": "https://vietnam.travel/things-to-do/must-do-da-nang-an-insider-list",
+        "source_file": "data/raw/danang/cafes.json",
+        "latitude": 16.068889,
+        "longitude": 108.223889,
+        "text": "Tên địa điểm: Boulevard Gelato & Coffee\nThành phố: Đà Nẵng\nLoại hình: cafe\nĐịa chỉ: Đà Nẵng, Việt Nam\nThời điểm phù hợp: Chiều hoặc tối\nNgân sách tham khảo: Tùy đồ uống, gelato và món gọi thêm\nPhù hợp với: người thích cafe, người thích món ngọt, gia đình, nhóm bạn\nMô tả: Boulevard Gelato & Coffee phù hợp với du khách muốn nghỉ chân trong ngày, dùng cafe, đồ uống hoặc món ngọt. Đây là lựa chọn nhẹ nhàng cho lịch trình thành phố hoặc sau khi đi biể..."
+      },
+      {
+        "score": 0.6571,
+        "search_mode": "broad_city_search",
+        "title": "Danang Rooftop Cafe Experience",
+        "city": "Đà Nẵng",
+        "category": "cafe",
+        "address": "Khu vực ven biển và trung tâm Đà Nẵng",
+        "best_time": "Chiều muộn hoặc tối",
+        "budget": "Tùy quán và đồ uống",
+        "suitable_for": [
+          "người thích cafe chill",
+          "người thích ngắm cảnh",
+          "người thích rooftop",
+          "cặp đôi"
+        ],
+        "tips": "Nên chọn khung giờ chiều muộn để tránh nắng và có ánh sáng đẹp.",
+        "source_url": "https://vietnam.travel/things-to-do/must-do-da-nang-an-insider-list",
+        "source_file": "data/raw/danang/cafes.json",
+        "latitude": 16.061944,
+        "longitude": 108.223056,
+        "text": "Tên địa điểm: Danang Rooftop Cafe Experience\nThành phố: Đà Nẵng\nLoại hình: cafe\nĐịa chỉ: Khu vực ven biển và trung tâm Đà Nẵng\nThời điểm phù hợp: Chiều muộn hoặc tối\nNgân sách tham khảo: Tùy quán và đồ uống\nPhù hợp với: người thích cafe chill, người thích ngắm cảnh, người thích rooftop, cặp đôi\nMô tả: Trải nghiệm rooftop cafe ở Đà Nẵng phù hợp với du khách muốn ngắm biển, thành phố hoặc sông Hàn từ trên cao. Đây là hoạt động nhẹ nhàng, dễ đưa vào..."
+      },
+      {
+        "score": 0.7049,
+        "search_mode": "broad_city_search",
+        "title": "Hải sản Đà Nẵng",
+        "city": "Đà Nẵng",
+        "category": "ẩm thực",
+        "address": "Khu vực ven biển Đà Nẵng",
+        "best_time": "Buổi tối",
+        "budget": "Tùy loại hải sản, quán ăn và thời điểm",
+        "suitable_for": [
+          "người thích hải sản",
+          "gia đình",
+          "nhóm bạn",
+          "người thích ăn ven biển"
+        ],
+        "tips": "Nên hỏi giá trước khi gọi món và chọn quán có niêm yết giá rõ ràng.",
+        "source_url": "https://vietnam.travel/places-to-go/central-vietnam/da-nang",
+        "source_file": "data/raw/danang/food.json",
+        "latitude": 16.064444,
+        "longitude": 108.246944,
+        "text": "Tên địa điểm: Hải sản Đà Nẵng\nThành phố: Đà Nẵng\nLoại hình: ẩm thực\nĐịa chỉ: Khu vực ven biển Đà Nẵng\nThời điểm phù hợp: Buổi tối\nNgân sách tham khảo: Tùy loại hải sản, quán ăn và thời điểm\nPhù hợp với: người thích hải sản, gia đình, nhóm bạn, người thích ăn ven biển\nMô tả: Hải sản là lựa chọn phổ biến khi đến Đà Nẵng, đặc biệt ở các khu vực gần biển như Mỹ Khê, Sơn Trà hoặc ven đường Võ Nguyên Giáp. Du khách có thể chọn các món như tôm, mực, cá,..."
+      },
+      {
+        "score": 0.6891,
+        "search_mode": "broad_city_search",
+        "title": "Bánh mì Đà Nẵng",
+        "city": "Đà Nẵng",
+        "category": "ẩm thực",
+        "address": "Đà Nẵng, Việt Nam",
+        "best_time": "Buổi sáng hoặc ăn nhẹ trong ngày",
+        "budget": "Tùy điểm bán",
+        "suitable_for": [
+          "người thích ăn nhanh",
+          "du khách ngân sách thấp",
+          "người thích street food",
+          "người cần bữa nhẹ"
+        ],
+        "tips": "Phù hợp để ăn nhanh trước khi đi biển, tham quan hoặc di chuyển giữa các điểm.",
+        "source_url": "https://vietnam.travel/places-to-go/central-vietnam/da-nang",
+        "source_file": "data/raw/danang/food.json",
+        "latitude": 16.066389,
+        "longitude": 108.223889,
+        "text": "Tên địa điểm: Bánh mì Đà Nẵng\nThành phố: Đà Nẵng\nLoại hình: ẩm thực\nĐịa chỉ: Đà Nẵng, Việt Nam\nThời điểm phù hợp: Buổi sáng hoặc ăn nhẹ trong ngày\nNgân sách tham khảo: Tùy điểm bán\nPhù hợp với: người thích ăn nhanh, du khách ngân sách thấp, người thích street food, người cần bữa nhẹ\nMô tả: Bánh mì là lựa chọn tiện lợi cho bữa sáng hoặc bữa nhẹ tại Đà Nẵng. Món dễ tìm, phù hợp với lịch trình di chuyển nhiều hoặc du khách muốn tiết kiệm chi phí.\nLư..."
+      },
+      {
+        "score": 0.6653,
+        "search_mode": "broad_city_search",
+        "title": "Bún chả cá Đà Nẵng",
+        "city": "Đà Nẵng",
+        "category": "ẩm thực",
+        "address": "Đà Nẵng, Việt Nam",
+        "best_time": "Buổi sáng hoặc trưa",
+        "budget": "Tùy quán ăn địa phương",
+        "suitable_for": [
+          "người thích món nước",
+          "người thích hải sản",
+          "người thích ăn sáng địa phương",
+          "du khách muốn đổi vị"
+        ],
+        "tips": "Nên ăn lúc còn nóng và có thể thêm rau sống, mắm ruốc hoặc gia vị tùy khẩu vị.",
+        "source_url": "https://vietnam.travel/things-to-do/must-do-da-nang-an-insider-list",
+        "source_file": "data/raw/danang/food.json",
+        "latitude": 16.066944,
+        "longitude": 108.214444,
+        "text": "Tên địa điểm: Bún chả cá Đà Nẵng\nThành phố: Đà Nẵng\nLoại hình: ẩm thực\nĐịa chỉ: Đà Nẵng, Việt Nam\nThời điểm phù hợp: Buổi sáng hoặc trưa\nNgân sách tham khảo: Tùy quán ăn địa phương\nPhù hợp với: người thích món nước, người thích hải sản, người thích ăn sáng địa phương, du khách muốn đổi vị\nMô tả: Bún chả cá là món nước phổ biến ở Đà Nẵng, thường có nước dùng thanh, chả cá, bún, rau sống và các món ăn kèm. Món này phù hợp cho bữa sáng hoặc bữa trưa..."
+      }
+    ],
+    "route_plan": {
+      "strategy": "Ưu tiên tọa độ có sẵn trong JSON, sau đó geocoding bằng Nominatim nếu cần, rồi tính tuyến bằng ORS hoặc Haversine fallback.",
+      "ordered_places": [
+        {
+          "title": "Bãi biển Non Nước",
+          "category": "biển",
+          "address": "Ngũ Hành Sơn, Đà Nẵng",
+          "best_time": "Sáng sớm hoặc chiều mát"
+        },
+        {
+          "title": "Bãi biển Mỹ Khê",
+          "category": "biển",
+          "address": "Võ Nguyên Giáp, Đà Nẵng",
+          "best_time": "Sáng sớm hoặc chiều mát"
+        },
+        {
+          "title": "Danang Beach Cafe Experience",
+          "category": "cafe",
+          "address": "Khu vực Mỹ Khê và ven biển Đà Nẵng",
+          "best_time": "Sáng sớm hoặc chiều mát"
+        },
+        {
+          "title": "Bãi biển Phạm Văn Đồng",
+          "category": "biển",
+          "address": "Phạm Văn Đồng, Sơn Trà, Đà Nẵng",
+          "best_time": "Sáng sớm hoặc chiều tối"
+        },
+        {
+          "title": "Han River",
+          "category": "tham quan",
+          "address": "Sông Hàn, Đà Nẵng",
+          "best_time": "Buổi tối"
+        },
+        {
+          "title": "Boulevard Gelato & Coffee",
+          "category": "cafe",
+          "address": "Đà Nẵng, Việt Nam",
+          "best_time": "Chiều hoặc tối"
+        }
+      ],
+      "missing_coordinate_places": [],
+      "route_summary": {
+        "provider": "openrouteservice_heigit",
+        "profile": "foot-walking",
+        "total_distance_km": 12.26,
+        "total_duration_minutes": 147,
+        "segments": [],
+        "note": "Tuyến đường được tính bằng OpenRouteService/HeiGIT API."
+      }
+    },
+    "budget_plan": {
+      "user_budget_vnd": null,
+      "place_budget_notes": [
+        {
+          "title": "Bãi biển Non Nước",
+          "budget": "Miễn phí nếu chỉ đi dạo và tắm biển, chi phí tùy dịch vụ cá nhân",
+          "category": "biển"
+        },
+        {
+          "title": "Bãi biển Mỹ Khê",
+          "budget": "Miễn phí nếu chỉ tắm biển, đi dạo và ngắm cảnh",
+          "category": "biển"
+        },
+        {
+          "title": "Bãi biển Phạm Văn Đồng",
+          "budget": "Miễn phí nếu chỉ đi dạo và ngắm biển",
+          "category": "biển"
+        },
+        {
+          "title": "Han River",
+          "budget": "Miễn phí nếu chỉ đi dạo ven sông",
+          "category": "tham quan"
+        },
+        {
+          "title": "Danang Beach Cafe Experience",
+          "budget": "Tùy quán cafe và đồ uống",
+          "category": "cafe"
+        },
+        {
+          "title": "Boulevard Gelato & Coffee",
+          "budget": "Tùy đồ uống, gelato và món gọi thêm",
+          "category": "cafe"
+        },
+        {
+          "title": "Danang Rooftop Cafe Experience",
+          "budget": "Tùy quán và đồ uống",
+          "category": "cafe"
+        },
+        {
+          "title": "Hải sản Đà Nẵng",
+          "budget": "Tùy loại hải sản, quán ăn và thời điểm",
+          "category": "ẩm thực"
+        },
+        {
+          "title": "Bánh mì Đà Nẵng",
+          "budget": "Tùy điểm bán",
+          "category": "ẩm thực"
+        },
+        {
+          "title": "Bún chả cá Đà Nẵng",
+          "budget": "Tùy quán ăn địa phương",
+          "category": "ẩm thực"
+        }
+      ],
+      "assessment": "Ngân sách được đánh giá dựa trên dữ liệu mô tả trong knowledge base. Hệ thống không khẳng định giá hiện tại nếu dữ liệu không có nguồn thời gian thực."
+    },
+    "grounding_guard": {
+      "has_retrieved_contexts": true,
+      "allowed_place_names": [
+        "Bãi biển Non Nước",
+        "Bãi biển Mỹ Khê",
+        "Bãi biển Phạm Văn Đồng",
+        "Han River",
+        "Danang Beach Cafe Experience",
+        "Boulevard Gelato & Coffee",
+        "Danang Rooftop Cafe Experience",
+        "Hải sản Đà Nẵng",
+        "Bánh mì Đà Nẵng",
+        "Bún chả cá Đà Nẵng"
+      ],
+      "route_provider": "openrouteservice_heigit",
+      "is_route_estimate_only": false,
+      "real_time_risk_keywords": [
+        "giá vé hiện tại",
+        "giá chính xác",
+        "giờ mở cửa hiện tại",
+        "đang mở cửa",
+        "đang đóng cửa",
+        "đông khách hiện tại",
+        "tình trạng đông",
+        "thời tiết hiện tại",
+        "kẹt xe",
+        "còn phòng",
+        "vé máy bay",
+        "giá khách sạn hiện tại"
+      ],
+      "warnings": [],
+      "policy": {
+        "only_use_retrieved_places": true,
+        "no_realtime_claims": true,
+        "must_disclose_missing_data": true,
+        "must_disclose_route_estimate": false
+      }
+    }
+  },
+  {
+    "id": "G003",
+    "method": "basic_rag",
+    "question": "Tôi muốn khám phá Hội An 2 ngày, thích phố cổ, văn hóa và trải nghiệm nhẹ nhàng.",
+    "city": "Hội An",
+    "evaluation_focus": [
+      "culture",
+      "old_town",
+      "coherence"
+    ],
+    "answer": "Chào bạn, tôi là Travel AI Planner. Dựa trên yêu cầu của bạn, tôi đề xuất lịch trình khám phá Hội An 2 ngày với các hoạt động văn hóa, phố cổ và trải nghiệm nhẹ nhàng như sau:\n\n**Tóm tắt nhu cầu:**\nBạn muốn khám phá Hội An trong 2 ngày, ưu tiên phố cổ, văn hóa và các trải nghiệm nhẹ nhàng.\n\n**Lịch trình đề xuất:**\n\n*   **Ngày 1: Khám phá Phố cổ Hội An**\n    *   **Buổi sáng/chiều:** Tham quan **Japanese Covered Bridge** và **Tan Ky Old House**. Bạn có thể kết hợp tham quan các điểm di tích khác trong phố cổ để hiểu rõ hơn lịch sử Hội An.\n    *   **Buổi chiều muộn:** Dạo quanh phố cổ, tận hưởng không khí yên bình.\n\n*   **Ngày 2: Trải nghiệm nông thôn nhẹ nhàng**\n    *   **Sáng sớm hoặc chiều mát:** Đạp xe qua **Cam Thanh và Trà Quế**. Đây là trải nghiệm phù hợp để rời khu phố cổ, khám phá cánh đồng và thiên nhiên nhẹ nhàng.\n\n**Vì sao phù hợp:**\nLịch trình này kết hợp các điểm đến văn hóa, lịch sử nổi bật trong phố cổ Hội An như Japanese Covered Bridge và Tan Ky Old House, đáp ứng sở thích về phố cổ và văn hóa của bạn. Hoạt động đạp xe qua Cam Thanh và Trà Quế mang đến trải nghiệm nhẹ nhàng, gần gũi với thiên nhiên, phù hợp với yêu cầu trải nghiệm chậm của bạn.\n\n**Lưu ý ngân sách và di chuyển:**\n\n*   **Ngân sách:**\n    *   Việc tham quan Japanese Covered Bridge và Tan Ky Old House có thể cần vé tham quan phố cổ tùy hình thức vào điểm di tích.\n    *   Đạp xe qua Cam Thanh và Trà Quế có thể tốn chi phí thuê xe đạp hoặc chi phí tour trải nghiệm nếu bạn chọn.\n*   **Di chuyển:**\n    *   Trong phố cổ Hội An, bạn có thể đi bộ để tiện khám phá các điểm đến gần nhau.\n    *   Để đến Cam Thanh và Trà Quế, bạn có thể thuê xe đạp hoặc tham gia tour đạp xe. Nên đi vào sáng sớm hoặc chiều mát để tránh nắng.",
+    "retrieved_contexts": [
+      {
+        "score": 0.6283,
+        "search_mode": "broad_city_search",
+        "title": "Đạp xe qua Cam Thanh và Trà Quế",
+        "city": "Hội An",
+        "category": "trải nghiệm",
+        "address": "Cam Thanh, Trà Quế, Hội An",
+        "best_time": "Sáng sớm hoặc chiều mát",
+        "budget": "Tùy thuê xe đạp hoặc tour trải nghiệm",
+        "suitable_for": [
+          "người thích đạp xe",
+          "người thích nông thôn",
+          "người thích trải nghiệm chậm",
+          "người thích thiên nhiên nhẹ nhàng"
+        ],
+        "tips": "Nên đi sáng sớm hoặc chiều mát để tránh nắng. Nếu không quen đường, có thể chọn tour đạp xe ngắn hoặc hỏi khách sạn lộ trình phù hợp.",
+        "source_url": "https://vietnam.travel/things-to-do/top-things-to-do-hoi-an",
+        "source_file": "data/raw/hoian/experiences.json",
+        "latitude": 15.895315,
+        "longitude": 108.337583,
+        "text": "Tên địa điểm: Đạp xe qua Cam Thanh và Trà Quế\nThành phố: Hội An\nLoại hình: trải nghiệm\nĐịa chỉ: Cam Thanh, Trà Quế, Hội An\nThời điểm phù hợp: Sáng sớm hoặc chiều mát\nNgân sách tham khảo: Tùy thuê xe đạp hoặc tour trải nghiệm\nPhù hợp với: người thích đạp xe, người thích nông thôn, người thích trải nghiệm chậm, người thích thiên nhiên nhẹ nhàng\nMô tả: Đạp xe ở vùng ven Hội An là trải nghiệm phù hợp với du khách muốn rời khu phố cổ để khám phá cánh..."
+      },
+      {
+        "score": 0.6939,
+        "search_mode": "broad_city_search",
+        "title": "Japanese Covered Bridge",
+        "city": "Hội An",
+        "category": "văn hóa",
+        "address": "Phố cổ Hội An, Quảng Nam",
+        "best_time": "Sáng sớm hoặc chiều muộn",
+        "budget": "Có thể cần vé tham quan phố cổ tùy hình thức vào điểm di tích",
+        "suitable_for": [
+          "người thích lịch sử",
+          "người thích kiến trúc",
+          "người thích văn hóa",
+          "du khách lần đầu đến Hội An"
+        ],
+        "tips": "Nên kết hợp tham quan Chùa Cầu với nhà cổ Tấn Ký, Hội quán Phúc Kiến và các bảo tàng trong phố cổ để hiểu rõ hơn lịch sử Hội An.",
+        "source_url": "https://vietnam.travel/things-to-do/the-best-ways-to-explore-the-ancient-town-of-hoi-an",
+        "source_file": "data/raw/hoian/old_town.json",
+        "latitude": 15.877114,
+        "longitude": 108.325917,
+        "text": "Lưu ý: Nên kết hợp tham quan Chùa Cầu với nhà cổ Tấn Ký, Hội quán Phúc Kiến và các bảo tàng trong phố cổ để hiểu rõ hơn lịch sử Hội An.\nNguồn: https://vietnam.travel/things-to-do/the-best-ways-to-explore-the-ancient-town-of-hoi-an"
+      },
+      {
+        "score": 0.6596,
+        "search_mode": "broad_city_search",
+        "title": "Tan Ky Old House",
+        "city": "Hội An",
+        "category": "văn hóa",
+        "address": "Phố cổ Hội An, Quảng Nam",
+        "best_time": "Ban ngày, phù hợp đi cùng lịch trình tham quan phố cổ",
+        "budget": "Có thể cần vé tham quan phố cổ tùy hình thức vào điểm di tích",
+        "suitable_for": [
+          "người thích nhà cổ",
+          "người thích kiến trúc",
+          "người thích lịch sử",
+          "người thích văn hóa Hội An"
+        ],
+        "tips": "Nên đi vào ban ngày để dễ quan sát chi tiết kiến trúc và kết hợp với các điểm di sản gần đó.",
+        "source_url": "https://vietnam.travel/places-to-go/central-vietnam/hoi-an",
+        "source_file": "data/raw/hoian/old_town.json",
+        "latitude": 15.877028,
+        "longitude": 108.326889,
+        "text": "Tên địa điểm: Tan Ky Old House\nThành phố: Hội An\nLoại hình: văn hóa\nĐịa chỉ: Phố cổ Hội An, Quảng Nam\nThời điểm phù hợp: Ban ngày, phù hợp đi cùng lịch trình tham quan phố cổ\nNgân sách tham khảo: Có thể cần vé tham quan phố cổ tùy hình thức vào điểm di tích\nPhù hợp với: người thích nhà cổ, người thích kiến trúc, người thích lịch sử, người thích văn hóa Hội An\nMô tả: Tan Ky Old House là một nhà cổ nổi bật trong phố cổ Hội An, thường được nhắc đến..."
+      },
+      {
+        "score": 0.6466,
+        "search_mode": "broad_city_search",
+        "title": "Japanese Covered Bridge",
+        "city": "Hội An",
+        "category": "văn hóa",
+        "address": "Phố cổ Hội An, Quảng Nam",
+        "best_time": "Sáng sớm hoặc chiều muộn",
+        "budget": "Có thể cần vé tham quan phố cổ tùy hình thức vào điểm di tích",
+        "suitable_for": [
+          "người thích lịch sử",
+          "người thích kiến trúc",
+          "người thích văn hóa",
+          "du khách lần đầu đến Hội An"
+        ],
+        "tips": "Nên kết hợp tham quan Chùa Cầu với nhà cổ Tấn Ký, Hội quán Phúc Kiến và các bảo tàng trong phố cổ để hiểu rõ hơn lịch sử Hội An.",
+        "source_url": "https://vietnam.travel/things-to-do/the-best-ways-to-explore-the-ancient-town-of-hoi-an",
+        "source_file": "data/raw/hoian/old_town.json",
+        "latitude": 15.877114,
+        "longitude": 108.325917,
+        "text": "Tên địa điểm: Japanese Covered Bridge\nThành phố: Hội An\nLoại hình: văn hóa\nĐịa chỉ: Phố cổ Hội An, Quảng Nam\nThời điểm phù hợp: Sáng sớm hoặc chiều muộn\nNgân sách tham khảo: Có thể cần vé tham quan phố cổ tùy hình thức vào điểm di tích\nPhù hợp với: người thích lịch sử, người thích kiến trúc, người thích văn hóa, du khách lần đầu đến Hội An\nMô tả: Japanese Covered Bridge là một biểu tượng nổi bật của Hội An. Công trình gắn với cộng đồng thương nhâ..."
+      },
+      {
+        "score": 0.6449,
+        "search_mode": "broad_city_search",
+        "title": "An Bang Beach",
+        "city": "Hội An",
+        "category": "biển",
+        "address": "An Bàng, Hội An, Quảng Nam",
+        "best_time": "Sáng sớm hoặc chiều mát",
+        "budget": "Tùy ăn uống, ghế nằm và dịch vụ cá nhân",
+        "suitable_for": [
+          "người thích biển",
+          "người thích thư giãn",
+          "gia đình",
+          "nhóm bạn"
+        ],
+        "tips": "Nên đi sáng sớm hoặc chiều để tránh nắng gắt. Nếu muốn không gian yên tĩnh hơn, nên tránh khung giờ cao điểm.",
+        "source_url": "https://vietnam.travel/places-to-go/central-vietnam/hoi-an",
+        "source_file": "data/raw/hoian/attractions.json",
+        "latitude": 15.912384,
+        "longitude": 108.342417,
+        "text": "Tên địa điểm: An Bang Beach\nThành phố: Hội An\nLoại hình: biển\nĐịa chỉ: An Bàng, Hội An, Quảng Nam\nThời điểm phù hợp: Sáng sớm hoặc chiều mát\nNgân sách tham khảo: Tùy ăn uống, ghế nằm và dịch vụ cá nhân\nPhù hợp với: người thích biển, người thích thư giãn, gia đình, nhóm bạn\nMô tả: An Bang Beach là bãi biển nổi tiếng gần phố cổ Hội An, phù hợp để thư giãn, tắm biển, ăn hải sản hoặc nghỉ ngơi sau khi tham quan khu phố cổ. Bãi biển cách khu phố cổ kh..."
+      },
+      {
+        "score": 0.6831,
+        "search_mode": "broad_city_search",
+        "title": "Cafe-hopping ở Hội An",
+        "city": "Hội An",
+        "category": "cafe",
+        "address": "Phố cổ Hội An và khu vực lân cận",
+        "best_time": "Sáng hoặc chiều",
+        "budget": "Tùy quán cafe",
+        "suitable_for": [
+          "người thích cafe chill",
+          "người thích ngồi thư giãn",
+          "người thích chụp ảnh",
+          "người thích đi bộ phố cổ"
+        ],
+        "tips": "Nên chọn quán gần khu phố cổ để dễ kết hợp đi bộ. Buổi chiều là thời điểm phù hợp để nghỉ chân trước khi phố cổ lên đèn.",
+        "source_url": "https://vietnam.travel/things-to-do/top-things-to-do-hoi-an",
+        "source_file": "data/raw/hoian/experiences.json",
+        "latitude": 15.877421,
+        "longitude": 108.328734,
+        "text": "Tên địa điểm: Cafe-hopping ở Hội An\nThành phố: Hội An\nLoại hình: cafe\nĐịa chỉ: Phố cổ Hội An và khu vực lân cận\nThời điểm phù hợp: Sáng hoặc chiều\nNgân sách tham khảo: Tùy quán cafe\nPhù hợp với: người thích cafe chill, người thích ngồi thư giãn, người thích chụp ảnh, người thích đi bộ phố cổ\nMô tả: Hội An có nhiều quán cafe mang không khí cổ, yên tĩnh hoặc có ban công nhìn xuống phố. Cafe-hopping phù hợp với du khách muốn nghỉ giữa lịch trình tha..."
+      },
+      {
+        "score": 0.7035,
+        "search_mode": "broad_city_search",
+        "title": "Hoi An Ancient Town",
+        "city": "Hội An",
+        "category": "phố cổ",
+        "address": "Phố cổ Hội An, Quảng Nam",
+        "best_time": "Buổi sáng sớm hoặc buổi tối khi phố lên đèn",
+        "budget": "Tùy điểm tham quan, ăn uống và mua sắm cá nhân",
+        "suitable_for": [
+          "người thích phố cổ",
+          "người thích đi bộ nhẹ nhàng",
+          "người thích văn hóa",
+          "người thích chụp ảnh"
+        ],
+        "tips": "Nên đi bộ hoặc đạp xe trong khu phố cổ. Buổi tối đẹp nhưng thường đông, nếu muốn chụp ảnh thoáng hơn nên đi sáng sớm.",
+        "source_url": "https://vietnam.travel/places-to-go/central-vietnam/hoi-an",
+        "source_file": "data/raw/hoian/old_town.json",
+        "latitude": 15.8770741,
+        "longitude": 108.327091,
+        "text": "Tên địa điểm: Hoi An Ancient Town\nThành phố: Hội An\nLoại hình: phố cổ\nĐịa chỉ: Phố cổ Hội An, Quảng Nam\nThời điểm phù hợp: Buổi sáng sớm hoặc buổi tối khi phố lên đèn\nNgân sách tham khảo: Tùy điểm tham quan, ăn uống và mua sắm cá nhân\nPhù hợp với: người thích phố cổ, người thích đi bộ nhẹ nhàng, người thích văn hóa, người thích chụp ảnh"
+      },
+      {
+        "score": 0.6611,
+        "search_mode": "broad_city_search",
+        "title": "Hoi An Ancient Town",
+        "city": "Hội An",
+        "category": "phố cổ",
+        "address": "Phố cổ Hội An, Quảng Nam",
+        "best_time": "Buổi sáng sớm hoặc buổi tối khi phố lên đèn",
+        "budget": "Tùy điểm tham quan, ăn uống và mua sắm cá nhân",
+        "suitable_for": [
+          "người thích phố cổ",
+          "người thích đi bộ nhẹ nhàng",
+          "người thích văn hóa",
+          "người thích chụp ảnh"
+        ],
+        "tips": "Nên đi bộ hoặc đạp xe trong khu phố cổ. Buổi tối đẹp nhưng thường đông, nếu muốn chụp ảnh thoáng hơn nên đi sáng sớm.",
+        "source_url": "https://vietnam.travel/places-to-go/central-vietnam/hoi-an",
+        "source_file": "data/raw/hoian/old_town.json",
+        "latitude": 15.8770741,
+        "longitude": 108.327091,
+        "text": "Phù hợp với: người thích phố cổ, người thích đi bộ nhẹ nhàng, người thích văn hóa, người thích chụp ảnh\nMô tả: Hoi An Ancient Town là khu phố cổ nổi tiếng của miền Trung Việt Nam, từng là thương cảng sầm uất từ thế kỷ 15 đến 19. Khu vực này có những dãy nhà vàng, mái ngói cũ, hội quán, nhà cổ, chùa, cầu và các con phố nhỏ phù hợp để đi bộ chậm, ngắm kiến trúc và cảm nhận không khí di sản. Buổi tối, phố cổ trở nên đặc trưng hơn với ánh đèn lồng và..."
+      },
+      {
+        "score": 0.6599,
+        "search_mode": "broad_city_search",
+        "title": "May đo và mua sắm ở Hội An",
+        "city": "Hội An",
+        "category": "mua sắm",
+        "address": "Phố cổ Hội An, Quảng Nam",
+        "best_time": "Đầu chuyến đi để có thời gian thử và chỉnh sửa",
+        "budget": "Tùy chất liệu, kiểu dáng và cửa hàng",
+        "suitable_for": [
+          "người thích mua sắm",
+          "người muốn may đồ lấy nhanh",
+          "du khách thích sản phẩm thủ công",
+          "người thích thời trang"
+        ],
+        "tips": "Nên đặt may sớm trong chuyến đi để có thời gian thử đồ và chỉnh sửa nếu cần.",
+        "source_url": "https://vietnam.travel/things-to-do/the-best-ways-to-explore-the-ancient-town-of-hoi-an",
+        "source_file": "data/raw/hoian/experiences.json",
+        "latitude": 15.878142,
+        "longitude": 108.329124,
+        "text": "Tên địa điểm: May đo và mua sắm ở Hội An\nThành phố: Hội An\nLoại hình: mua sắm\nĐịa chỉ: Phố cổ Hội An, Quảng Nam\nThời điểm phù hợp: Đầu chuyến đi để có thời gian thử và chỉnh sửa\nNgân sách tham khảo: Tùy chất liệu, kiểu dáng và cửa hàng\nPhù hợp với: người thích mua sắm, người muốn may đồ lấy nhanh, du khách thích sản phẩm thủ công, người thích thời trang\nMô tả: Hội An nổi tiếng với các tiệm may và cửa hàng thủ công. Du khách có thể đặt may quần áo..."
+      },
+      {
+        "score": 0.6549,
+        "search_mode": "broad_city_search",
+        "title": "Hoi An Lantern Festival",
+        "city": "Hội An",
+        "category": "trải nghiệm văn hóa",
+        "address": "Khu vực phố cổ và ven sông Thu Bồn, Hội An",
+        "best_time": "Tối ngày 14 âm lịch hằng tháng",
+        "budget": "Tùy hoạt động cá nhân như đi thuyền, thả đèn hoa đăng hoặc ăn uống",
+        "suitable_for": [
+          "người thích đèn lồng",
+          "cặp đôi",
+          "người thích chụp ảnh",
+          "du khách muốn trải nghiệm văn hóa Hội An"
+        ],
+        "tips": "Nên đến sớm để tránh đông. Nếu muốn không gian yên tĩnh hơn, có thể chọn đi dạo ở các tuyến phố nhỏ thay vì chỉ tập trung ở khu vực ven sông.",
+        "source_url": "https://vietnam.travel/things-to-do/the-best-ways-to-explore-the-ancient-town-of-hoi-an",
+        "source_file": "data/raw/hoian/old_town.json",
+        "latitude": 15.876722,
+        "longitude": 108.327528,
+        "text": "Lưu ý: Nên đến sớm để tránh đông. Nếu muốn không gian yên tĩnh hơn, có thể chọn đi dạo ở các tuyến phố nhỏ thay vì chỉ tập trung ở khu vực ven sông.\nNguồn: https://vietnam.travel/things-to-do/the-best-ways-to-explore-the-ancient-town-of-hoi-an"
+      }
+    ]
+  },
+  {
+    "id": "G003",
+    "method": "agentic_rag",
+    "question": "Tôi muốn khám phá Hội An 2 ngày, thích phố cổ, văn hóa và trải nghiệm nhẹ nhàng.",
+    "city": "Hội An",
+    "evaluation_focus": [
+      "culture",
+      "old_town",
+      "coherence"
+    ],
+    "answer": "Chào bạn, đây là lịch trình 2 ngày khám phá Hội An dành cho bạn, tập trung vào phố cổ, văn hóa và các trải nghiệm nhẹ nhàng:\n\n**Tóm tắt nhu cầu**\nBạn muốn khám phá Hội An trong 2 ngày, ưu tiên trải nghiệm phố cổ, văn hóa và các hoạt động nhẹ nhàng.\n\n**Lịch trình theo ngày**\n\n**Ngày 1: Khám phá Phố cổ và trải nghiệm văn hóa**\n*   **Buổi sáng:** Bắt đầu ngày mới bằng việc khám phá Hoi An Ancient Town. Bạn có thể tham quan Japanese Covered Bridge và Tan Ky Old House để tìm hiểu về kiến trúc và lịch sử.\n*   **Buổi chiều:** Thư giãn với trải nghiệm Cafe-hopping ở Hội An, chọn một quán cafe cổ kính để nghỉ chân và ngắm phố.\n*   **Buổi tối:** Dạo quanh phố cổ khi lên đèn, nếu trùng vào ngày 14 âm lịch, bạn có thể tham gia Hoi An Lantern Festival để trải nghiệm không khí lung linh.\n\n**Ngày 2: Trải nghiệm thiên nhiên và mua sắm**\n*   **Buổi sáng:** Đạp xe qua Cam Thanh và Trà Quế để khám phá vùng nông thôn yên bình, tận hưởng không khí trong lành.\n*   **Buổi chiều:** Ghé thăm An Bang Beach để thư giãn, đi dạo trên bãi biển hoặc thưởng thức không khí biển.\n*   **Buổi tối:** Dành thời gian May đo và mua sắm ở Hội An, bạn có thể tìm mua các sản phẩm thủ công hoặc đặt may trang phục.\n\n**Gợi ý đặc sản địa phương hoặc trải nghiệm phù hợp**\n*   Trải nghiệm văn hóa tại Hoi An Ancient Town.\n*   Thưởng thức không khí biển tại An Bang Beach.\n*   Khám phá làng quê bằng xe đạp qua Cam Thanh và Trà Quế.\n\n**Ngân sách tham khảo**\n*   Chi phí tham quan các điểm di tích trong phố cổ có thể cần vé tùy hình thức.\n*   Ngân sách cho ăn uống, cafe và mua sắm sẽ tùy thuộc vào lựa chọn cá nhân của bạn.\n*   Chi phí thuê xe đạp hoặc tham gia tour trải nghiệm cũng sẽ khác nhau.\n\n**Lưu ý quan trọng**\n*   Nên đi bộ hoặc đạp xe trong khu phố cổ để cảm nhận trọn vẹn không khí.\n*   Buổi sáng sớm hoặc chiều mát là thời điểm lý tưởng để tham quan các địa điểm ngoài trời.\n\n**Lưu ý về dữ liệu**\n*   Hệ thống hiện chưa có đủ dữ liệu về ngân sách cụ thể, số người đi và số đêm lưu trú.\n*   Tuyến đường được tính bằng OpenRouteService/HeiGIT API.",
+    "retrieved_contexts": [
+      {
+        "score": 0.6283,
+        "search_mode": "broad_city_search",
+        "title": "Đạp xe qua Cam Thanh và Trà Quế",
+        "city": "Hội An",
+        "category": "trải nghiệm",
+        "address": "Cam Thanh, Trà Quế, Hội An",
+        "best_time": "Sáng sớm hoặc chiều mát",
+        "budget": "Tùy thuê xe đạp hoặc tour trải nghiệm",
+        "suitable_for": [
+          "người thích đạp xe",
+          "người thích nông thôn",
+          "người thích trải nghiệm chậm",
+          "người thích thiên nhiên nhẹ nhàng"
+        ],
+        "tips": "Nên đi sáng sớm hoặc chiều mát để tránh nắng. Nếu không quen đường, có thể chọn tour đạp xe ngắn hoặc hỏi khách sạn lộ trình phù hợp.",
+        "source_url": "https://vietnam.travel/things-to-do/top-things-to-do-hoi-an",
+        "source_file": "data/raw/hoian/experiences.json",
+        "latitude": 15.895315,
+        "longitude": 108.337583,
+        "text": "Tên địa điểm: Đạp xe qua Cam Thanh và Trà Quế\nThành phố: Hội An\nLoại hình: trải nghiệm\nĐịa chỉ: Cam Thanh, Trà Quế, Hội An\nThời điểm phù hợp: Sáng sớm hoặc chiều mát\nNgân sách tham khảo: Tùy thuê xe đạp hoặc tour trải nghiệm\nPhù hợp với: người thích đạp xe, người thích nông thôn, người thích trải nghiệm chậm, người thích thiên nhiên nhẹ nhàng\nMô tả: Đạp xe ở vùng ven Hội An là trải nghiệm phù hợp với du khách muốn rời khu phố cổ để khám phá cánh..."
+      },
+      {
+        "score": 0.6939,
+        "search_mode": "broad_city_search",
+        "title": "Japanese Covered Bridge",
+        "city": "Hội An",
+        "category": "văn hóa",
+        "address": "Phố cổ Hội An, Quảng Nam",
+        "best_time": "Sáng sớm hoặc chiều muộn",
+        "budget": "Có thể cần vé tham quan phố cổ tùy hình thức vào điểm di tích",
+        "suitable_for": [
+          "người thích lịch sử",
+          "người thích kiến trúc",
+          "người thích văn hóa",
+          "du khách lần đầu đến Hội An"
+        ],
+        "tips": "Nên kết hợp tham quan Chùa Cầu với nhà cổ Tấn Ký, Hội quán Phúc Kiến và các bảo tàng trong phố cổ để hiểu rõ hơn lịch sử Hội An.",
+        "source_url": "https://vietnam.travel/things-to-do/the-best-ways-to-explore-the-ancient-town-of-hoi-an",
+        "source_file": "data/raw/hoian/old_town.json",
+        "latitude": 15.877114,
+        "longitude": 108.325917,
+        "text": "Lưu ý: Nên kết hợp tham quan Chùa Cầu với nhà cổ Tấn Ký, Hội quán Phúc Kiến và các bảo tàng trong phố cổ để hiểu rõ hơn lịch sử Hội An.\nNguồn: https://vietnam.travel/things-to-do/the-best-ways-to-explore-the-ancient-town-of-hoi-an"
+      },
+      {
+        "score": 0.6596,
+        "search_mode": "broad_city_search",
+        "title": "Tan Ky Old House",
+        "city": "Hội An",
+        "category": "văn hóa",
+        "address": "Phố cổ Hội An, Quảng Nam",
+        "best_time": "Ban ngày, phù hợp đi cùng lịch trình tham quan phố cổ",
+        "budget": "Có thể cần vé tham quan phố cổ tùy hình thức vào điểm di tích",
+        "suitable_for": [
+          "người thích nhà cổ",
+          "người thích kiến trúc",
+          "người thích lịch sử",
+          "người thích văn hóa Hội An"
+        ],
+        "tips": "Nên đi vào ban ngày để dễ quan sát chi tiết kiến trúc và kết hợp với các điểm di sản gần đó.",
+        "source_url": "https://vietnam.travel/places-to-go/central-vietnam/hoi-an",
+        "source_file": "data/raw/hoian/old_town.json",
+        "latitude": 15.877028,
+        "longitude": 108.326889,
+        "text": "Tên địa điểm: Tan Ky Old House\nThành phố: Hội An\nLoại hình: văn hóa\nĐịa chỉ: Phố cổ Hội An, Quảng Nam\nThời điểm phù hợp: Ban ngày, phù hợp đi cùng lịch trình tham quan phố cổ\nNgân sách tham khảo: Có thể cần vé tham quan phố cổ tùy hình thức vào điểm di tích\nPhù hợp với: người thích nhà cổ, người thích kiến trúc, người thích lịch sử, người thích văn hóa Hội An\nMô tả: Tan Ky Old House là một nhà cổ nổi bật trong phố cổ Hội An, thường được nhắc đến..."
+      },
+      {
+        "score": 0.6466,
+        "search_mode": "broad_city_search",
+        "title": "Japanese Covered Bridge",
+        "city": "Hội An",
+        "category": "văn hóa",
+        "address": "Phố cổ Hội An, Quảng Nam",
+        "best_time": "Sáng sớm hoặc chiều muộn",
+        "budget": "Có thể cần vé tham quan phố cổ tùy hình thức vào điểm di tích",
+        "suitable_for": [
+          "người thích lịch sử",
+          "người thích kiến trúc",
+          "người thích văn hóa",
+          "du khách lần đầu đến Hội An"
+        ],
+        "tips": "Nên kết hợp tham quan Chùa Cầu với nhà cổ Tấn Ký, Hội quán Phúc Kiến và các bảo tàng trong phố cổ để hiểu rõ hơn lịch sử Hội An.",
+        "source_url": "https://vietnam.travel/things-to-do/the-best-ways-to-explore-the-ancient-town-of-hoi-an",
+        "source_file": "data/raw/hoian/old_town.json",
+        "latitude": 15.877114,
+        "longitude": 108.325917,
+        "text": "Tên địa điểm: Japanese Covered Bridge\nThành phố: Hội An\nLoại hình: văn hóa\nĐịa chỉ: Phố cổ Hội An, Quảng Nam\nThời điểm phù hợp: Sáng sớm hoặc chiều muộn\nNgân sách tham khảo: Có thể cần vé tham quan phố cổ tùy hình thức vào điểm di tích\nPhù hợp với: người thích lịch sử, người thích kiến trúc, người thích văn hóa, du khách lần đầu đến Hội An\nMô tả: Japanese Covered Bridge là một biểu tượng nổi bật của Hội An. Công trình gắn với cộng đồng thương nhâ..."
+      },
+      {
+        "score": 0.6449,
+        "search_mode": "broad_city_search",
+        "title": "An Bang Beach",
+        "city": "Hội An",
+        "category": "biển",
+        "address": "An Bàng, Hội An, Quảng Nam",
+        "best_time": "Sáng sớm hoặc chiều mát",
+        "budget": "Tùy ăn uống, ghế nằm và dịch vụ cá nhân",
+        "suitable_for": [
+          "người thích biển",
+          "người thích thư giãn",
+          "gia đình",
+          "nhóm bạn"
+        ],
+        "tips": "Nên đi sáng sớm hoặc chiều để tránh nắng gắt. Nếu muốn không gian yên tĩnh hơn, nên tránh khung giờ cao điểm.",
+        "source_url": "https://vietnam.travel/places-to-go/central-vietnam/hoi-an",
+        "source_file": "data/raw/hoian/attractions.json",
+        "latitude": 15.912384,
+        "longitude": 108.342417,
+        "text": "Tên địa điểm: An Bang Beach\nThành phố: Hội An\nLoại hình: biển\nĐịa chỉ: An Bàng, Hội An, Quảng Nam\nThời điểm phù hợp: Sáng sớm hoặc chiều mát\nNgân sách tham khảo: Tùy ăn uống, ghế nằm và dịch vụ cá nhân\nPhù hợp với: người thích biển, người thích thư giãn, gia đình, nhóm bạn\nMô tả: An Bang Beach là bãi biển nổi tiếng gần phố cổ Hội An, phù hợp để thư giãn, tắm biển, ăn hải sản hoặc nghỉ ngơi sau khi tham quan khu phố cổ. Bãi biển cách khu phố cổ kh..."
+      },
+      {
+        "score": 0.6831,
+        "search_mode": "broad_city_search",
+        "title": "Cafe-hopping ở Hội An",
+        "city": "Hội An",
+        "category": "cafe",
+        "address": "Phố cổ Hội An và khu vực lân cận",
+        "best_time": "Sáng hoặc chiều",
+        "budget": "Tùy quán cafe",
+        "suitable_for": [
+          "người thích cafe chill",
+          "người thích ngồi thư giãn",
+          "người thích chụp ảnh",
+          "người thích đi bộ phố cổ"
+        ],
+        "tips": "Nên chọn quán gần khu phố cổ để dễ kết hợp đi bộ. Buổi chiều là thời điểm phù hợp để nghỉ chân trước khi phố cổ lên đèn.",
+        "source_url": "https://vietnam.travel/things-to-do/top-things-to-do-hoi-an",
+        "source_file": "data/raw/hoian/experiences.json",
+        "latitude": 15.877421,
+        "longitude": 108.328734,
+        "text": "Tên địa điểm: Cafe-hopping ở Hội An\nThành phố: Hội An\nLoại hình: cafe\nĐịa chỉ: Phố cổ Hội An và khu vực lân cận\nThời điểm phù hợp: Sáng hoặc chiều\nNgân sách tham khảo: Tùy quán cafe\nPhù hợp với: người thích cafe chill, người thích ngồi thư giãn, người thích chụp ảnh, người thích đi bộ phố cổ\nMô tả: Hội An có nhiều quán cafe mang không khí cổ, yên tĩnh hoặc có ban công nhìn xuống phố. Cafe-hopping phù hợp với du khách muốn nghỉ giữa lịch trình tha..."
+      },
+      {
+        "score": 0.7035,
+        "search_mode": "broad_city_search",
+        "title": "Hoi An Ancient Town",
+        "city": "Hội An",
+        "category": "phố cổ",
+        "address": "Phố cổ Hội An, Quảng Nam",
+        "best_time": "Buổi sáng sớm hoặc buổi tối khi phố lên đèn",
+        "budget": "Tùy điểm tham quan, ăn uống và mua sắm cá nhân",
+        "suitable_for": [
+          "người thích phố cổ",
+          "người thích đi bộ nhẹ nhàng",
+          "người thích văn hóa",
+          "người thích chụp ảnh"
+        ],
+        "tips": "Nên đi bộ hoặc đạp xe trong khu phố cổ. Buổi tối đẹp nhưng thường đông, nếu muốn chụp ảnh thoáng hơn nên đi sáng sớm.",
+        "source_url": "https://vietnam.travel/places-to-go/central-vietnam/hoi-an",
+        "source_file": "data/raw/hoian/old_town.json",
+        "latitude": 15.8770741,
+        "longitude": 108.327091,
+        "text": "Tên địa điểm: Hoi An Ancient Town\nThành phố: Hội An\nLoại hình: phố cổ\nĐịa chỉ: Phố cổ Hội An, Quảng Nam\nThời điểm phù hợp: Buổi sáng sớm hoặc buổi tối khi phố lên đèn\nNgân sách tham khảo: Tùy điểm tham quan, ăn uống và mua sắm cá nhân\nPhù hợp với: người thích phố cổ, người thích đi bộ nhẹ nhàng, người thích văn hóa, người thích chụp ảnh"
+      },
+      {
+        "score": 0.6611,
+        "search_mode": "broad_city_search",
+        "title": "Hoi An Ancient Town",
+        "city": "Hội An",
+        "category": "phố cổ",
+        "address": "Phố cổ Hội An, Quảng Nam",
+        "best_time": "Buổi sáng sớm hoặc buổi tối khi phố lên đèn",
+        "budget": "Tùy điểm tham quan, ăn uống và mua sắm cá nhân",
+        "suitable_for": [
+          "người thích phố cổ",
+          "người thích đi bộ nhẹ nhàng",
+          "người thích văn hóa",
+          "người thích chụp ảnh"
+        ],
+        "tips": "Nên đi bộ hoặc đạp xe trong khu phố cổ. Buổi tối đẹp nhưng thường đông, nếu muốn chụp ảnh thoáng hơn nên đi sáng sớm.",
+        "source_url": "https://vietnam.travel/places-to-go/central-vietnam/hoi-an",
+        "source_file": "data/raw/hoian/old_town.json",
+        "latitude": 15.8770741,
+        "longitude": 108.327091,
+        "text": "Phù hợp với: người thích phố cổ, người thích đi bộ nhẹ nhàng, người thích văn hóa, người thích chụp ảnh\nMô tả: Hoi An Ancient Town là khu phố cổ nổi tiếng của miền Trung Việt Nam, từng là thương cảng sầm uất từ thế kỷ 15 đến 19. Khu vực này có những dãy nhà vàng, mái ngói cũ, hội quán, nhà cổ, chùa, cầu và các con phố nhỏ phù hợp để đi bộ chậm, ngắm kiến trúc và cảm nhận không khí di sản. Buổi tối, phố cổ trở nên đặc trưng hơn với ánh đèn lồng và..."
+      },
+      {
+        "score": 0.6599,
+        "search_mode": "broad_city_search",
+        "title": "May đo và mua sắm ở Hội An",
+        "city": "Hội An",
+        "category": "mua sắm",
+        "address": "Phố cổ Hội An, Quảng Nam",
+        "best_time": "Đầu chuyến đi để có thời gian thử và chỉnh sửa",
+        "budget": "Tùy chất liệu, kiểu dáng và cửa hàng",
+        "suitable_for": [
+          "người thích mua sắm",
+          "người muốn may đồ lấy nhanh",
+          "du khách thích sản phẩm thủ công",
+          "người thích thời trang"
+        ],
+        "tips": "Nên đặt may sớm trong chuyến đi để có thời gian thử đồ và chỉnh sửa nếu cần.",
+        "source_url": "https://vietnam.travel/things-to-do/the-best-ways-to-explore-the-ancient-town-of-hoi-an",
+        "source_file": "data/raw/hoian/experiences.json",
+        "latitude": 15.878142,
+        "longitude": 108.329124,
+        "text": "Tên địa điểm: May đo và mua sắm ở Hội An\nThành phố: Hội An\nLoại hình: mua sắm\nĐịa chỉ: Phố cổ Hội An, Quảng Nam\nThời điểm phù hợp: Đầu chuyến đi để có thời gian thử và chỉnh sửa\nNgân sách tham khảo: Tùy chất liệu, kiểu dáng và cửa hàng\nPhù hợp với: người thích mua sắm, người muốn may đồ lấy nhanh, du khách thích sản phẩm thủ công, người thích thời trang\nMô tả: Hội An nổi tiếng với các tiệm may và cửa hàng thủ công. Du khách có thể đặt may quần áo..."
+      },
+      {
+        "score": 0.6549,
+        "search_mode": "broad_city_search",
+        "title": "Hoi An Lantern Festival",
+        "city": "Hội An",
+        "category": "trải nghiệm văn hóa",
+        "address": "Khu vực phố cổ và ven sông Thu Bồn, Hội An",
+        "best_time": "Tối ngày 14 âm lịch hằng tháng",
+        "budget": "Tùy hoạt động cá nhân như đi thuyền, thả đèn hoa đăng hoặc ăn uống",
+        "suitable_for": [
+          "người thích đèn lồng",
+          "cặp đôi",
+          "người thích chụp ảnh",
+          "du khách muốn trải nghiệm văn hóa Hội An"
+        ],
+        "tips": "Nên đến sớm để tránh đông. Nếu muốn không gian yên tĩnh hơn, có thể chọn đi dạo ở các tuyến phố nhỏ thay vì chỉ tập trung ở khu vực ven sông.",
+        "source_url": "https://vietnam.travel/things-to-do/the-best-ways-to-explore-the-ancient-town-of-hoi-an",
+        "source_file": "data/raw/hoian/old_town.json",
+        "latitude": 15.876722,
+        "longitude": 108.327528,
+        "text": "Lưu ý: Nên đến sớm để tránh đông. Nếu muốn không gian yên tĩnh hơn, có thể chọn đi dạo ở các tuyến phố nhỏ thay vì chỉ tập trung ở khu vực ven sông.\nNguồn: https://vietnam.travel/things-to-do/the-best-ways-to-explore-the-ancient-town-of-hoi-an"
+      }
+    ],
+    "route_plan": {
+      "strategy": "Ưu tiên tọa độ có sẵn trong JSON, sau đó geocoding bằng Nominatim nếu cần, rồi tính tuyến bằng ORS hoặc Haversine fallback.",
+      "ordered_places": [
+        {
+          "title": "Đạp xe qua Cam Thanh và Trà Quế",
+          "category": "trải nghiệm",
+          "address": "Cam Thanh, Trà Quế, Hội An",
+          "best_time": "Sáng sớm hoặc chiều mát"
+        },
+        {
+          "title": "An Bang Beach",
+          "category": "biển",
+          "address": "An Bàng, Hội An, Quảng Nam",
+          "best_time": "Sáng sớm hoặc chiều mát"
+        },
+        {
+          "title": "Cafe-hopping ở Hội An",
+          "category": "cafe",
+          "address": "Phố cổ Hội An và khu vực lân cận",
+          "best_time": "Sáng hoặc chiều"
+        },
+        {
+          "title": "Tan Ky Old House",
+          "category": "văn hóa",
+          "address": "Phố cổ Hội An, Quảng Nam",
+          "best_time": "Ban ngày, phù hợp đi cùng lịch trình tham quan phố cổ"
+        },
+        {
+          "title": "Japanese Covered Bridge",
+          "category": "văn hóa",
+          "address": "Phố cổ Hội An, Quảng Nam",
+          "best_time": "Sáng sớm hoặc chiều muộn"
+        },
+        {
+          "title": "Japanese Covered Bridge",
+          "category": "văn hóa",
+          "address": "Phố cổ Hội An, Quảng Nam",
+          "best_time": "Sáng sớm hoặc chiều muộn"
+        }
+      ],
+      "missing_coordinate_places": [],
+      "route_summary": {
+        "provider": "openrouteservice_heigit",
+        "profile": "foot-walking",
+        "total_distance_km": 9.09,
+        "total_duration_minutes": 109,
+        "segments": [],
+        "note": "Tuyến đường được tính bằng OpenRouteService/HeiGIT API."
+      }
+    },
+    "budget_plan": {
+      "user_budget_vnd": null,
+      "place_budget_notes": [
+        {
+          "title": "Đạp xe qua Cam Thanh và Trà Quế",
+          "budget": "Tùy thuê xe đạp hoặc tour trải nghiệm",
+          "category": "trải nghiệm"
+        },
+        {
+          "title": "Japanese Covered Bridge",
+          "budget": "Có thể cần vé tham quan phố cổ tùy hình thức vào điểm di tích",
+          "category": "văn hóa"
+        },
+        {
+          "title": "Tan Ky Old House",
+          "budget": "Có thể cần vé tham quan phố cổ tùy hình thức vào điểm di tích",
+          "category": "văn hóa"
+        },
+        {
+          "title": "Japanese Covered Bridge",
+          "budget": "Có thể cần vé tham quan phố cổ tùy hình thức vào điểm di tích",
+          "category": "văn hóa"
+        },
+        {
+          "title": "An Bang Beach",
+          "budget": "Tùy ăn uống, ghế nằm và dịch vụ cá nhân",
+          "category": "biển"
+        },
+        {
+          "title": "Cafe-hopping ở Hội An",
+          "budget": "Tùy quán cafe",
+          "category": "cafe"
+        },
+        {
+          "title": "Hoi An Ancient Town",
+          "budget": "Tùy điểm tham quan, ăn uống và mua sắm cá nhân",
+          "category": "phố cổ"
+        },
+        {
+          "title": "Hoi An Ancient Town",
+          "budget": "Tùy điểm tham quan, ăn uống và mua sắm cá nhân",
+          "category": "phố cổ"
+        },
+        {
+          "title": "May đo và mua sắm ở Hội An",
+          "budget": "Tùy chất liệu, kiểu dáng và cửa hàng",
+          "category": "mua sắm"
+        },
+        {
+          "title": "Hoi An Lantern Festival",
+          "budget": "Tùy hoạt động cá nhân như đi thuyền, thả đèn hoa đăng hoặc ăn uống",
+          "category": "trải nghiệm văn hóa"
+        }
+      ],
+      "assessment": "Ngân sách được đánh giá dựa trên dữ liệu mô tả trong knowledge base. Hệ thống không khẳng định giá hiện tại nếu dữ liệu không có nguồn thời gian thực."
+    },
+    "grounding_guard": {
+      "has_retrieved_contexts": true,
+      "allowed_place_names": [
+        "Đạp xe qua Cam Thanh và Trà Quế",
+        "Japanese Covered Bridge",
+        "Tan Ky Old House",
+        "An Bang Beach",
+        "Cafe-hopping ở Hội An",
+        "Hoi An Ancient Town",
+        "May đo và mua sắm ở Hội An",
+        "Hoi An Lantern Festival"
+      ],
+      "route_provider": "openrouteservice_heigit",
+      "is_route_estimate_only": false,
+      "real_time_risk_keywords": [
+        "giá vé hiện tại",
+        "giá chính xác",
+        "giờ mở cửa hiện tại",
+        "đang mở cửa",
+        "đang đóng cửa",
+        "đông khách hiện tại",
+        "tình trạng đông",
+        "thời tiết hiện tại",
+        "kẹt xe",
+        "còn phòng",
+        "vé máy bay",
+        "giá khách sạn hiện tại"
+      ],
+      "warnings": [],
+      "policy": {
+        "only_use_retrieved_places": true,
+        "no_realtime_claims": true,
+        "must_disclose_missing_data": true,
+        "must_disclose_route_estimate": false
+      }
+    }
+  },
+  {
+    "id": "G004",
+    "method": "basic_rag",
+    "question": "Tôi muốn đi Hà Giang 4 ngày, thích thiên nhiên, road trip và muốn ăn đặc sản địa phương.",
+    "city": "Hà Giang",
+    "evaluation_focus": [
+      "multi_day",
+      "road_trip",
+      "food",
+      "hallucination_control"
+    ],
+    "answer": "Chào bạn, với yêu cầu của bạn, tôi đề xuất lịch trình Hà Giang 4 ngày tập trung vào trải nghiệm thiên nhiên, road trip và ẩm thực địa phương.\n\n**Tóm tắt nhu cầu:**\nBạn muốn đi Hà Giang 4 ngày, ưu tiên trải nghiệm thiên nhiên, road trip và thưởng thức đặc sản địa phương.\n\n**Lịch trình đề xuất:**\nĐây là lịch trình mẫu Ha Giang Loop 4 ngày, phù hợp với sở thích của bạn:\n\n*   **Ngày 1:** Di chuyển từ thành phố Hà Giang đến Yên Minh.\n    *   Bạn sẽ đi qua Quản Bạ, nơi có thể ngắm cảnh thiên nhiên hùng vĩ.\n    *   Nên khởi hành buổi sáng để có nhiều thời gian ngắm cảnh và di chuyển an toàn.\n*   **Ngày 2 - Ngày 4:** Tiếp tục hành trình khám phá các cung đường núi đặc trưng của Hà Giang.\n    *   Hành trình thường đi qua Đồng Văn, Mèo Vạc và các điểm nổi bật như Đồng Văn Karst Plateau, Heaven's Gate, Mã Pí Lèng, sông Nho Quế và các bản làng vùng cao.\n    *   Trong quá trình di chuyển, bạn có thể dừng chân tại các bản làng để thưởng thức đặc sản địa phương.\n\n**Vì sao phù hợp:**\n*   Lịch trình Ha Giang Loop 4 ngày được thiết kế cho những người thích road trip và thiên nhiên, bao gồm các cung đường núi đặc trưng và cảnh quan hùng vĩ.\n*   Thời gian 4 ngày cho phép bạn khám phá mà không quá vội vàng, có đủ thời gian để nghỉ ngơi và thưởng thức ẩm thực địa phương.\n*   Lịch trình này đi qua các địa điểm như Quản Bạ, Yên Minh, Đồng Văn, Mèo Vạc, nơi bạn có thể tìm thấy các đặc sản vùng cao.\n\n**Lưu ý ngân sách và di chuyển:**\n*   **Ngân sách:** Tùy thuộc vào phương tiện di chuyển, loại hình lưu trú, các bữa ăn và dịch vụ địa phương bạn lựa chọn.\n*   **Di chuyển:**\n    *   Nếu tự chạy xe máy, cần có kinh nghiệm lái xe đường đèo.\n    *   Không nên ép lịch trình quá dày vì đường núi cần thời gian di chuyển và nghỉ ngơi.\n    *   Nên ăn sáng trước khi khởi hành, mang áo khoác nhẹ và không nên chạy xe quá nhanh trên các đoạn cua.\n*   **Thời điểm phù hợp:** Từ tháng 9 đến tháng 11 hoặc mùa khô, khi điều kiện đường đèo thuận lợi hơn.\n\nBạn có muốn tôi tìm thêm thông tin về các đặc sản địa phương ở Hà Giang không?",
+    "retrieved_contexts": [
+      {
+        "score": 0.739,
+        "search_mode": "broad_city_search",
+        "title": "Ha Giang Loop 4 ngày",
+        "city": "Hà Giang",
+        "category": "lịch trình mẫu",
+        "address": "Hà Giang - Quản Bạ - Yên Minh - Đồng Văn - Mèo Vạc",
+        "best_time": "Từ tháng 9 đến tháng 11 hoặc mùa khô, khi điều kiện đường đèo thuận lợi hơn",
+        "budget": "Tùy phương tiện, lưu trú, ăn uống và dịch vụ địa phương",
+        "suitable_for": [
+          "người thích road trip",
+          "người thích thiên nhiên",
+          "người có nhiều thời gian",
+          "nhóm bạn"
+        ],
+        "tips": "Không nên ép lịch trình quá dày vì đường núi cần thời gian di chuyển và nghỉ ngơi. Nếu tự chạy xe máy, cần có kinh nghiệm lái xe đường đèo.",
+        "source_url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip",
+        "source_file": "data/raw/hagiang/itinerary_samples.json",
+        "latitude": 23.2384784,
+        "longitude": 105.2472621,
+        "text": "Phù hợp với: người thích road trip, người thích thiên nhiên, người có nhiều thời gian, nhóm bạn\nMô tả: Ha Giang Loop 4 ngày là lịch trình phù hợp để khám phá các cung đường núi đặc trưng của Hà Giang mà không quá vội. Hành trình thường đi qua thành phố Hà Giang, Quản Bạ, Yên Minh, Đồng Văn, Mèo Vạc và các điểm nổi bật như Đồng Văn Karst Plateau, Heaven's Gate, Mã Pí Lèng, sông Nho Quế và các bản làng vùng cao.\nLưu ý: Không nên ép lịch trình quá d..."
+      },
+      {
+        "score": 0.7211,
+        "search_mode": "broad_city_search",
+        "title": "Ha Giang Loop 4 ngày",
+        "city": "Hà Giang",
+        "category": "lịch trình mẫu",
+        "address": "Hà Giang - Quản Bạ - Yên Minh - Đồng Văn - Mèo Vạc",
+        "best_time": "Từ tháng 9 đến tháng 11 hoặc mùa khô, khi điều kiện đường đèo thuận lợi hơn",
+        "budget": "Tùy phương tiện, lưu trú, ăn uống và dịch vụ địa phương",
+        "suitable_for": [
+          "người thích road trip",
+          "người thích thiên nhiên",
+          "người có nhiều thời gian",
+          "nhóm bạn"
+        ],
+        "tips": "Không nên ép lịch trình quá dày vì đường núi cần thời gian di chuyển và nghỉ ngơi. Nếu tự chạy xe máy, cần có kinh nghiệm lái xe đường đèo.",
+        "source_url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip",
+        "source_file": "data/raw/hagiang/itinerary_samples.json",
+        "latitude": 23.2384784,
+        "longitude": 105.2472621,
+        "text": "Tên địa điểm: Ha Giang Loop 4 ngày\nThành phố: Hà Giang\nLoại hình: lịch trình mẫu\nĐịa chỉ: Hà Giang - Quản Bạ - Yên Minh - Đồng Văn - Mèo Vạc\nThời điểm phù hợp: Từ tháng 9 đến tháng 11 hoặc mùa khô, khi điều kiện đường đèo thuận lợi hơn\nNgân sách tham khảo: Tùy phương tiện, lưu trú, ăn uống và dịch vụ địa phương\nPhù hợp với: người thích road trip, người thích thiên nhiên, người có nhiều thời gian, nhóm bạn"
+      },
+      {
+        "score": 0.6551,
+        "search_mode": "broad_city_search",
+        "title": "Ngày 1 Hà Giang City đến Yên Minh",
+        "city": "Hà Giang",
+        "category": "lịch trình mẫu",
+        "address": "Hà Giang City - Quản Bạ - Yên Minh",
+        "best_time": "Khởi hành buổi sáng để có nhiều thời gian dừng ngắm cảnh",
+        "budget": "Tùy phương tiện, ăn uống và lưu trú",
+        "suitable_for": [
+          "người thích road trip",
+          "người thích ngắm cảnh",
+          "du khách lần đầu đi Hà Giang Loop"
+        ],
+        "tips": "Nên ăn sáng trước khi khởi hành, mang áo khoác nhẹ và không nên chạy xe quá nhanh trên các đoạn cua.",
+        "source_url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip",
+        "source_file": "data/raw/hagiang/itinerary_samples.json",
+        "latitude": 22.822765,
+        "longitude": 104.981881,
+        "text": "Lưu ý: Nên ăn sáng trước khi khởi hành, mang áo khoác nhẹ và không nên chạy xe quá nhanh trên các đoạn cua.\nNguồn: https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip"
+      },
+      {
+        "score": 0.6388,
+        "search_mode": "broad_city_search",
+        "title": "Đồng Văn Karst Plateau Geopark",
+        "city": "Hà Giang",
+        "category": "thiên nhiên",
+        "address": "Đồng Văn, Hà Giang",
+        "best_time": "Từ tháng 9 đến tháng 11 hoặc mùa khô, khi thời tiết thuận lợi cho di chuyển",
+        "budget": "Tùy lịch trình và phương tiện di chuyển",
+        "suitable_for": [
+          "người thích địa chất",
+          "người thích thiên nhiên",
+          "người thích trekking",
+          "du khách yêu văn hóa bản địa"
+        ],
+        "tips": "Nên dành nhiều thời gian hơn một ngày nếu muốn khám phá trọn vẹn khu vực Đồng Văn, Mèo Vạc và các điểm dọc tuyến.",
+        "source_url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip",
+        "source_file": "data/raw/hagiang/attractions.json",
+        "latitude": 23.2384784,
+        "longitude": 105.2472621,
+        "text": "Lưu ý: Nên dành nhiều thời gian hơn một ngày nếu muốn khám phá trọn vẹn khu vực Đồng Văn, Mèo Vạc và các điểm dọc tuyến.\nNguồn: https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip"
+      },
+      {
+        "score": 0.6108,
+        "search_mode": "broad_city_search",
+        "title": "Đồng Văn Karst Plateau Geopark",
+        "city": "Hà Giang",
+        "category": "thiên nhiên",
+        "address": "Đồng Văn, Hà Giang",
+        "best_time": "Từ tháng 9 đến tháng 11 hoặc mùa khô, khi thời tiết thuận lợi cho di chuyển",
+        "budget": "Tùy lịch trình và phương tiện di chuyển",
+        "suitable_for": [
+          "người thích địa chất",
+          "người thích thiên nhiên",
+          "người thích trekking",
+          "du khách yêu văn hóa bản địa"
+        ],
+        "tips": "Nên dành nhiều thời gian hơn một ngày nếu muốn khám phá trọn vẹn khu vực Đồng Văn, Mèo Vạc và các điểm dọc tuyến.",
+        "source_url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip",
+        "source_file": "data/raw/hagiang/attractions.json",
+        "latitude": 23.2384784,
+        "longitude": 105.2472621,
+        "text": "Tên địa điểm: Đồng Văn Karst Plateau Geopark\nThành phố: Hà Giang\nLoại hình: thiên nhiên\nĐịa chỉ: Đồng Văn, Hà Giang\nThời điểm phù hợp: Từ tháng 9 đến tháng 11 hoặc mùa khô, khi thời tiết thuận lợi cho di chuyển\nNgân sách tham khảo: Tùy lịch trình và phương tiện di chuyển\nPhù hợp với: người thích địa chất, người thích thiên nhiên, người thích trekking, du khách yêu văn hóa bản địa\nMô tả: Đồng Văn Karst Plateau Geopark là vùng cao nguyên đá nổi bật..."
+      },
+      {
+        "score": 0.6303,
+        "search_mode": "broad_city_search",
+        "title": "Quản Bạ Heaven's Gate",
+        "city": "Hà Giang",
+        "category": "thiên nhiên",
+        "address": "Quản Bạ, Hà Giang",
+        "best_time": "Sáng hoặc chiều, khi thời tiết trong và ít sương mù",
+        "budget": "Tùy phương tiện di chuyển",
+        "suitable_for": [
+          "người thích ngắm cảnh",
+          "người thích road trip",
+          "người thích chụp ảnh",
+          "du khách lần đầu đến Hà Giang"
+        ],
+        "tips": "Nên dừng lại nghỉ ngắn, chụp ảnh và kiểm tra phương tiện trước khi tiếp tục các đoạn đường đèo phía sau.",
+        "source_url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip",
+        "source_file": "data/raw/hagiang/attractions.json",
+        "latitude": 23.0569766,
+        "longitude": 104.8580006,
+        "text": "Lưu ý: Nên dừng lại nghỉ ngắn, chụp ảnh và kiểm tra phương tiện trước khi tiếp tục các đoạn đường đèo phía sau.\nNguồn: https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip"
+      },
+      {
+        "score": 0.6565,
+        "search_mode": "broad_city_search",
+        "title": "Trekking ở Hà Giang",
+        "city": "Hà Giang",
+        "category": "trải nghiệm",
+        "address": "Các khu vực đồi núi và bản làng tại Hà Giang",
+        "best_time": "Mùa khô, khi đường mòn ít trơn trượt hơn",
+        "budget": "Tùy tuyến trekking và hướng dẫn viên địa phương",
+        "suitable_for": [
+          "người thích đi bộ",
+          "người thích thiên nhiên",
+          "người thích bản làng",
+          "người thích trải nghiệm địa phương"
+        ],
+        "tips": "Nên đi cùng người địa phương hoặc hướng dẫn viên nếu trekking ở tuyến chưa quen. Cần chuẩn bị giày phù hợp, nước uống và kiểm tra thời tiết trước khi đi.",
+        "source_url": "https://vietnam.travel/places-to-go/northern-vietnam/ha-giang",
+        "source_file": "data/raw/hagiang/adventures.json",
+        "latitude": 23.238478,
+        "longitude": 105.247262,
+        "text": "Tên địa điểm: Trekking ở Hà Giang\nThành phố: Hà Giang\nLoại hình: trải nghiệm\nĐịa chỉ: Các khu vực đồi núi và bản làng tại Hà Giang\nThời điểm phù hợp: Mùa khô, khi đường mòn ít trơn trượt hơn\nNgân sách tham khảo: Tùy tuyến trekking và hướng dẫn viên địa phương\nPhù hợp với: người thích đi bộ, người thích thiên nhiên, người thích bản làng, người thích trải nghiệm địa phương\nMô tả: Hà Giang có nhiều cơ hội trekking qua đồi núi, thung lũng, cao nguyên..."
+      },
+      {
+        "score": 0.6326,
+        "search_mode": "broad_city_search",
+        "title": "Trải nghiệm ẩm thực vùng cao Hà Giang",
+        "city": "Hà Giang",
+        "category": "trải nghiệm",
+        "address": "Đồng Văn, Mèo Vạc và các khu chợ địa phương ở Hà Giang",
+        "best_time": "Buổi sáng hoặc khi ghé các chợ, thị trấn trong hành trình",
+        "budget": "Tùy món ăn và địa điểm",
+        "suitable_for": [
+          "người thích ẩm thực",
+          "người thích văn hóa địa phương",
+          "nhóm bạn",
+          "du khách muốn trải nghiệm vùng cao"
+        ],
+        "tips": "Một số món có hương vị khá đặc trưng, nên hỏi kỹ thành phần nếu không quen đồ ăn vùng cao hoặc có hạn chế về sức khỏe.",
+        "source_url": "https://vietnam.travel/things-to-do/local-unpacked-one-kind-cuisine-ha-giang-karst-plateau",
+        "source_file": "data/raw/hagiang/adventures.json",
+        "latitude": 23.279442,
+        "longitude": 105.362143,
+        "text": "Tên địa điểm: Trải nghiệm ẩm thực vùng cao Hà Giang\nThành phố: Hà Giang\nLoại hình: trải nghiệm\nĐịa chỉ: Đồng Văn, Mèo Vạc và các khu chợ địa phương ở Hà Giang\nThời điểm phù hợp: Buổi sáng hoặc khi ghé các chợ, thị trấn trong hành trình\nNgân sách tham khảo: Tùy món ăn và địa điểm\nPhù hợp với: người thích ẩm thực, người thích văn hóa địa phương, nhóm bạn, du khách muốn trải nghiệm vùng cao\nMô tả: Ẩm thực Hà Giang gắn với đời sống của nhiều cộng đồn..."
+      },
+      {
+        "score": 0.6315,
+        "search_mode": "broad_city_search",
+        "title": "Trải nghiệm ẩm thực vùng cao Hà Giang",
+        "city": "Hà Giang",
+        "category": "trải nghiệm",
+        "address": "Đồng Văn, Mèo Vạc và các khu chợ địa phương ở Hà Giang",
+        "best_time": "Buổi sáng hoặc khi ghé các chợ, thị trấn trong hành trình",
+        "budget": "Tùy món ăn và địa điểm",
+        "suitable_for": [
+          "người thích ẩm thực",
+          "người thích văn hóa địa phương",
+          "nhóm bạn",
+          "du khách muốn trải nghiệm vùng cao"
+        ],
+        "tips": "Một số món có hương vị khá đặc trưng, nên hỏi kỹ thành phần nếu không quen đồ ăn vùng cao hoặc có hạn chế về sức khỏe.",
+        "source_url": "https://vietnam.travel/things-to-do/local-unpacked-one-kind-cuisine-ha-giang-karst-plateau",
+        "source_file": "data/raw/hagiang/adventures.json",
+        "latitude": 23.279442,
+        "longitude": 105.362143,
+        "text": "Lưu ý: Một số món có hương vị khá đặc trưng, nên hỏi kỹ thành phần nếu không quen đồ ăn vùng cao hoặc có hạn chế về sức khỏe.\nNguồn: https://vietnam.travel/things-to-do/local-unpacked-one-kind-cuisine-ha-giang-karst-plateau"
+      },
+      {
+        "score": 0.6304,
+        "search_mode": "broad_city_search",
+        "title": "Dong Van Ancient Town",
+        "city": "Hà Giang",
+        "category": "văn hóa",
+        "address": "Đồng Văn, Hà Giang",
+        "best_time": "Buổi tối hoặc sáng sớm, khi khu phố có không khí yên bình và dễ đi bộ",
+        "budget": "Tùy ăn uống và mua sắm cá nhân",
+        "suitable_for": [
+          "người thích phố cổ",
+          "người thích văn hóa địa phương",
+          "người thích đi bộ nhẹ nhàng",
+          "nhóm bạn"
+        ],
+        "tips": "Nên nghỉ qua đêm ở Đồng Văn nếu muốn chia nhỏ lịch trình và tránh di chuyển quá nhiều trong một ngày.",
+        "source_url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip",
+        "source_file": "data/raw/hagiang/attractions.json",
+        "latitude": 23.2789139,
+        "longitude": 105.3615967,
+        "text": "Lưu ý: Nên nghỉ qua đêm ở Đồng Văn nếu muốn chia nhỏ lịch trình và tránh di chuyển quá nhiều trong một ngày.\nNguồn: https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip"
+      }
+    ]
+  },
+  {
+    "id": "G004",
+    "method": "agentic_rag",
+    "question": "Tôi muốn đi Hà Giang 4 ngày, thích thiên nhiên, road trip và muốn ăn đặc sản địa phương.",
+    "city": "Hà Giang",
+    "evaluation_focus": [
+      "multi_day",
+      "road_trip",
+      "food",
+      "hallucination_control"
+    ],
+    "answer": "Bạn muốn có một chuyến đi Hà Giang 4 ngày, tập trung vào thiên nhiên, road trip và trải nghiệm ẩm thực địa phương.\n\n**Lịch trình gợi ý:**\n\n*   **Ngày 1: Hà Giang City đến Yên Minh**\n    *   Khởi hành từ Hà Giang City, đi qua Quản Bạ và dừng chân tại Quản Bạ Heaven's Gate để ngắm cảnh.\n    *   Tiếp tục di chuyển đến Yên Minh, tận hưởng cảnh quan thiên nhiên trên đường đi.\n    *   Nên ăn sáng trước khi khởi hành và mang theo áo khoác nhẹ.\n\n*   **Ngày 2: Khám phá Đồng Văn Karst Plateau Geopark**\n    *   Dành thời gian khám phá Đồng Văn Karst Plateau Geopark với những cảnh quan địa chất độc đáo.\n    *   Bạn có thể cân nhắc Trekking ở Hà Giang để trải nghiệm thiên nhiên hùng vĩ.\n    *   Buổi tối, khám phá Dong Van Ancient Town.\n\n*   **Ngày 3: Tiếp tục khám phá vùng cao**\n    *   Tiếp tục hành trình khám phá các cung đường và cảnh đẹp của Hà Giang.\n    *   Trải nghiệm ẩm thực vùng cao Hà Giang tại các khu chợ địa phương.\n\n*   **Ngày 4: Kết thúc hành trình**\n    *   Di chuyển nhẹ nhàng, có thể quay lại Hà Giang City hoặc tiếp tục khám phá các điểm lân cận nếu thời gian cho phép.\n\n**Gợi ý đặc sản địa phương và trải nghiệm phù hợp:**\n\n*   Trải nghiệm ẩm thực vùng cao Hà Giang tại Đồng Văn, Mèo Vạc và các khu chợ địa phương.\n*   Trekking ở Hà Giang qua các khu vực đồi núi và bản làng.\n\n**Ngân sách tham khảo:**\n\n*   Ngân sách cho chuyến đi sẽ tùy thuộc vào phương tiện di chuyển, loại hình lưu trú, các bữa ăn và các dịch vụ địa phương bạn lựa chọn.\n*   Chi phí cho các điểm tham quan như Đồng Văn Karst Plateau Geopark và các trải nghiệm như Trekking ở Hà Giang cũng tùy thuộc vào lịch trình cụ thể.\n*   Ngân sách cho ẩm thực và mua sắm cá nhân tại Dong Van Ancient Town sẽ tùy thuộc vào nhu cầu của bạn.\n\n**Lưu ý quan trọng:**\n\n*   Thời điểm phù hợp để đi Hà Giang là từ tháng 9 đến tháng 11 hoặc mùa khô, khi điều kiện đường đèo thuận lợi hơn.\n*   Không nên ép lịch trình quá dày vì đường núi cần thời gian di chuyển và nghỉ ngơi.\n*   Nếu tự chạy xe máy, cần có kinh nghiệm lái xe đường đèo và luôn kiểm tra phương tiện.\n*   Một số món ăn vùng cao có hương vị đặc trưng, bạn nên hỏi kỹ thành phần nếu không quen.\n\n**Lưu ý về dữ liệu:**\n\n*   Khoảng cách được ước lượng theo đường thẳng, không phải tuyến đường thực tế.\n\n## Lưu ý về dữ liệu\n- Khoảng cách và thời gian di chuyển chỉ là ước lượng theo dữ liệu hiện có, chưa phải tuyến đường thực tế.\n- Tuyến đường đang dùng Haversine fallback. Khoảng cách chỉ là ước lượng theo đường thẳng, không phải tuyến đường thực tế.",
+    "retrieved_contexts": [
+      {
+        "score": 0.739,
+        "search_mode": "broad_city_search",
+        "title": "Ha Giang Loop 4 ngày",
+        "city": "Hà Giang",
+        "category": "lịch trình mẫu",
+        "address": "Hà Giang - Quản Bạ - Yên Minh - Đồng Văn - Mèo Vạc",
+        "best_time": "Từ tháng 9 đến tháng 11 hoặc mùa khô, khi điều kiện đường đèo thuận lợi hơn",
+        "budget": "Tùy phương tiện, lưu trú, ăn uống và dịch vụ địa phương",
+        "suitable_for": [
+          "người thích road trip",
+          "người thích thiên nhiên",
+          "người có nhiều thời gian",
+          "nhóm bạn"
+        ],
+        "tips": "Không nên ép lịch trình quá dày vì đường núi cần thời gian di chuyển và nghỉ ngơi. Nếu tự chạy xe máy, cần có kinh nghiệm lái xe đường đèo.",
+        "source_url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip",
+        "source_file": "data/raw/hagiang/itinerary_samples.json",
+        "latitude": 23.2384784,
+        "longitude": 105.2472621,
+        "text": "Phù hợp với: người thích road trip, người thích thiên nhiên, người có nhiều thời gian, nhóm bạn\nMô tả: Ha Giang Loop 4 ngày là lịch trình phù hợp để khám phá các cung đường núi đặc trưng của Hà Giang mà không quá vội. Hành trình thường đi qua thành phố Hà Giang, Quản Bạ, Yên Minh, Đồng Văn, Mèo Vạc và các điểm nổi bật như Đồng Văn Karst Plateau, Heaven's Gate, Mã Pí Lèng, sông Nho Quế và các bản làng vùng cao.\nLưu ý: Không nên ép lịch trình quá d..."
+      },
+      {
+        "score": 0.7211,
+        "search_mode": "broad_city_search",
+        "title": "Ha Giang Loop 4 ngày",
+        "city": "Hà Giang",
+        "category": "lịch trình mẫu",
+        "address": "Hà Giang - Quản Bạ - Yên Minh - Đồng Văn - Mèo Vạc",
+        "best_time": "Từ tháng 9 đến tháng 11 hoặc mùa khô, khi điều kiện đường đèo thuận lợi hơn",
+        "budget": "Tùy phương tiện, lưu trú, ăn uống và dịch vụ địa phương",
+        "suitable_for": [
+          "người thích road trip",
+          "người thích thiên nhiên",
+          "người có nhiều thời gian",
+          "nhóm bạn"
+        ],
+        "tips": "Không nên ép lịch trình quá dày vì đường núi cần thời gian di chuyển và nghỉ ngơi. Nếu tự chạy xe máy, cần có kinh nghiệm lái xe đường đèo.",
+        "source_url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip",
+        "source_file": "data/raw/hagiang/itinerary_samples.json",
+        "latitude": 23.2384784,
+        "longitude": 105.2472621,
+        "text": "Tên địa điểm: Ha Giang Loop 4 ngày\nThành phố: Hà Giang\nLoại hình: lịch trình mẫu\nĐịa chỉ: Hà Giang - Quản Bạ - Yên Minh - Đồng Văn - Mèo Vạc\nThời điểm phù hợp: Từ tháng 9 đến tháng 11 hoặc mùa khô, khi điều kiện đường đèo thuận lợi hơn\nNgân sách tham khảo: Tùy phương tiện, lưu trú, ăn uống và dịch vụ địa phương\nPhù hợp với: người thích road trip, người thích thiên nhiên, người có nhiều thời gian, nhóm bạn"
+      },
+      {
+        "score": 0.6551,
+        "search_mode": "broad_city_search",
+        "title": "Ngày 1 Hà Giang City đến Yên Minh",
+        "city": "Hà Giang",
+        "category": "lịch trình mẫu",
+        "address": "Hà Giang City - Quản Bạ - Yên Minh",
+        "best_time": "Khởi hành buổi sáng để có nhiều thời gian dừng ngắm cảnh",
+        "budget": "Tùy phương tiện, ăn uống và lưu trú",
+        "suitable_for": [
+          "người thích road trip",
+          "người thích ngắm cảnh",
+          "du khách lần đầu đi Hà Giang Loop"
+        ],
+        "tips": "Nên ăn sáng trước khi khởi hành, mang áo khoác nhẹ và không nên chạy xe quá nhanh trên các đoạn cua.",
+        "source_url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip",
+        "source_file": "data/raw/hagiang/itinerary_samples.json",
+        "latitude": 22.822765,
+        "longitude": 104.981881,
+        "text": "Lưu ý: Nên ăn sáng trước khi khởi hành, mang áo khoác nhẹ và không nên chạy xe quá nhanh trên các đoạn cua.\nNguồn: https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip"
+      },
+      {
+        "score": 0.6388,
+        "search_mode": "broad_city_search",
+        "title": "Đồng Văn Karst Plateau Geopark",
+        "city": "Hà Giang",
+        "category": "thiên nhiên",
+        "address": "Đồng Văn, Hà Giang",
+        "best_time": "Từ tháng 9 đến tháng 11 hoặc mùa khô, khi thời tiết thuận lợi cho di chuyển",
+        "budget": "Tùy lịch trình và phương tiện di chuyển",
+        "suitable_for": [
+          "người thích địa chất",
+          "người thích thiên nhiên",
+          "người thích trekking",
+          "du khách yêu văn hóa bản địa"
+        ],
+        "tips": "Nên dành nhiều thời gian hơn một ngày nếu muốn khám phá trọn vẹn khu vực Đồng Văn, Mèo Vạc và các điểm dọc tuyến.",
+        "source_url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip",
+        "source_file": "data/raw/hagiang/attractions.json",
+        "latitude": 23.2384784,
+        "longitude": 105.2472621,
+        "text": "Lưu ý: Nên dành nhiều thời gian hơn một ngày nếu muốn khám phá trọn vẹn khu vực Đồng Văn, Mèo Vạc và các điểm dọc tuyến.\nNguồn: https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip"
+      },
+      {
+        "score": 0.6108,
+        "search_mode": "broad_city_search",
+        "title": "Đồng Văn Karst Plateau Geopark",
+        "city": "Hà Giang",
+        "category": "thiên nhiên",
+        "address": "Đồng Văn, Hà Giang",
+        "best_time": "Từ tháng 9 đến tháng 11 hoặc mùa khô, khi thời tiết thuận lợi cho di chuyển",
+        "budget": "Tùy lịch trình và phương tiện di chuyển",
+        "suitable_for": [
+          "người thích địa chất",
+          "người thích thiên nhiên",
+          "người thích trekking",
+          "du khách yêu văn hóa bản địa"
+        ],
+        "tips": "Nên dành nhiều thời gian hơn một ngày nếu muốn khám phá trọn vẹn khu vực Đồng Văn, Mèo Vạc và các điểm dọc tuyến.",
+        "source_url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip",
+        "source_file": "data/raw/hagiang/attractions.json",
+        "latitude": 23.2384784,
+        "longitude": 105.2472621,
+        "text": "Tên địa điểm: Đồng Văn Karst Plateau Geopark\nThành phố: Hà Giang\nLoại hình: thiên nhiên\nĐịa chỉ: Đồng Văn, Hà Giang\nThời điểm phù hợp: Từ tháng 9 đến tháng 11 hoặc mùa khô, khi thời tiết thuận lợi cho di chuyển\nNgân sách tham khảo: Tùy lịch trình và phương tiện di chuyển\nPhù hợp với: người thích địa chất, người thích thiên nhiên, người thích trekking, du khách yêu văn hóa bản địa\nMô tả: Đồng Văn Karst Plateau Geopark là vùng cao nguyên đá nổi bật..."
+      },
+      {
+        "score": 0.6303,
+        "search_mode": "broad_city_search",
+        "title": "Quản Bạ Heaven's Gate",
+        "city": "Hà Giang",
+        "category": "thiên nhiên",
+        "address": "Quản Bạ, Hà Giang",
+        "best_time": "Sáng hoặc chiều, khi thời tiết trong và ít sương mù",
+        "budget": "Tùy phương tiện di chuyển",
+        "suitable_for": [
+          "người thích ngắm cảnh",
+          "người thích road trip",
+          "người thích chụp ảnh",
+          "du khách lần đầu đến Hà Giang"
+        ],
+        "tips": "Nên dừng lại nghỉ ngắn, chụp ảnh và kiểm tra phương tiện trước khi tiếp tục các đoạn đường đèo phía sau.",
+        "source_url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip",
+        "source_file": "data/raw/hagiang/attractions.json",
+        "latitude": 23.0569766,
+        "longitude": 104.8580006,
+        "text": "Lưu ý: Nên dừng lại nghỉ ngắn, chụp ảnh và kiểm tra phương tiện trước khi tiếp tục các đoạn đường đèo phía sau.\nNguồn: https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip"
+      },
+      {
+        "score": 0.6565,
+        "search_mode": "broad_city_search",
+        "title": "Trekking ở Hà Giang",
+        "city": "Hà Giang",
+        "category": "trải nghiệm",
+        "address": "Các khu vực đồi núi và bản làng tại Hà Giang",
+        "best_time": "Mùa khô, khi đường mòn ít trơn trượt hơn",
+        "budget": "Tùy tuyến trekking và hướng dẫn viên địa phương",
+        "suitable_for": [
+          "người thích đi bộ",
+          "người thích thiên nhiên",
+          "người thích bản làng",
+          "người thích trải nghiệm địa phương"
+        ],
+        "tips": "Nên đi cùng người địa phương hoặc hướng dẫn viên nếu trekking ở tuyến chưa quen. Cần chuẩn bị giày phù hợp, nước uống và kiểm tra thời tiết trước khi đi.",
+        "source_url": "https://vietnam.travel/places-to-go/northern-vietnam/ha-giang",
+        "source_file": "data/raw/hagiang/adventures.json",
+        "latitude": 23.238478,
+        "longitude": 105.247262,
+        "text": "Tên địa điểm: Trekking ở Hà Giang\nThành phố: Hà Giang\nLoại hình: trải nghiệm\nĐịa chỉ: Các khu vực đồi núi và bản làng tại Hà Giang\nThời điểm phù hợp: Mùa khô, khi đường mòn ít trơn trượt hơn\nNgân sách tham khảo: Tùy tuyến trekking và hướng dẫn viên địa phương\nPhù hợp với: người thích đi bộ, người thích thiên nhiên, người thích bản làng, người thích trải nghiệm địa phương\nMô tả: Hà Giang có nhiều cơ hội trekking qua đồi núi, thung lũng, cao nguyên..."
+      },
+      {
+        "score": 0.6326,
+        "search_mode": "broad_city_search",
+        "title": "Trải nghiệm ẩm thực vùng cao Hà Giang",
+        "city": "Hà Giang",
+        "category": "trải nghiệm",
+        "address": "Đồng Văn, Mèo Vạc và các khu chợ địa phương ở Hà Giang",
+        "best_time": "Buổi sáng hoặc khi ghé các chợ, thị trấn trong hành trình",
+        "budget": "Tùy món ăn và địa điểm",
+        "suitable_for": [
+          "người thích ẩm thực",
+          "người thích văn hóa địa phương",
+          "nhóm bạn",
+          "du khách muốn trải nghiệm vùng cao"
+        ],
+        "tips": "Một số món có hương vị khá đặc trưng, nên hỏi kỹ thành phần nếu không quen đồ ăn vùng cao hoặc có hạn chế về sức khỏe.",
+        "source_url": "https://vietnam.travel/things-to-do/local-unpacked-one-kind-cuisine-ha-giang-karst-plateau",
+        "source_file": "data/raw/hagiang/adventures.json",
+        "latitude": 23.279442,
+        "longitude": 105.362143,
+        "text": "Tên địa điểm: Trải nghiệm ẩm thực vùng cao Hà Giang\nThành phố: Hà Giang\nLoại hình: trải nghiệm\nĐịa chỉ: Đồng Văn, Mèo Vạc và các khu chợ địa phương ở Hà Giang\nThời điểm phù hợp: Buổi sáng hoặc khi ghé các chợ, thị trấn trong hành trình\nNgân sách tham khảo: Tùy món ăn và địa điểm\nPhù hợp với: người thích ẩm thực, người thích văn hóa địa phương, nhóm bạn, du khách muốn trải nghiệm vùng cao\nMô tả: Ẩm thực Hà Giang gắn với đời sống của nhiều cộng đồn..."
+      },
+      {
+        "score": 0.6315,
+        "search_mode": "broad_city_search",
+        "title": "Trải nghiệm ẩm thực vùng cao Hà Giang",
+        "city": "Hà Giang",
+        "category": "trải nghiệm",
+        "address": "Đồng Văn, Mèo Vạc và các khu chợ địa phương ở Hà Giang",
+        "best_time": "Buổi sáng hoặc khi ghé các chợ, thị trấn trong hành trình",
+        "budget": "Tùy món ăn và địa điểm",
+        "suitable_for": [
+          "người thích ẩm thực",
+          "người thích văn hóa địa phương",
+          "nhóm bạn",
+          "du khách muốn trải nghiệm vùng cao"
+        ],
+        "tips": "Một số món có hương vị khá đặc trưng, nên hỏi kỹ thành phần nếu không quen đồ ăn vùng cao hoặc có hạn chế về sức khỏe.",
+        "source_url": "https://vietnam.travel/things-to-do/local-unpacked-one-kind-cuisine-ha-giang-karst-plateau",
+        "source_file": "data/raw/hagiang/adventures.json",
+        "latitude": 23.279442,
+        "longitude": 105.362143,
+        "text": "Lưu ý: Một số món có hương vị khá đặc trưng, nên hỏi kỹ thành phần nếu không quen đồ ăn vùng cao hoặc có hạn chế về sức khỏe.\nNguồn: https://vietnam.travel/things-to-do/local-unpacked-one-kind-cuisine-ha-giang-karst-plateau"
+      },
+      {
+        "score": 0.6304,
+        "search_mode": "broad_city_search",
+        "title": "Dong Van Ancient Town",
+        "city": "Hà Giang",
+        "category": "văn hóa",
+        "address": "Đồng Văn, Hà Giang",
+        "best_time": "Buổi tối hoặc sáng sớm, khi khu phố có không khí yên bình và dễ đi bộ",
+        "budget": "Tùy ăn uống và mua sắm cá nhân",
+        "suitable_for": [
+          "người thích phố cổ",
+          "người thích văn hóa địa phương",
+          "người thích đi bộ nhẹ nhàng",
+          "nhóm bạn"
+        ],
+        "tips": "Nên nghỉ qua đêm ở Đồng Văn nếu muốn chia nhỏ lịch trình và tránh di chuyển quá nhiều trong một ngày.",
+        "source_url": "https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip",
+        "source_file": "data/raw/hagiang/attractions.json",
+        "latitude": 23.2789139,
+        "longitude": 105.3615967,
+        "text": "Lưu ý: Nên nghỉ qua đêm ở Đồng Văn nếu muốn chia nhỏ lịch trình và tránh di chuyển quá nhiều trong một ngày.\nNguồn: https://vietnam.travel/things-to-do/ha-giang-loop-four-day-road-trip"
+      }
+    ],
+    "route_plan": {
+      "strategy": "Ưu tiên tọa độ có sẵn trong JSON, sau đó geocoding bằng Nominatim nếu cần, rồi tính tuyến bằng ORS hoặc Haversine fallback.",
+      "ordered_places": [
+        {
+          "title": "Ha Giang Loop 4 ngày",
+          "category": "lịch trình mẫu",
+          "address": "Hà Giang - Quản Bạ - Yên Minh - Đồng Văn - Mèo Vạc",
+          "best_time": "Từ tháng 9 đến tháng 11 hoặc mùa khô, khi điều kiện đường đèo thuận lợi hơn"
+        },
+        {
+          "title": "Ha Giang Loop 4 ngày",
+          "category": "lịch trình mẫu",
+          "address": "Hà Giang - Quản Bạ - Yên Minh - Đồng Văn - Mèo Vạc",
+          "best_time": "Từ tháng 9 đến tháng 11 hoặc mùa khô, khi điều kiện đường đèo thuận lợi hơn"
+        },
+        {
+          "title": "Đồng Văn Karst Plateau Geopark",
+          "category": "thiên nhiên",
+          "address": "Đồng Văn, Hà Giang",
+          "best_time": "Từ tháng 9 đến tháng 11 hoặc mùa khô, khi thời tiết thuận lợi cho di chuyển"
+        },
+        {
+          "title": "Đồng Văn Karst Plateau Geopark",
+          "category": "thiên nhiên",
+          "address": "Đồng Văn, Hà Giang",
+          "best_time": "Từ tháng 9 đến tháng 11 hoặc mùa khô, khi thời tiết thuận lợi cho di chuyển"
+        },
+        {
+          "title": "Quản Bạ Heaven's Gate",
+          "category": "thiên nhiên",
+          "address": "Quản Bạ, Hà Giang",
+          "best_time": "Sáng hoặc chiều, khi thời tiết trong và ít sương mù"
+        },
+        {
+          "title": "Ngày 1 Hà Giang City đến Yên Minh",
+          "category": "lịch trình mẫu",
+          "address": "Hà Giang City - Quản Bạ - Yên Minh",
+          "best_time": "Khởi hành buổi sáng để có nhiều thời gian dừng ngắm cảnh"
+        }
+      ],
+      "missing_coordinate_places": [],
+      "route_summary": {
+        "provider": "haversine_fallback",
+        "profile": "walking_estimate",
+        "total_distance_km": 73.59,
+        "total_duration_minutes": 981,
+        "segments": [
+          {
+            "from": "Ha Giang Loop 4 ngày",
+            "to": "Ha Giang Loop 4 ngày",
+            "distance_km": 0.0,
+            "duration_minutes_estimate": 0,
+            "method": "haversine_estimate"
+          },
+          {
+            "from": "Ha Giang Loop 4 ngày",
+            "to": "Đồng Văn Karst Plateau Geopark",
+            "distance_km": 0.0,
+            "duration_minutes_estimate": 0,
+            "method": "haversine_estimate"
+          },
+          {
+            "from": "Đồng Văn Karst Plateau Geopark",
+            "to": "Đồng Văn Karst Plateau Geopark",
+            "distance_km": 0.0,
+            "duration_minutes_estimate": 0,
+            "method": "haversine_estimate"
+          },
+          {
+            "from": "Đồng Văn Karst Plateau Geopark",
+            "to": "Quản Bạ Heaven's Gate",
+            "distance_km": 44.62,
+            "duration_minutes_estimate": 595,
+            "method": "haversine_estimate"
+          },
+          {
+            "from": "Quản Bạ Heaven's Gate",
+            "to": "Ngày 1 Hà Giang City đến Yên Minh",
+            "distance_km": 28.97,
+            "duration_minutes_estimate": 386,
+            "method": "haversine_estimate"
+          }
+        ],
+        "note": "Khoảng cách được ước lượng theo đường thẳng, không phải tuyến đường thực tế."
+      }
+    },
+    "budget_plan": {
+      "user_budget_vnd": null,
+      "place_budget_notes": [
+        {
+          "title": "Ha Giang Loop 4 ngày",
+          "budget": "Tùy phương tiện, lưu trú, ăn uống và dịch vụ địa phương",
+          "category": "lịch trình mẫu"
+        },
+        {
+          "title": "Ha Giang Loop 4 ngày",
+          "budget": "Tùy phương tiện, lưu trú, ăn uống và dịch vụ địa phương",
+          "category": "lịch trình mẫu"
+        },
+        {
+          "title": "Ngày 1 Hà Giang City đến Yên Minh",
+          "budget": "Tùy phương tiện, ăn uống và lưu trú",
+          "category": "lịch trình mẫu"
+        },
+        {
+          "title": "Đồng Văn Karst Plateau Geopark",
+          "budget": "Tùy lịch trình và phương tiện di chuyển",
+          "category": "thiên nhiên"
+        },
+        {
+          "title": "Đồng Văn Karst Plateau Geopark",
+          "budget": "Tùy lịch trình và phương tiện di chuyển",
+          "category": "thiên nhiên"
+        },
+        {
+          "title": "Quản Bạ Heaven's Gate",
+          "budget": "Tùy phương tiện di chuyển",
+          "category": "thiên nhiên"
+        },
+        {
+          "title": "Trekking ở Hà Giang",
+          "budget": "Tùy tuyến trekking và hướng dẫn viên địa phương",
+          "category": "trải nghiệm"
+        },
+        {
+          "title": "Trải nghiệm ẩm thực vùng cao Hà Giang",
+          "budget": "Tùy món ăn và địa điểm",
+          "category": "trải nghiệm"
+        },
+        {
+          "title": "Trải nghiệm ẩm thực vùng cao Hà Giang",
+          "budget": "Tùy món ăn và địa điểm",
+          "category": "trải nghiệm"
+        },
+        {
+          "title": "Dong Van Ancient Town",
+          "budget": "Tùy ăn uống và mua sắm cá nhân",
+          "category": "văn hóa"
+        }
+      ],
+      "assessment": "Ngân sách được đánh giá dựa trên dữ liệu mô tả trong knowledge base. Hệ thống không khẳng định giá hiện tại nếu dữ liệu không có nguồn thời gian thực."
+    },
+    "grounding_guard": {
+      "has_retrieved_contexts": true,
+      "allowed_place_names": [
+        "Ha Giang Loop 4 ngày",
+        "Ngày 1 Hà Giang City đến Yên Minh",
+        "Đồng Văn Karst Plateau Geopark",
+        "Quản Bạ Heaven's Gate",
+        "Trekking ở Hà Giang",
+        "Trải nghiệm ẩm thực vùng cao Hà Giang",
+        "Dong Van Ancient Town"
+      ],
+      "route_provider": "haversine_fallback",
+      "is_route_estimate_only": true,
+      "real_time_risk_keywords": [
+        "giá vé hiện tại",
+        "giá chính xác",
+        "giờ mở cửa hiện tại",
+        "đang mở cửa",
+        "đang đóng cửa",
+        "đông khách hiện tại",
+        "tình trạng đông",
+        "thời tiết hiện tại",
+        "kẹt xe",
+        "còn phòng",
+        "vé máy bay",
+        "giá khách sạn hiện tại"
+      ],
+      "warnings": [
+        "Tuyến đường đang dùng Haversine fallback. Khoảng cách chỉ là ước lượng theo đường thẳng, không phải tuyến đường thực tế."
+      ],
+      "policy": {
+        "only_use_retrieved_places": true,
+        "no_realtime_claims": true,
+        "must_disclose_missing_data": true,
+        "must_disclose_route_estimate": true
+      }
+    }
+  }
+]

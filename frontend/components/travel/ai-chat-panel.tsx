@@ -71,8 +71,6 @@ export function AiChatPanel() {
                 ...msg,
                 content:
                   data.answer ||
-                  data.response ||
-                  data.message ||
                   "Agent đã phản hồi nhưng không có trường answer trong dữ liệu trả về.",
               }
             : msg

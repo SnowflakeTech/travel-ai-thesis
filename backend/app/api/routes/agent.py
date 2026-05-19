@@ -6,12 +6,13 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.agents.travel_graph import run_travel_agent
 from app.core.config import settings
+from app.core.security import verify_demo_api_key
 from app.db.session import get_db
 from app.memory.extractor import extract_memories_from_message
 from app.memory.service import get_user_memory_text, save_or_update_memory
 
 
-router = APIRouter()
+router = APIRouter(dependencies=[Depends(verify_demo_api_key)])
 
 
 class AgentRequest(BaseModel):
@@ -32,6 +33,8 @@ class AgentResponse(BaseModel):
     retrieved_contexts: list[dict[str, Any]]
     route_plan: dict[str, Any]
     budget_plan: dict[str, Any]
+    grounding_guard: dict[str, Any] = {}
+    post_processing_guard: dict[str, Any] = {}
     critique: str
     saved_memories: list[SavedMemoryResponse]
 
@@ -83,9 +86,14 @@ async def travel_agent(
             retrieved_contexts=result.get("retrieved_contexts", []),
             route_plan=result.get("route_plan", {}),
             budget_plan=result.get("budget_plan", {}),
+            grounding_guard=result.get("grounding_guard", {}),
+            post_processing_guard=result.get("post_processing_guard", {}),
             critique=result.get("critique", ""),
             saved_memories=saved_memories,
         )
+
+    except HTTPException:
+        raise
 
     except Exception as exc:
         raise HTTPException(

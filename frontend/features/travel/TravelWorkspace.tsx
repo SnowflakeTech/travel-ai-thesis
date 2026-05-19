@@ -9,12 +9,17 @@ import {
   sendAgentMessage,
 } from "@/lib/api";
 import type { AgentResponse, ChatMessage } from "@/types/travel";
+import type { AppError } from "@/types/error";
+import { classifyAppError } from "@/lib/error-handler";
 import { ChatBubble } from "@/components/chat/ChatBubble";
 import { TypingIndicator } from "@/components/chat/TypingIndicator";
 import { ItineraryTimeline } from "@/components/itinerary/ItineraryTimeline";
 import { TravelMap } from "@/components/map/TravelMap";
 import { PreferenceEditor } from "@/components/preferences/PreferenceEditor";
 import { RetrievedPlacesPanel } from "@/components/travel/RetrievedPlacesPanel";
+import { HallucinationControlPanel } from "@/components/travel/HallucinationControlPanel";
+import { ErrorAlert } from "@/components/travel/ErrorAlert";
+import { WarningNotice } from "@/components/travel/WarningNotice";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Textarea } from "@/components/ui/textarea";
@@ -40,6 +45,7 @@ export function TravelWorkspace() {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [agentData, setAgentData] = useState<AgentResponse | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [appError, setAppError] = useState<AppError | null>(null);
 
   const backendOnline =
     backendStatus !== "Đang kiểm tra..." &&
@@ -64,6 +70,8 @@ export function TravelWorkspace() {
 
     if (!trimmedInput || isLoading) return;
 
+    setAppError(null);
+
     const userMessage: ChatMessage = {
       role: "user",
       content: trimmedInput,
@@ -85,13 +93,20 @@ export function TravelWorkspace() {
           content: data.answer,
         },
       ]);
-    } catch {
+    } catch (error) {
+      const classifiedError = classifyAppError(error);
+      setAppError(classifiedError);
+
       setMessages((prev) => [
         ...prev,
         {
           role: "assistant",
-          content:
-            "Có lỗi xảy ra khi gọi Travel Agent. Bạn kiểm tra backend, API key, Qdrant hoặc logs server nhé.",
+          content: `## ${classifiedError.title}
+
+${classifiedError.message}
+
+### Gợi ý kiểm tra
+${classifiedError.suggestions.map((item) => `- ${item}`).join("\n")}`,
         },
       ]);
     } finally {
@@ -99,9 +114,17 @@ export function TravelWorkspace() {
     }
   }
 
+  async function handleRetryLastRequest() {
+    if (!lastRequest || isLoading) return;
+
+    setInput(lastRequest);
+    setAppError(null);
+  }
+
   async function handleRegenerateDay(day: number) {
     if (!lastRequest || isLoading) return;
 
+    setAppError(null);
     setIsLoading(true);
 
     try {
@@ -114,12 +137,33 @@ export function TravelWorkspace() {
           content: `## Phương án tạo lại ngày ${day}\n\n${data.answer}`,
         },
       ]);
-    } catch {
+
+      setAgentData((prev) =>
+        prev
+          ? {
+              ...prev,
+              route_plan: data.route_plan || prev.route_plan,
+              budget_plan: data.budget_plan || prev.budget_plan,
+              grounding_guard: data.grounding_guard || prev.grounding_guard,
+              post_processing_guard:
+                data.post_processing_guard || prev.post_processing_guard,
+            }
+          : prev
+      );
+    } catch (error) {
+      const classifiedError = classifyAppError(error);
+      setAppError(classifiedError);
+
       setMessages((prev) => [
         ...prev,
         {
           role: "assistant",
-          content: `Không thể tạo lại ngày ${day}. Vui lòng kiểm tra backend.`,
+          content: `## ${classifiedError.title}
+
+Không thể tạo lại ngày ${day}.
+
+### Gợi ý kiểm tra
+${classifiedError.suggestions.map((item) => `- ${item}`).join("\n")}`,
         },
       ]);
     } finally {
@@ -130,6 +174,7 @@ export function TravelWorkspace() {
   async function handleOptimizeRoute() {
     if (!lastRequest || isLoading) return;
 
+    setAppError(null);
     setIsLoading(true);
 
     try {
@@ -142,12 +187,33 @@ export function TravelWorkspace() {
           content: `## Lịch trình đã tối ưu tuyến đường\n\n${data.answer}`,
         },
       ]);
-    } catch {
+
+      setAgentData((prev) =>
+        prev
+          ? {
+              ...prev,
+              route_plan: data.route_plan || prev.route_plan,
+              budget_plan: data.budget_plan || prev.budget_plan,
+              grounding_guard: data.grounding_guard || prev.grounding_guard,
+              post_processing_guard:
+                data.post_processing_guard || prev.post_processing_guard,
+            }
+          : prev
+      );
+    } catch (error) {
+      const classifiedError = classifyAppError(error);
+      setAppError(classifiedError);
+
       setMessages((prev) => [
         ...prev,
         {
           role: "assistant",
-          content: "Không thể tối ưu tuyến đường. Vui lòng kiểm tra backend.",
+          content: `## ${classifiedError.title}
+
+Không thể tối ưu tuyến đường.
+
+### Gợi ý kiểm tra
+${classifiedError.suggestions.map((item) => `- ${item}`).join("\n")}`,
         },
       ]);
     } finally {
@@ -157,9 +223,21 @@ export function TravelWorkspace() {
 
   const retrievedPlaces = agentData?.retrieved_contexts || [];
 
+  const hasAgentResponse = Boolean(agentData);
+  const hasNoRetrievedContext =
+    hasAgentResponse && retrievedPlaces.length === 0;
+
+  const hasMissingMapCoordinates =
+    retrievedPlaces.length > 0 &&
+    !retrievedPlaces.some(
+      (place) =>
+        typeof place.latitude === "number" &&
+        typeof place.longitude === "number"
+    );
+
   const requestSummary = useMemo(
     () => buildRequestSummary(lastRequest, retrievedPlaces.length),
-    [lastRequest, retrievedPlaces.length],
+    [lastRequest, retrievedPlaces.length]
   );
 
   const quickPrompts = [
@@ -293,6 +371,14 @@ export function TravelWorkspace() {
                   <ChatBubble key={index} message={message} />
                 ))}
 
+                {appError && (
+                  <ErrorAlert
+                    error={appError}
+                    onClose={() => setAppError(null)}
+                    onRetry={handleRetryLastRequest}
+                  />
+                )}
+
                 {isLoading && (
                   <>
                     <TypingIndicator />
@@ -337,6 +423,30 @@ export function TravelWorkspace() {
           <aside className="space-y-6 lg:sticky lg:top-6 lg:self-start">
             <PreferenceEditor />
 
+            {hasNoRetrievedContext && (
+              <WarningNotice
+                title="No retrieved context"
+                message="Hệ thống đã phản hồi nhưng không tìm thấy dữ liệu phù hợp trong RAG. Câu trả lời chỉ nên xem là tham khảo."
+                suggestions={[
+                  "Kiểm tra data JSON đã có địa điểm/thành phố này chưa",
+                  "Chạy lại python -m scripts.ingest_rag",
+                  "Thử hỏi với thành phố đã có trong dữ liệu",
+                ]}
+              />
+            )}
+
+            {hasMissingMapCoordinates && (
+              <WarningNotice
+                title="Map missing coordinates"
+                message="Một số hoặc toàn bộ địa điểm chưa có latitude/longitude nên bản đồ có thể không hiển thị marker."
+                suggestions={[
+                  "Thêm latitude và longitude vào file JSON",
+                  "Chạy lại ingest RAG sau khi sửa dữ liệu",
+                  "Kiểm tra retriever.py có trả latitude/longitude chưa",
+                ]}
+              />
+            )}
+
             {lastRequest && (
               <AgentSummaryCard
                 city={requestSummary.city}
@@ -344,6 +454,13 @@ export function TravelWorkspace() {
                 style={requestSummary.style}
                 budget={requestSummary.budget}
                 ragCount={retrievedPlaces.length}
+              />
+            )}
+
+            {agentData?.grounding_guard && (
+              <HallucinationControlPanel
+                guard={agentData.grounding_guard}
+                postGuard={agentData.post_processing_guard}
               />
             )}
 
@@ -631,7 +748,9 @@ function buildRequestSummary(request: string, ragCount: number) {
         ? "Đà Nẵng"
         : normalized.includes("đà lạt") || normalized.includes("dalat")
           ? "Đà Lạt"
-          : "Chưa xác định";
+          : normalized.includes("hà nội") || normalized.includes("hanoi")
+            ? "Hà Nội"
+            : "Chưa xác định";
 
   const durationMatch = request.match(/(\d+)\s*(ngày|day)/i);
   const duration = durationMatch
@@ -642,6 +761,7 @@ function buildRequestSummary(request: string, ragCount: number) {
     normalized.includes("road trip") ? "road trip" : "",
     normalized.includes("thiên nhiên") ? "thiên nhiên" : "",
     normalized.includes("phố cổ") ? "phố cổ" : "",
+    normalized.includes("văn hóa") ? "văn hóa" : "",
     normalized.includes("cafe") || normalized.includes("cà phê")
       ? "cafe chill"
       : "",
