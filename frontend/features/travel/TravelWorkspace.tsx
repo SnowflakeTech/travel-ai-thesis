@@ -20,6 +20,7 @@ import { RetrievedPlacesPanel } from "@/components/travel/RetrievedPlacesPanel";
 import { HallucinationControlPanel } from "@/components/travel/HallucinationControlPanel";
 import { ErrorAlert } from "@/components/travel/ErrorAlert";
 import { WarningNotice } from "@/components/travel/WarningNotice";
+import { CompareSystemsPanel } from "@/components/travel/CompareSystemsPanel";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Textarea } from "@/components/ui/textarea";
@@ -37,6 +38,8 @@ import {
   WalletCards,
 } from "lucide-react";
 
+type WorkspaceTab = "chat" | "compare";
+
 export function TravelWorkspace() {
   const [backendStatus, setBackendStatus] = useState("Đang kiểm tra...");
   const [databaseStatus, setDatabaseStatus] = useState("Đang kiểm tra...");
@@ -46,6 +49,7 @@ export function TravelWorkspace() {
   const [agentData, setAgentData] = useState<AgentResponse | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [appError, setAppError] = useState<AppError | null>(null);
+  const [activeTab, setActiveTab] = useState<WorkspaceTab>("chat");
 
   const backendOnline =
     backendStatus !== "Đang kiểm tra..." &&
@@ -81,6 +85,7 @@ export function TravelWorkspace() {
     setLastRequest(trimmedInput);
     setInput("");
     setIsLoading(true);
+    setActiveTab("chat");
 
     try {
       const data = await sendAgentMessage(trimmedInput);
@@ -119,6 +124,7 @@ ${classifiedError.suggestions.map((item) => `- ${item}`).join("\n")}`,
 
     setInput(lastRequest);
     setAppError(null);
+    setActiveTab("chat");
   }
 
   async function handleRegenerateDay(day: number) {
@@ -126,6 +132,7 @@ ${classifiedError.suggestions.map((item) => `- ${item}`).join("\n")}`,
 
     setAppError(null);
     setIsLoading(true);
+    setActiveTab("chat");
 
     try {
       const data = await regenerateDay(day, lastRequest);
@@ -176,6 +183,7 @@ ${classifiedError.suggestions.map((item) => `- ${item}`).join("\n")}`,
 
     setAppError(null);
     setIsLoading(true);
+    setActiveTab("chat");
 
     try {
       const data = await optimizeRoute(lastRequest);
@@ -323,177 +331,209 @@ ${classifiedError.suggestions.map((item) => `- ${item}`).join("\n")}`,
           </div>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-          <section className="rounded-2xl border border-white/10 bg-white/10 p-5 shadow-2xl shadow-cyan-950/40 backdrop-blur-xl">
-            <div className="mb-5 flex items-center justify-between gap-4">
-              <div>
-                <h2 className="text-xl font-semibold">AI Travel Agent</h2>
-                <p className="text-sm text-slate-400">
-                  Chat với Agent và nhận lịch trình cá nhân hóa
-                </p>
-              </div>
+        <div className="mb-6 flex gap-2 rounded-2xl border border-white/10 bg-white/5 p-1 shadow-xl shadow-black/10 backdrop-blur">
+          <button
+            type="button"
+            onClick={() => setActiveTab("chat")}
+            className={`flex-1 rounded-xl px-4 py-3 text-sm font-medium transition ${
+              activeTab === "chat"
+                ? "bg-cyan-400 text-slate-950 shadow-lg shadow-cyan-950/30"
+                : "text-slate-300 hover:bg-white/10 hover:text-white"
+            }`}
+          >
+            AI Travel Agent
+          </button>
 
-              <div className="hidden rounded-full bg-cyan-400/10 px-3 py-1 text-xs text-cyan-200 md:block">
-                Ctrl + Enter để gửi
-              </div>
-            </div>
+          <button
+            type="button"
+            onClick={() => setActiveTab("compare")}
+            className={`flex-1 rounded-xl px-4 py-3 text-sm font-medium transition ${
+              activeTab === "compare"
+                ? "bg-violet-400 text-slate-950 shadow-lg shadow-violet-950/30"
+                : "text-slate-300 hover:bg-white/10 hover:text-white"
+            }`}
+          >
+            So sánh 3 hệ thống
+          </button>
+        </div>
 
-            <ScrollArea className="h-[480px] rounded-2xl border border-white/10 bg-slate-950/70 p-4">
-              <div className="space-y-4">
-                {messages.length === 0 && (
-                  <div className="space-y-4 rounded-2xl border border-dashed border-cyan-400/20 bg-cyan-400/10 p-5">
-                    <div>
-                      <p className="text-sm font-medium text-cyan-100">
-                        Gợi ý prompt demo
-                      </p>
-                      <p className="mt-1 text-sm leading-6 text-slate-300">
-                        Chọn một yêu cầu bên dưới để kiểm tra khả năng RAG,
-                        Agentic AI và cá nhân hóa lịch trình.
-                      </p>
-                    </div>
-
-                    <div className="grid gap-3 md:grid-cols-3">
-                      {quickPrompts.map((prompt) => (
-                        <button
-                          key={prompt}
-                          type="button"
-                          onClick={() => setInput(prompt)}
-                          className="rounded-2xl border border-white/10 bg-white/[0.04] p-4 text-left text-sm leading-6 text-slate-300 transition hover:border-cyan-400/40 hover:bg-cyan-400/10 hover:text-cyan-100"
-                        >
-                          {prompt}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {messages.map((message, index) => (
-                  <ChatBubble key={index} message={message} />
-                ))}
-
-                {appError && (
-                  <ErrorAlert
-                    error={appError}
-                    onClose={() => setAppError(null)}
-                    onRetry={handleRetryLastRequest}
-                  />
-                )}
-
-                {isLoading && (
-                  <>
-                    <TypingIndicator />
-                    <AgentWorkflowLoading />
-                  </>
-                )}
-              </div>
-            </ScrollArea>
-
-            <div className="mt-4 space-y-3">
-              <Textarea
-                value={input}
-                onChange={(event) => setInput(event.target.value)}
-                placeholder="Nhập yêu cầu du lịch của bạn..."
-                rows={4}
-                maxLength={1200}
-                className="resize-none border-white/10 bg-slate-950/70 text-white placeholder:text-slate-500"
-                onKeyDown={(event) => {
-                  if (event.key === "Enter" && event.ctrlKey) {
-                    handleSend();
-                  }
-                }}
-              />
-
-              <div className="flex items-center justify-between gap-3">
-                <p className="text-xs text-slate-500">
-                  Tối đa 1200 ký tự để tiết kiệm token free tier.
-                </p>
-
-                <Button
-                  onClick={handleSend}
-                  disabled={isLoading || !input.trim()}
-                  className="rounded-xl bg-cyan-400 text-slate-950 hover:bg-cyan-300"
-                >
-                  <Send className="mr-2 h-4 w-4" />
-                  {isLoading ? "Đang xử lý..." : "Gửi yêu cầu"}
-                </Button>
-              </div>
-            </div>
-          </section>
-
-          <aside className="space-y-6 lg:sticky lg:top-6 lg:self-start">
-            <PreferenceEditor />
-
-            {hasNoRetrievedContext && (
-              <WarningNotice
-                title="No retrieved context"
-                message="Hệ thống đã phản hồi nhưng không tìm thấy dữ liệu phù hợp trong RAG. Câu trả lời chỉ nên xem là tham khảo."
-                suggestions={[
-                  "Kiểm tra data JSON đã có địa điểm/thành phố này chưa",
-                  "Chạy lại python -m scripts.ingest_rag",
-                  "Thử hỏi với thành phố đã có trong dữ liệu",
-                ]}
-              />
-            )}
-
-            {hasMissingMapCoordinates && (
-              <WarningNotice
-                title="Map missing coordinates"
-                message="Một số hoặc toàn bộ địa điểm chưa có latitude/longitude nên bản đồ có thể không hiển thị marker."
-                suggestions={[
-                  "Thêm latitude và longitude vào file JSON",
-                  "Chạy lại ingest RAG sau khi sửa dữ liệu",
-                  "Kiểm tra retriever.py có trả latitude/longitude chưa",
-                ]}
-              />
-            )}
-
-            {lastRequest && (
-              <AgentSummaryCard
-                city={requestSummary.city}
-                duration={requestSummary.duration}
-                style={requestSummary.style}
-                budget={requestSummary.budget}
-                ragCount={retrievedPlaces.length}
-              />
-            )}
-
-            {agentData?.grounding_guard && (
-              <HallucinationControlPanel
-                guard={agentData.grounding_guard}
-                postGuard={agentData.post_processing_guard}
-              />
-            )}
-
-            {isLoading && <AgentWorkflowCard />}
-
-            {retrievedPlaces.length > 0 ? (
-              <>
-                <RagEvidenceCard places={retrievedPlaces} />
-
-                <ItineraryTimeline
-                  places={retrievedPlaces}
-                  onRegenerateDay={handleRegenerateDay}
-                  onOptimizeRoute={handleOptimizeRoute}
-                />
-
-                <TravelMap places={retrievedPlaces} />
-
-                <RetrievedPlacesPanel places={retrievedPlaces} />
-              </>
-            ) : (
-              <div className="rounded-2xl border border-white/10 bg-white/10 p-5 text-white shadow-2xl shadow-black/20 backdrop-blur-xl">
-                <div className="mb-3 flex items-center gap-2">
-                  <Route className="h-5 w-5 text-violet-300" />
-                  <h2 className="text-xl font-semibold">Demo Workspace</h2>
+        <div className={activeTab === "chat" ? "block" : "hidden"}>
+          <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+            <section className="rounded-2xl border border-white/10 bg-white/10 p-5 shadow-2xl shadow-cyan-950/40 backdrop-blur-xl">
+              <div className="mb-5 flex items-center justify-between gap-4">
+                <div>
+                  <h2 className="text-xl font-semibold">AI Travel Agent</h2>
+                  <p className="text-sm text-slate-400">
+                    Chat với Agent và nhận lịch trình cá nhân hóa
+                  </p>
                 </div>
 
-                <p className="text-sm leading-6 text-slate-400">
-                  Sau khi gửi yêu cầu, khu vực này sẽ hiển thị timeline, bản đồ,
-                  retrieved contexts và các nút tương tác với lịch trình.
-                </p>
+                <div className="hidden rounded-full bg-cyan-400/10 px-3 py-1 text-xs text-cyan-200 md:block">
+                  Ctrl + Enter để gửi
+                </div>
               </div>
-            )}
-          </aside>
+
+              <ScrollArea className="h-[480px] rounded-2xl border border-white/10 bg-slate-950/70 p-4">
+                <div className="space-y-4">
+                  {messages.length === 0 && (
+                    <div className="space-y-4 rounded-2xl border border-dashed border-cyan-400/20 bg-cyan-400/10 p-5">
+                      <div>
+                        <p className="text-sm font-medium text-cyan-100">
+                          Gợi ý prompt demo
+                        </p>
+                        <p className="mt-1 text-sm leading-6 text-slate-300">
+                          Chọn một yêu cầu bên dưới để kiểm tra khả năng RAG,
+                          Agentic AI và cá nhân hóa lịch trình.
+                        </p>
+                      </div>
+
+                      <div className="grid gap-3 md:grid-cols-3">
+                        {quickPrompts.map((prompt) => (
+                          <button
+                            key={prompt}
+                            type="button"
+                            onClick={() => setInput(prompt)}
+                            className="rounded-2xl border border-white/10 bg-white/[0.04] p-4 text-left text-sm leading-6 text-slate-300 transition hover:border-cyan-400/40 hover:bg-cyan-400/10 hover:text-cyan-100"
+                          >
+                            {prompt}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {messages.map((message, index) => (
+                    <ChatBubble key={index} message={message} />
+                  ))}
+
+                  {appError && (
+                    <ErrorAlert
+                      error={appError}
+                      onClose={() => setAppError(null)}
+                      onRetry={handleRetryLastRequest}
+                    />
+                  )}
+
+                  {isLoading && (
+                    <>
+                      <TypingIndicator />
+                      <AgentWorkflowLoading />
+                    </>
+                  )}
+                </div>
+              </ScrollArea>
+
+              <div className="mt-4 space-y-3">
+                <Textarea
+                  value={input}
+                  onChange={(event) => setInput(event.target.value)}
+                  placeholder="Nhập yêu cầu du lịch của bạn..."
+                  rows={4}
+                  maxLength={1200}
+                  className="resize-none border-white/10 bg-slate-950/70 text-white placeholder:text-slate-500"
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter" && event.ctrlKey) {
+                      handleSend();
+                    }
+                  }}
+                />
+
+                <div className="flex items-center justify-between gap-3">
+                  <p className="text-xs text-slate-500">
+                    Tối đa 1200 ký tự để tiết kiệm token free tier.
+                  </p>
+
+                  <Button
+                    onClick={handleSend}
+                    disabled={isLoading || !input.trim()}
+                    className="rounded-xl bg-cyan-400 text-slate-950 hover:bg-cyan-300"
+                  >
+                    <Send className="mr-2 h-4 w-4" />
+                    {isLoading ? "Đang xử lý..." : "Gửi yêu cầu"}
+                  </Button>
+                </div>
+              </div>
+            </section>
+
+            <aside className="space-y-6 lg:sticky lg:top-6 lg:self-start">
+              <PreferenceEditor />
+
+              {hasNoRetrievedContext && (
+                <WarningNotice
+                  title="No retrieved context"
+                  message="Hệ thống đã phản hồi nhưng không tìm thấy dữ liệu phù hợp trong RAG. Câu trả lời chỉ nên xem là tham khảo."
+                  suggestions={[
+                    "Kiểm tra data JSON đã có địa điểm/thành phố này chưa",
+                    "Chạy lại python -m scripts.ingest_rag",
+                    "Thử hỏi với thành phố đã có trong dữ liệu",
+                  ]}
+                />
+              )}
+
+              {hasMissingMapCoordinates && (
+                <WarningNotice
+                  title="Map missing coordinates"
+                  message="Một số hoặc toàn bộ địa điểm chưa có latitude/longitude nên bản đồ có thể không hiển thị marker."
+                  suggestions={[
+                    "Thêm latitude và longitude vào file JSON",
+                    "Chạy lại ingest RAG sau khi sửa dữ liệu",
+                    "Kiểm tra retriever.py có trả latitude/longitude chưa",
+                  ]}
+                />
+              )}
+
+              {lastRequest && (
+                <AgentSummaryCard
+                  city={requestSummary.city}
+                  duration={requestSummary.duration}
+                  style={requestSummary.style}
+                  budget={requestSummary.budget}
+                  ragCount={retrievedPlaces.length}
+                />
+              )}
+
+              {agentData?.grounding_guard && (
+                <HallucinationControlPanel
+                  guard={agentData.grounding_guard}
+                  postGuard={agentData.post_processing_guard}
+                />
+              )}
+
+              {isLoading && <AgentWorkflowCard />}
+
+              {retrievedPlaces.length > 0 ? (
+                <>
+                  <RagEvidenceCard places={retrievedPlaces} />
+
+                  <ItineraryTimeline
+                    places={retrievedPlaces}
+                    onRegenerateDay={handleRegenerateDay}
+                    onOptimizeRoute={handleOptimizeRoute}
+                  />
+
+                  <TravelMap places={retrievedPlaces} />
+
+                  <RetrievedPlacesPanel places={retrievedPlaces} />
+                </>
+              ) : (
+                <div className="rounded-2xl border border-white/10 bg-white/10 p-5 text-white shadow-2xl shadow-black/20 backdrop-blur-xl">
+                  <div className="mb-3 flex items-center gap-2">
+                    <Route className="h-5 w-5 text-violet-300" />
+                    <h2 className="text-xl font-semibold">Demo Workspace</h2>
+                  </div>
+
+                  <p className="text-sm leading-6 text-slate-400">
+                    Sau khi gửi yêu cầu, khu vực này sẽ hiển thị timeline, bản
+                    đồ, retrieved contexts và các nút tương tác với lịch trình.
+                  </p>
+                </div>
+              )}
+            </aside>
+          </div>
+        </div>
+
+        <div className={activeTab === "compare" ? "block" : "hidden"}>
+          <CompareSystemsPanel lastRequest={lastRequest} />
         </div>
 
         <FooterInfo />
@@ -740,17 +780,21 @@ function FooterInfo() {
 function buildRequestSummary(request: string, ragCount: number) {
   const normalized = request.toLowerCase();
 
-  const city = normalized.includes("hà giang")
-    ? "Hà Giang"
-    : normalized.includes("hội an")
-      ? "Hội An"
-      : normalized.includes("đà nẵng") || normalized.includes("danang")
-        ? "Đà Nẵng"
-        : normalized.includes("đà lạt") || normalized.includes("dalat")
-          ? "Đà Lạt"
-          : normalized.includes("hà nội") || normalized.includes("hanoi")
-            ? "Hà Nội"
-            : "Chưa xác định";
+  const city = normalized.includes("hải dương")
+    ? "Hải Dương"
+    : normalized.includes("hai duong")
+      ? "Hải Dương"
+      : normalized.includes("hà giang")
+        ? "Hà Giang"
+        : normalized.includes("hội an")
+          ? "Hội An"
+          : normalized.includes("đà nẵng") || normalized.includes("danang")
+            ? "Đà Nẵng"
+            : normalized.includes("đà lạt") || normalized.includes("dalat")
+              ? "Đà Lạt"
+              : normalized.includes("hà nội") || normalized.includes("hanoi")
+                ? "Hà Nội"
+                : "Chưa xác định";
 
   const durationMatch = request.match(/(\d+)\s*(ngày|day)/i);
   const duration = durationMatch
@@ -762,6 +806,8 @@ function buildRequestSummary(request: string, ragCount: number) {
     normalized.includes("thiên nhiên") ? "thiên nhiên" : "",
     normalized.includes("phố cổ") ? "phố cổ" : "",
     normalized.includes("văn hóa") ? "văn hóa" : "",
+    normalized.includes("lịch sử") ? "lịch sử" : "",
+    normalized.includes("di tích") ? "di tích" : "",
     normalized.includes("cafe") || normalized.includes("cà phê")
       ? "cafe chill"
       : "",

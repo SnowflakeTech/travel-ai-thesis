@@ -35,6 +35,9 @@ def detect_city(query: str) -> str | None:
         "hà giang": "hà giang",
         "ha giang": "hà giang",
         "hagiang": "hà giang",
+        "hải dương": "hải dương",
+        "hai duong": "hải dương",
+        "haiduong": "hải dương",
     }
 
     for keyword, city in city_keywords.items():

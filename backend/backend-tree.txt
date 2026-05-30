@@ -1,0 +1,261 @@
+Folder PATH listing
+Volume serial number is C410-AD4B
+C:\USERS\SONDE\DESKTOP\TRAVEL-AI-THESIS\BACKEND
+|   .dockerignore
+|   .env
+|   .env.docker
+|   .env.example
+|   alembic.ini
+|   backend-tree.txt
+|   Dockerfile
+|   requirements.txt
+|   
++---.cache
+|   \---routes
+|           cache.db
+|           cache.db-shm
+|           cache.db-wal
+|           
++---alembic
+|   |   env.py
+|   |   README
+|   |   script.py.mako
+|   |   
+|   +---versions
+|   |   |   493fff473d57_create_users_table.py
+|   |   |   53a1ff755a59_create_user_memories_table.py
+|   |   |   
+|   |   \---__pycache__
+|   |           493fff473d57_create_users_table.cpython-311.pyc
+|   |           53a1ff755a59_create_user_memories_table.cpython-311.pyc
+|   |           
+|   \---__pycache__
+|           env.cpython-311.pyc
+|           
++---app
+|   |   main.py
+|   |   __init__.py
+|   |   
+|   +---agents
+|   |   |   budget_agent.py
+|   |   |   critic_agent.py
+|   |   |   grounding_guard.py
+|   |   |   planner_agent.py
+|   |   |   retrieval_agent.py
+|   |   |   route_agent.py
+|   |   |   state.py
+|   |   |   travel_graph.py
+|   |   |   __init__.py
+|   |   |   
+|   |   \---__pycache__
+|   |           budget_agent.cpython-311.pyc
+|   |           critic_agent.cpython-311.pyc
+|   |           grounding_guard.cpython-311.pyc
+|   |           planner_agent.cpython-311.pyc
+|   |           retrieval_agent.cpython-311.pyc
+|   |           route_agent.cpython-311.pyc
+|   |           state.cpython-311.pyc
+|   |           travel_graph.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |           
+|   +---ai
+|   |   |   gemini_client.py
+|   |   |   prompts.py
+|   |   |   __init__.py
+|   |   |   
+|   |   \---__pycache__
+|   |           gemini_client.cpython-311.pyc
+|   |           prompts.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |           
+|   +---api
+|   |   |   __init__.py
+|   |   |   
+|   |   +---routes
+|   |   |   |   agent.py
+|   |   |   |   chat.py
+|   |   |   |   db_health.py
+|   |   |   |   health.py
+|   |   |   |   interactive.py
+|   |   |   |   memory.py
+|   |   |   |   __init__.py
+|   |   |   |   
+|   |   |   \---__pycache__
+|   |   |           agent.cpython-311.pyc
+|   |   |           chat.cpython-311.pyc
+|   |   |           chat.cpython-313.pyc
+|   |   |           db_health.cpython-311.pyc
+|   |   |           db_health.cpython-313.pyc
+|   |   |           health.cpython-311.pyc
+|   |   |           health.cpython-313.pyc
+|   |   |           interactive.cpython-311.pyc
+|   |   |           memory.cpython-311.pyc
+|   |   |           __init__.cpython-311.pyc
+|   |   |           __init__.cpython-313.pyc
+|   |   |           
+|   |   \---__pycache__
+|   |           __init__.cpython-311.pyc
+|   |           __init__.cpython-313.pyc
+|   |           
+|   +---core
+|   |   |   config.py
+|   |   |   logging.py
+|   |   |   security.py
+|   |   |   __init__.py
+|   |   |   
+|   |   \---__pycache__
+|   |           config.cpython-311.pyc
+|   |           config.cpython-313.pyc
+|   |           logging.cpython-311.pyc
+|   |           logging.cpython-313.pyc
+|   |           security.cpython-311.pyc
+|   |           security.cpython-313.pyc
+|   |           __init__.cpython-311.pyc
+|   |           __init__.cpython-313.pyc
+|   |           
+|   +---db
+|   |   |   base.py
+|   |   |   session.py
+|   |   |   __init__.py
+|   |   |   
+|   |   \---__pycache__
+|   |           base.cpython-311.pyc
+|   |           session.cpython-311.pyc
+|   |           session.cpython-313.pyc
+|   |           __init__.cpython-311.pyc
+|   |           __init__.cpython-313.pyc
+|   |           
+|   +---memory
+|   |   |   extractor.py
+|   |   |   schemas.py
+|   |   |   service.py
+|   |   |   __init__.py
+|   |   |   
+|   |   \---__pycache__
+|   |           extractor.cpython-311.pyc
+|   |           schemas.cpython-311.pyc
+|   |           service.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |           
+|   +---models
+|   |   |   user.py
+|   |   |   user_memory.py
+|   |   |   __init__.py
+|   |   |   
+|   |   \---__pycache__
+|   |           user.cpython-311.pyc
+|   |           user_memory.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |           
+|   +---rag
+|   |   |   chunking.py
+|   |   |   cleaning.py
+|   |   |   data_loader.py
+|   |   |   embedding.py
+|   |   |   qdrant_store.py
+|   |   |   retriever.py
+|   |   |   __init__.py
+|   |   |   
+|   |   \---__pycache__
+|   |           chunking.cpython-311.pyc
+|   |           cleaning.cpython-311.pyc
+|   |           cleaning.cpython-313.pyc
+|   |           data_loader.cpython-311.pyc
+|   |           embedding.cpython-311.pyc
+|   |           embedding.cpython-313.pyc
+|   |           qdrant_store.cpython-311.pyc
+|   |           retriever.cpython-311.pyc
+|   |           retriever.cpython-313.pyc
+|   |           __init__.cpython-311.pyc
+|   |           __init__.cpython-313.pyc
+|   |           
+|   +---schemas
+|   |   |   chat.py
+|   |   |   __init__.py
+|   |   |   
+|   |   \---__pycache__
+|   |           chat.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |           
+|   +---services
+|   |   |   chat_service.py
+|   |   |   destination_guard.py
+|   |   |   hallucination_guard.py
+|   |   |   route_service.py
+|   |   |   __init__.py
+|   |   |   
+|   |   \---__pycache__
+|   |           chat_service.cpython-311.pyc
+|   |           hallucination_guard.cpython-311.pyc
+|   |           route_service.cpython-311.pyc
+|   |           __init__.cpython-311.pyc
+|   |           
+|   \---__pycache__
+|           main.cpython-311.pyc
+|           main.cpython-313.pyc
+|           __init__.cpython-311.pyc
+|           __init__.cpython-313.pyc
+|           
++---data
+|   +---processed
+|   \---raw
+|       +---dalat
+|       |       attractions.json
+|       |       cafes.json
+|       |       
+|       +---danang
+|       |       attractions.json
+|       |       beaches.json
+|       |       cafes.json
+|       |       food.json
+|       |       
+|       +---hagiang
+|       |       adventures.json
+|       |       attractions.json
+|       |       food.json
+|       |       itinerary_samples.json
+|       |       
+|       +---hanoi
+|       |       attractions.json
+|       |       culture.json
+|       |       food.json
+|       |       old_quarter.json
+|       |       
+|       \---hoian
+|               attractions.json
+|               experiences.json
+|               food.json
+|               old_town.json
+|               
++---evaluation
+|   |   analyze_results.py
+|   |   run_generation_eval.py
+|   |   run_memory_eval.py
+|   |   run_retrieval_eval.py
+|   |   
+|   +---datasets
+|   |       generation_eval_questions.json
+|   |       retrieval_eval_questions.json
+|   |       
+|   +---reports
+|   |       evaluation_summary.json
+|   |       
+|   \---results
+|           generation_results.json
+|           generation_scores.csv
+|           memory_eval_results.json
+|           retrieval_results.json
+|           
+\---scripts
+    |   crawl_vietnam_travel_hagiang.py
+    |   ingest_rag.py
+    |   test_agent.py
+    |   test_retrieval.py
+    |   __init__.py
+    |   
+    \---__pycache__
+            crawl_vietnam_travel_hagiang.cpython-311.pyc
+            ingest_rag.cpython-311.pyc
+            test_retrieval.cpython-311.pyc
+            __init__.cpython-311.pyc
+            

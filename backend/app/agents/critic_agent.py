@@ -18,6 +18,7 @@ def compact_contexts(
         compacted.append(
             {
                 "title": item.get("title"),
+                "city": item.get("city"),
                 "category": item.get("category"),
                 "address": item.get("address"),
                 "best_time": item.get("best_time"),
@@ -71,6 +72,18 @@ def extract_available_categories(contexts: list[dict[str, Any]]) -> list[str]:
     return categories
 
 
+def extract_budget_texts(contexts: list[dict[str, Any]]) -> list[str]:
+    budget_texts = []
+
+    for item in contexts:
+        budget = item.get("budget")
+
+        if isinstance(budget, str) and budget.strip() and budget not in budget_texts:
+            budget_texts.append(budget.strip())
+
+    return budget_texts
+
+
 def build_allowed_place_names(
     grounding_guard: dict[str, Any],
     available_titles: list[str],
@@ -94,8 +107,39 @@ def build_post_guard_info(
         "removed_items": sanitized.get("removed_items", []),
         "warnings": sanitized.get("warnings", []),
         "blocked_items": sanitized.get("blocked_items", []),
+        "violations": sanitized.get("violations", []),
+        "safety_notice_added": sanitized.get("safety_notice_added", False),
         "guard_applied": True,
     }
+
+
+def build_no_context_answer(
+    user_request: str,
+    grounding_guard: dict[str, Any],
+) -> str:
+    warnings = grounding_guard.get("warnings", [])
+
+    supported_hint = (
+        "Bạn có thể thử lại với các địa phương đã có trong dữ liệu như Đà Lạt, "
+        "Đà Nẵng, Hội An, Hà Nội, Hà Giang hoặc Hải Dương."
+    )
+
+    if warnings:
+        warning_text = "\n".join(f"- {warning}" for warning in warnings)
+    else:
+        warning_text = "- Không tìm thấy retrieved contexts phù hợp trong kho tri thức."
+
+    return f"""
+Hệ thống hiện chưa có đủ dữ liệu phù hợp để tạo lịch trình chi tiết cho yêu cầu này, nên mình sẽ không tự tạo lịch trình để tránh bịa thông tin.
+
+Yêu cầu đã nhận:
+{user_request}
+
+Lý do:
+{warning_text}
+
+{supported_hint}
+""".strip()
 
 
 async def critic_agent(state: TravelAgentState) -> TravelAgentState:
@@ -111,13 +155,39 @@ async def critic_agent(state: TravelAgentState) -> TravelAgentState:
     contexts = compact_contexts(raw_contexts, max_items=10)
     available_titles = extract_available_titles(raw_contexts)
     available_categories = extract_available_categories(raw_contexts)
+    available_budget_texts = extract_budget_texts(raw_contexts)
     route_plan = compact_route_plan(state.get("route_plan", {}))
     budget_plan = state.get("budget_plan", {})
     grounding_guard = state.get("grounding_guard", {})
+
     allowed_place_names = build_allowed_place_names(
         grounding_guard=grounding_guard,
         available_titles=available_titles,
     )
+
+    if not raw_contexts:
+        raw_answer = build_no_context_answer(
+            user_request=user_request,
+            grounding_guard=grounding_guard,
+        )
+
+        sanitized = sanitize_final_answer(
+            answer=raw_answer,
+            grounding_guard=grounding_guard,
+            allowed_budget_texts=available_budget_texts,
+        )
+
+        post_guard_info = build_post_guard_info(
+            sanitized=sanitized,
+            raw_answer=raw_answer,
+        )
+
+        return {
+            **state,
+            "critique": "Workflow dừng tạo lịch trình chi tiết vì không có retrieved contexts phù hợp.",
+            "final_answer": sanitized.get("answer", raw_answer),
+            "post_processing_guard": post_guard_info,
+        }
 
     prompt = f"""
 Bạn là Critic Agent trong hệ thống AI Travel Planner.
@@ -131,19 +201,24 @@ DANH SÁCH TÊN ĐƯỢC PHÉP SỬ DỤNG:
 DANH SÁCH NHÓM DỮ LIỆU HIỆN CÓ:
 {available_categories}
 
+DANH SÁCH NGÂN SÁCH ĐƯỢC PHÉP TRÍCH DẪN:
+{available_budget_texts}
+
 QUY TẮC CHỐNG HALLUCINATION BẮT BUỘC:
 1. Chỉ được đề xuất các địa điểm, món ăn, trải nghiệm có trong DANH SÁCH TÊN ĐƯỢC PHÉP SỬ DỤNG.
 2. Không tự thêm địa điểm mới nếu địa điểm đó không có trong retrieved_contexts.
 3. Không bịa giá vé, giờ mở cửa, tình trạng đông khách, thời tiết, kẹt xe hoặc dữ liệu thời gian thực.
 4. Nếu dữ liệu không đủ, phải nói rõ: "Hệ thống hiện chưa có đủ dữ liệu để khẳng định chi tiết này."
-5. Nếu route_provider là "haversine_fallback", phải nói rõ khoảng cách chỉ là ước lượng theo đường thẳng, không phải tuyến đường thực tế.
+5. Nếu route_provider là "haversine_fallback", chỉ nói một lần rằng khoảng cách là ước lượng theo đường thẳng, không phải tuyến đường thực tế.
 6. Nếu không có retrieved_contexts, không được tạo lịch trình chi tiết như thể đã có dữ liệu.
-7. Khi nêu ngân sách, chỉ được nói ở mức tham khảo dựa trên dữ liệu đã có.
-8. Không dùng các cụm khẳng định tuyệt đối như "chắc chắn", "đảm bảo", "đang mở cửa", "giá chính xác".
-9. Không dùng câu chung chung như "các điểm nổi tiếng khác", "khám phá thêm", "những quán ngon khác" nếu không nêu được tên cụ thể trong retrieved_contexts.
-10. Nếu không thấy một món ăn trong retrieved_contexts, không được liệt kê món đó trong phần đặc sản.
-11. Nếu không thấy một địa điểm trong retrieved_contexts, không được đưa địa điểm đó vào lịch trình.
-12. Nếu có cảnh báo trong grounding_guard, phải tôn trọng cảnh báo đó khi tạo câu trả lời.
+7. Khi nêu ngân sách, chỉ được dùng đúng nội dung trong DANH SÁCH NGÂN SÁCH ĐƯỢC PHÉP TRÍCH DẪN.
+8. Nếu budget trong dữ liệu ghi "Tùy...", "Miễn phí", "Tùy chi phí cá nhân", chỉ được diễn giải ở mức chung, không được tự suy ra số tiền.
+9. Không dùng các cụm khẳng định tuyệt đối như "chắc chắn", "đảm bảo", "đang mở cửa", "giá chính xác".
+10. Không dùng câu chung chung như "các điểm nổi tiếng khác", "khám phá thêm", "những quán ngon khác" nếu không nêu được tên cụ thể trong retrieved_contexts.
+11. Nếu không thấy một món ăn trong retrieved_contexts, không được liệt kê món đó trong phần đặc sản.
+12. Nếu không thấy một địa điểm trong retrieved_contexts, không được đưa địa điểm đó vào lịch trình.
+13. Nếu có cảnh báo trong grounding_guard, phải tôn trọng cảnh báo đó khi tạo câu trả lời.
+14. Không lặp lại phần "Lưu ý về dữ liệu" nhiều lần.
 
 QUY TẮC DÙNG MEMORY:
 1. Nếu user_memories có sở thích liên quan như cafe chill, thiên nhiên, biển, văn hóa, ẩm thực, ít đi bộ, ngân sách thấp, hãy ưu tiên khi chọn và diễn giải lịch trình.
@@ -219,10 +294,11 @@ Grounding guard:
 YÊU CẦU ĐẦU RA:
 - Trả lời bằng tiếng Việt.
 - Có cấu trúc rõ ràng.
-- Có phần "Lưu ý về dữ liệu" ở cuối nếu có cảnh báo trong grounding_guard.
+- Chỉ có một phần "Lưu ý về dữ liệu" ở cuối nếu cần.
 - Không nhắc đến tên kỹ thuật như RAG, Haversine, Qdrant nếu không cần.
 - Nếu cần nói về route_provider haversine_fallback, hãy diễn đạt dễ hiểu là: "khoảng cách chỉ là ước lượng theo đường thẳng, không phải tuyến đường thực tế".
 - Không đề xuất bất kỳ địa điểm, món ăn, hoạt động hoặc trải nghiệm nào ngoài DANH SÁCH TÊN ĐƯỢC PHÉP SỬ DỤNG.
+- Không tự tạo con số ngân sách nếu con số đó không xuất hiện trong retrieved_contexts.
 """.strip()
 
     response = await client.aio.models.generate_content(
@@ -242,6 +318,7 @@ YÊU CẦU ĐẦU RA:
     sanitized = sanitize_final_answer(
         answer=raw_answer,
         grounding_guard=grounding_guard,
+        allowed_budget_texts=available_budget_texts,
     )
 
     post_guard_info = build_post_guard_info(

@@ -15,6 +15,22 @@ FORBIDDEN_REALTIME_PATTERNS = [
     r"\bcam kết\b",
 ]
 
+MONEY_PATTERN = re.compile(
+    r"(\d{1,3}(?:[.,]\d{3})+|\d+)\s*(vnd|vnđ|đồng|k|nghìn|triệu)",
+    flags=re.IGNORECASE,
+)
+
+PRICE_KEYWORDS = [
+    "giá",
+    "giá vé",
+    "vé",
+    "chi phí",
+    "ngân sách",
+    "gửi xe",
+    "phí",
+    "dao động",
+    "khoảng",
+]
 
 DEFAULT_REALTIME_NOTICE = (
     "Một số thông tin thời gian thực như giá vé, giờ mở cửa, tình trạng đông khách "
@@ -23,7 +39,7 @@ DEFAULT_REALTIME_NOTICE = (
 
 NO_CONTEXT_NOTICE = (
     "Hệ thống hiện chưa có đủ dữ liệu du lịch phù hợp trong kho tri thức, "
-    "vì vậy gợi ý trên chỉ nên xem là tham khảo."
+    "vì vậy hệ thống không tạo lịch trình chi tiết để tránh bịa thông tin."
 )
 
 ROUTE_ESTIMATE_NOTICE = (
@@ -33,9 +49,6 @@ ROUTE_ESTIMATE_NOTICE = (
 
 
 def find_forbidden_realtime_claims(answer: str) -> list[str]:
-    """
-    Tìm các cụm từ có nguy cơ tạo cảm giác thông tin thời gian thực hoặc cam kết tuyệt đối.
-    """
     violations: list[str] = []
 
     if not answer:
@@ -50,14 +63,76 @@ def find_forbidden_realtime_claims(answer: str) -> list[str]:
     return violations
 
 
+def normalize_text(text: str) -> str:
+    return re.sub(r"\s+", " ", text.lower().strip())
+
+
+def is_money_line_allowed(
+    line: str,
+    allowed_budget_texts: list[str] | None,
+) -> bool:
+    if not MONEY_PATTERN.search(line):
+        return True
+
+    line_lower = normalize_text(line)
+    allowed_budget_texts = allowed_budget_texts or []
+
+    for budget in allowed_budget_texts:
+        budget_lower = normalize_text(budget)
+
+        if not budget_lower:
+            continue
+
+        if budget_lower in line_lower or line_lower in budget_lower:
+            return True
+
+    if "miễn phí" in line_lower:
+        return True
+
+    return False
+
+
+def remove_untrusted_price_lines(
+    answer: str,
+    allowed_budget_texts: list[str] | None,
+) -> tuple[str, list[str]]:
+    if not answer:
+        return answer, []
+
+    cleaned_lines = []
+    removed_lines = []
+
+    for line in answer.splitlines():
+        line_lower = normalize_text(line)
+        has_price_keyword = any(keyword in line_lower for keyword in PRICE_KEYWORDS)
+        has_money = MONEY_PATTERN.search(line) is not None
+
+        if has_price_keyword and has_money:
+            if not is_money_line_allowed(line, allowed_budget_texts):
+                removed_lines.append(line.strip())
+                continue
+
+        cleaned_lines.append(line)
+
+    return "\n".join(cleaned_lines).strip(), removed_lines
+
+
+def normalize_route_notice(notice: str) -> str:
+    notice_lower = notice.lower()
+
+    if "haversine" in notice_lower or "ước lượng theo đường thẳng" in notice_lower:
+        return ROUTE_ESTIMATE_NOTICE
+
+    return notice.strip()
+
+
 def build_safety_notices(
     violations: list[str],
     grounding_guard: dict[str, Any] | None,
+    removed_price_lines: list[str] | None = None,
 ) -> list[str]:
-    """
-    Gom toàn bộ cảnh báo cần thêm vào câu trả lời cuối.
-    """
     grounding_guard = grounding_guard or {}
+    removed_price_lines = removed_price_lines or []
 
     notices: list[str] = []
 
@@ -68,6 +143,11 @@ def build_safety_notices(
     if violations:
         notices.append(DEFAULT_REALTIME_NOTICE)
 
+    if removed_price_lines:
+        notices.append(
+            "Một số dòng có con số chi phí không xuất hiện trong dữ liệu nguồn đã được loại bỏ để tránh bịa giá."
+        )
+
     if not has_context:
         notices.append(NO_CONTEXT_NOTICE)
 
@@ -76,58 +156,113 @@ def build_safety_notices(
 
     for warning in warnings:
         if isinstance(warning, str) and warning.strip():
-            notices.append(warning.strip())
+            notices.append(normalize_route_notice(warning))
 
-    # Loại trùng cảnh báo nhưng vẫn giữ thứ tự
     unique_notices: list[str] = []
+    seen = set()
+
     for notice in notices:
-        if notice not in unique_notices:
+        normalized = normalize_text(notice)
+
+        if normalized not in seen:
             unique_notices.append(notice)
+            seen.add(normalized)
 
     return unique_notices
 
 
-def append_safety_notices(answer: str, notices: list[str]) -> str:
-    """
-    Thêm phần lưu ý vào cuối câu trả lời.
-    Chỉ thêm nếu câu trả lời chưa có mục 'Lưu ý về dữ liệu'.
-    """
-    if not notices:
-        return answer
+def answer_has_data_notice(answer: str) -> bool:
+    answer_lower = answer.lower()
 
-    if "## Lưu ý về dữ liệu" in answer:
-        return answer
+    return (
+        "lưu ý về dữ liệu" in answer_lower
+        or "lưu ý dữ liệu" in answer_lower
+        or "## lưu ý" in answer_lower
+    )
+
+
+def append_safety_notices(answer: str, notices: list[str]) -> str:
+    if not notices:
+        return answer.strip()
+
+    if answer_has_data_notice(answer):
+        return answer.strip()
 
     notice_text = "\n\n## Lưu ý về dữ liệu\n" + "\n".join(
-        f"- {notice}" for notice in notices
+        f"- {notice}" for notice in notices[:3]
     )
 
     return answer.strip() + notice_text
 
 
+def sanitize_haversine_wording(answer: str) -> str:
+    replacements = {
+        "Haversine fallback": "ước lượng theo đường thẳng",
+        "haversine_fallback": "ước lượng theo đường thẳng",
+        "Haversine": "ước lượng theo đường thẳng",
+        "Qdrant": "kho tri thức",
+        "RAG": "dữ liệu truy xuất",
+    }
+
+    sanitized = answer
+
+    for old, new in replacements.items():
+        sanitized = sanitized.replace(old, new)
+
+    return sanitized
+
+
 def sanitize_final_answer(
     answer: str,
     grounding_guard: dict[str, Any] | None = None,
+    allowed_budget_texts: list[str] | None = None,
 ) -> dict[str, Any]:
-    """
-    Post-processing guard cho câu trả lời cuối của Agent.
-
-    Chức năng:
-    1. Phát hiện các claim dễ gây hallucination về dữ liệu thời gian thực.
-    2. Thêm cảnh báo nếu route chỉ là ước lượng.
-    3. Thêm cảnh báo nếu thiếu retrieved contexts.
-    4. Trả về câu trả lời đã được bổ sung safety notice.
-    """
     answer = answer or ""
 
-    violations = find_forbidden_realtime_claims(answer)
+    grounding_guard = grounding_guard or {}
+
+    if grounding_guard.get("has_retrieved_contexts") is False:
+        violations = find_forbidden_realtime_claims(answer)
+        cleaned_answer = sanitize_haversine_wording(answer)
+
+        notices = build_safety_notices(
+            violations=violations,
+            grounding_guard=grounding_guard,
+            removed_price_lines=[],
+        )
+
+        sanitized_answer = append_safety_notices(
+            answer=cleaned_answer,
+            notices=notices,
+        )
+
+        return {
+            "answer": sanitized_answer,
+            "violations": violations,
+            "safety_notice_added": sanitized_answer != answer,
+            "notices": notices,
+            "removed_items": [],
+            "warnings": notices,
+            "blocked_items": [],
+        }
+
+    answer_without_untrusted_prices, removed_price_lines = remove_untrusted_price_lines(
+        answer=answer,
+        allowed_budget_texts=allowed_budget_texts,
+    )
+
+    cleaned_answer = sanitize_haversine_wording(answer_without_untrusted_prices)
+
+    violations = find_forbidden_realtime_claims(cleaned_answer)
+
     notices = build_safety_notices(
         violations=violations,
         grounding_guard=grounding_guard,
+        removed_price_lines=removed_price_lines,
     )
 
     sanitized_answer = append_safety_notices(
-        answer=answer,
+        answer=cleaned_answer,
         notices=notices,
     )
 
@@ -136,4 +271,7 @@ def sanitize_final_answer(
         "violations": violations,
         "safety_notice_added": sanitized_answer != answer,
         "notices": notices,
+        "removed_items": removed_price_lines,
+        "warnings": notices,
+        "blocked_items": removed_price_lines,
     }

@@ -1,0 +1,97 @@
+[
+  {
+    "title": "Hồ Tuyền Lâm",
+    "city": "Đà Lạt",
+    "category": "thiên nhiên",
+    "address": "Đà Lạt, Lâm Đồng",
+    "best_time": "Sáng hoặc chiều mát",
+    "budget": "Vé tham quan bến thuyền: Miễn phí. Vé thuê thuyền máy dạo quanh hồ: 300.000 - 500.000 VND/chuyến (đi từ 5 - 10 người); thuê chèo thuyền Kayak/SUP: 100.000 - 150.000 VND/người.",
+    "suitable_for": [
+      "người thích thiên nhiên",
+      "người thích thư giãn",
+      "cặp đôi",
+      "gia đình"
+    ],
+    "description": "Hồ Tuyền Lâm là không gian thiên nhiên nổi bật ở Đà Lạt, phù hợp để ngắm cảnh, nghỉ ngơi, chụp ảnh và kết hợp với các điểm tham quan lân cận.",
+    "tips": "Nên đi vào ngày thời tiết đẹp để có trải nghiệm ngắm cảnh tốt hơn.",
+    "source_url": "https://www.dalattrip.com/dalat-tourist-attractions/",
+    "latitude": 11.884444,
+    "longitude": 108.432222
+  },
+  {
+    "title": "Thác Datanla",
+    "city": "Đà Lạt",
+    "category": "thiên nhiên",
+    "address": "Đà Lạt, Lâm Đồng",
+    "best_time": "Buổi sáng hoặc đầu giờ chiều",
+    "budget": "Vé vào cổng: 50.000 VND/người lớn, 25.000 VND/trẻ em. Vé xe máng trượt khứ hồi Alpine Coaster: 100.000 VND/người lớn, 60.000 VND/trẻ em. Các trò chơi mạo hiểm (High Rope Course, đu dây Zipline) tính phí riêng từ 350.000 - 800.000 VND/trò chơi.",
+    "suitable_for": [
+      "người thích thác nước",
+      "người thích hoạt động ngoài trời",
+      "nhóm bạn",
+      "người thích trải nghiệm"
+    ],
+    "description": "Thác Datanla là điểm đến thiên nhiên và trải nghiệm ngoài trời nổi tiếng ở Đà Lạt. Địa điểm phù hợp với du khách muốn kết hợp ngắm thác, vui chơi và tham quan trong ngày.",
+    "tips": "Nên kiểm tra điều kiện thời tiết và hoạt động tại khu du lịch trước khi đi.",
+    "source_url": "https://vietnamtourism.gov.vn/en/post/17608",
+    "latitude": 11.902778,
+    "longitude": 108.448333
+  },
+  {
+    "title": "Núi Langbiang",
+    "city": "Đà Lạt",
+    "category": "thiên nhiên",
+    "address": "Lạc Dương, Lâm Đồng",
+    "best_time": "Buổi sáng hoặc ngày thời tiết quang đãng",
+    "budget": "Vé vào cổng: 50.000 VND/người lớn, 25.000 VND/trẻ em. Vé xe Jeep khứ hồi lên đỉnh Ra-đa: 100.000 - 120.000 VND/người (ghép đoàn 6 người) hoặc thuê trọn gói xe: 600.000 VND/xe.",
+    "suitable_for": [
+      "người thích ngắm cảnh",
+      "người thích núi",
+      "người thích khám phá",
+      "nhóm bạn"
+    ],
+    "description": "Langbiang là điểm ngắm cảnh và trải nghiệm thiên nhiên nổi tiếng gần Đà Lạt, phù hợp với du khách muốn nhìn toàn cảnh vùng cao nguyên và kết hợp hoạt động ngoài trời.",
+    "tips": "Nên chuẩn bị áo khoác nhẹ và kiểm tra thời tiết trước khi đi.",
+    "source_url": "https://vietnamtourism.gov.vn/en/post/17608",
+    "latitude": 12.044167,
+    "longitude": 108.439444
+  },
+  {
+    "title": "Đồi chè Cầu Đất",
+    "city": "Đà Lạt",
+    "category": "thiên nhiên",
+    "address": "Cầu Đất, Đà Lạt, Lâm Đồng",
+    "best_time": "Sáng sớm hoặc chiều mát",
+    "budget": "Vé tham quan đồi chè: Miễn phí. Vé tham quan khu vực Cầu gỗ săn mây hoặc Tuabin gió: 40.000 - 50.000 VND/người. Chi phí thuê xe điện dạo quanh đồi chè: 40.000 VND/người.",
+    "suitable_for": [
+      "người thích chụp ảnh",
+      "người thích thiên nhiên",
+      "người thích không khí trong lành",
+      "nhóm bạn"
+    ],
+    "description": "Đồi chè Cầu Đất là điểm đến ngoài trung tâm Đà Lạt, nổi bật với không gian đồi chè rộng, không khí mát và cảnh quan phù hợp để chụp ảnh.",
+    "tips": "Nên đi vào sáng sớm nếu muốn ngắm mây hoặc chụp ảnh trong ánh sáng đẹp.",
+    "source_url": "https://vietnam.travel/things-to-do/8-things-to-do-in-dalat",
+    "latitude": 11.854167,
+    "longitude": 108.561944
+  },
+  {
+    "title": "Vườn hoa Đà Lạt",
+    "city": "Đà Lạt",
+    "category": "thiên nhiên",
+    "address": "Đà Lạt, Lâm Đồng",
+    "best_time": "Buổi sáng hoặc chiều",
+    "budget": "Vé vào cổng: 100.000 VND/người lớn, 50.000 VND/trẻ em. Vé gửi xe máy: 5.000 VND.",
+    "suitable_for": [
+      "người thích hoa",
+      "gia đình",
+      "người thích chụp ảnh",
+      "du khách lần đầu đến Đà Lạt"
+    ],
+    "description": "Vườn hoa Đà Lạt phù hợp với hình ảnh thành phố ngàn hoa, là điểm tham quan nhẹ cho du khách thích cảnh quan, hoa và chụp ảnh.",
+    "tips": "Nên kiểm tra thời điểm hoa nở hoặc sự kiện hoa nếu muốn có trải nghiệm tốt hơn.",
+    "source_url": "https://vietnamtourism.gov.vn/en/post/17608",
+    "latitude": 11.948889,
+    "longitude": 108.451389
+  }
+]

@@ -87,3 +87,10 @@ export type UserPreferences = {
   favoritePlaces: string;
   avoidPlaces: string;
 };
+
+export type ComparePromptsResponse = {
+  llm_only: string;
+  rag_only: string;
+  rag_agentic: string;
+  differences: string;
+};

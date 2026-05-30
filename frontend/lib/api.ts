@@ -1,4 +1,8 @@
-import type { AgentResponse, UserPreferences } from "@/types/travel";
+import type {
+  AgentResponse,
+  ComparePromptsResponse,
+  UserPreferences,
+} from "@/types/travel";
 
 const API_BASE_URL =
   process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
@@ -133,6 +137,26 @@ export async function getUserMemories(userId: string = "demo_user") {
 
   if (!response.ok) {
     await parseApiError(response, "Get memory failed");
+  }
+
+  return response.json();
+}
+
+export async function comparePrompts(
+  message: string,
+  userId: string = "demo_user"
+): Promise<ComparePromptsResponse> {
+  const response = await fetch(`${API_BASE_URL}/api/agent/compare-prompts`, {
+    method: "POST",
+    headers: demoAuthHeaders(),
+    body: JSON.stringify({
+      user_id: userId,
+      message,
+    }),
+  });
+
+  if (!response.ok) {
+    await parseApiError(response, "Compare prompts failed");
   }
 
   return response.json();

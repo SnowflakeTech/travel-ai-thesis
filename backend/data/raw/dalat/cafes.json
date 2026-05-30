@@ -1,30 +1,97 @@
 [
   {
+    "title": "K'Ho Coffee Farm and Roastery",
+    "city": "Đà Lạt",
+    "category": "cafe",
+    "address": "Khu vực Lạc Dương, Lâm Đồng",
+    "best_time": "Buổi sáng",
+    "budget": "Giá đồ uống dao động từ 40.000 - 80.000 VND. Chi phí mua hạt cà phê rang xay nguyên chất mang về làm quà từ 150.000 - 300.000 VND/gói.",
+    "suitable_for": [
+      "người thích cafe",
+      "người thích trải nghiệm nông trại",
+      "người thích tìm hiểu cà phê",
+      "du khách muốn đi ngoài trung tâm"
+    ],
+    "description": "K'Ho Coffee Farm and Roastery là điểm trải nghiệm cà phê được Vietnam Travel gợi ý, nơi du khách có thể tìm hiểu quá trình trồng và chế biến cà phê Arabica của cộng đồng K'Ho.",
+    "tips": "Nên đi buổi sáng và kiểm tra trước nếu muốn tham gia trải nghiệm nông trại.",
+    "source_url": "https://vietnam.travel/things-to-do/8-things-to-do-in-dalat",
+    "latitude": 11.989714,
+    "longitude": 108.435862
+  },
+  {
+    "title": "Mê Linh Coffee Garden",
+    "city": "Đà Lạt",
+    "category": "cafe",
+    "address": "Đà Lạt, Lâm Đồng",
+    "best_time": "Sáng hoặc chiều mát",
+    "budget": "Giá nước uống đã bao gồm vé tham quan ngắm cảnh trọn gói dao động từ 70.000 - 110.000 VND/người tùy loại đồ uống (như cà phê chồn, trà trái cây).",
+    "suitable_for": [
+      "người thích cafe view đẹp",
+      "người thích chụp ảnh",
+      "nhóm bạn",
+      "cặp đôi"
+    ],
+    "description": "Mê Linh Coffee Garden thường được nhắc đến như một quán cà phê có không gian mở và tầm nhìn rộng ở Đà Lạt, phù hợp với du khách thích cafe kết hợp ngắm cảnh.",
+    "tips": "Nên đi khi trời quang để có tầm nhìn tốt hơn.",
+    "source_url": "https://dalatcitytours.com/news/where-to-go-in-dalat-76",
+    "latitude": 11.912753,
+    "longitude": 108.327091
+  },
+  {
     "title": "Tiệm Cà Phê Túi Mơ To",
     "city": "Đà Lạt",
     "category": "cafe",
-    "address": "Hẻm 31 Sào Nam, Đà Lạt",
-    "best_time": "Sáng sớm hoặc chiều hoàng hôn",
-    "budget": "50000-100000 VND/người",
-    "suitable_for": ["cặp đôi", "bạn bè", "người thích cafe chill"],
-    "description": "Tiệm Cà Phê Túi Mơ To là quán cafe nổi tiếng với không gian nhiều cây xanh, view thung lũng và phong cách nhẹ nhàng. Phù hợp với người thích chụp ảnh, uống cafe chậm và trải nghiệm không khí Đà Lạt.",
-    "tips": "Nên đi vào sáng sớm hoặc chiều muộn để có ánh sáng đẹp.",
-    "source_url": "",
-    "latitude": null,
-    "longitude": null
+    "address": "Đà Lạt, Lâm Đồng",
+    "best_time": "Sáng sớm hoặc chiều mát",
+    "budget": "Giá thực đơn nước uống và bánh ngọt dao động phổ biến từ 50.000 - 85.000 VND/món.",
+    "suitable_for": [
+      "người thích cafe chill",
+      "người thích chụp ảnh",
+      "cặp đôi",
+      "nhóm bạn"
+    ],
+    "description": "Tiệm Cà Phê Túi Mơ To là một lựa chọn phù hợp với nhu cầu cafe chill và chụp ảnh ở Đà Lạt. Không gian quán thường được du khách chọn để thư giãn trong lịch trình nhẹ nhàng.",
+    "tips": "Nên đi vào sáng sớm hoặc chiều mát nếu muốn có không gian dễ chịu hơn.",
+    "source_url": "https://www.tripadvisor.com/Restaurants-g293922-c8-Da_Lat_Lam_Dong_Province.html",
+    "latitude": 11.944361,
+    "longitude": 108.475267
   },
   {
     "title": "An Cafe",
     "city": "Đà Lạt",
     "category": "cafe",
-    "address": "63Bis đường 3 tháng 2, Đà Lạt",
-    "best_time": "Buổi sáng hoặc đầu giờ chiều",
-    "budget": "40000-90000 VND/người",
-    "suitable_for": ["gia đình", "bạn bè", "người thích không gian xanh"],
-    "description": "An Cafe có không gian nhiều cây xanh, nằm gần trung tâm, thuận tiện di chuyển. Quán phù hợp để nghỉ chân, trò chuyện và thưởng thức đồ uống trong lịch trình nhẹ nhàng.",
-    "tips": "Phù hợp để ghé giữa lịch trình vì gần trung tâm.",
-    "source_url": "",
-    "latitude": null,
-    "longitude": null
+    "address": "Đà Lạt, Lâm Đồng",
+    "best_time": "Sáng hoặc chiều",
+    "budget": "Giá đồ uống tầm trung, dao động từ 35.000 - 65.000 VND/món.",
+    "suitable_for": [
+      "người thích cafe trong trung tâm",
+      "người thích không gian xanh",
+      "người thích lịch trình nhẹ",
+      "du khách đi một mình"
+    ],
+    "description": "An Cafe là một gợi ý cafe phù hợp cho lịch trình nhẹ ở Đà Lạt, đặc biệt với người muốn nghỉ giữa các điểm tham quan trong trung tâm.",
+    "tips": "Có thể kết hợp với lịch trình dạo trung tâm hoặc Hồ Xuân Hương.",
+    "source_url": "https://www.tripadvisor.com/Restaurants-g293922-c8-Da_Lat_Lam_Dong_Province.html",
+    "latitude": 11.941914,
+    "longitude": 108.435528
+  },
+  {
+    "title": "Cafe view đồi ở Đà Lạt",
+    "city": "Đà Lạt",
+    "category": "cafe",
+    "address": "Đà Lạt, Lâm Đồng",
+    "best_time": "Sáng sớm hoặc hoàng hôn",
+    "budget": "Mức giá trung bình tại các quán cà phê view đồi (như khu vực đèo Prenn hay Trại Mát) dao động từ 55.000 - 90.000 VND/người.",
+    "suitable_for": [
+      "người thích cafe chill",
+      "người thích ngắm cảnh",
+      "người thích không khí mát",
+      "cặp đôi"
+    ],
+    "description": "Đà Lạt có nhiều quán cafe view đồi phù hợp với nhu cầu thư giãn, ngắm cảnh và chụp ảnh. Đây là nhóm trải nghiệm phù hợp khi người dùng muốn lịch trình nhẹ và có điểm nghỉ.",
+    "tips": "Nên chọn quán có vị trí phù hợp với tuyến di chuyển để tránh mất nhiều thời gian.",
+    "source_url": "https://vietnam.travel/things-to-do/8-things-to-do-in-dalat",
+    "latitude": 11.946314,
+    "longitude": 108.468241
   }
 ]

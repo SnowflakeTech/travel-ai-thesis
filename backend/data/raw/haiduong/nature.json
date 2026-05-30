@@ -1,0 +1,59 @@
+[
+  {
+    "title": "Đảo Cò Chi Lăng Nam",
+    "city": "Hải Dương",
+    "category": "thiên nhiên",
+    "address": "Chi Lăng Nam, Thanh Miện, Hải Dương",
+    "best_time": "Chiều mát hoặc mùa chim về nhiều",
+    "budget": "Vé vào cổng: Miễn phí. Vé gửi xe: 10.000 VND. Vé đi thuyền máy ngắm cò: 30.000 - 40.000 VND/người hoặc thuê thuyền thiên nga tự đạp: 50.000 - 80.000 VND/giờ.",
+    "suitable_for": [
+      "người thích thiên nhiên",
+      "gia đình",
+      "người thích chụp ảnh",
+      "người thích quan sát chim"
+    ],
+    "description": "Đảo Cò Chi Lăng Nam nằm giữa hồ An Dương, là điểm du lịch sinh thái nổi bật ở Hải Dương. Không gian hồ nước, cây xanh và chim cò phù hợp cho lịch trình nghỉ ngơi nhẹ nhàng, quan sát thiên nhiên và chụp ảnh.",
+    "tips": "Nên đi chiều mát để dễ quan sát chim và tránh nắng. Nếu đi thuyền, cần tuân thủ hướng dẫn an toàn.",
+    "source_url": "https://web01.haiduong.gov.vn/Lists/TinTuc/Summary.aspx?PageFirstRow=13891&Paged=TRUE&PagedPrev=TRUE&View=%7BEC2DD7FE-4414-497F-8B00-927852450D8C%7D&p_ID=4177",
+    "latitude": 20.733564,
+    "longitude": 106.182417
+  },
+  {
+    "title": "Khu vực núi Côn Sơn",
+    "city": "Hải Dương",
+    "category": "thiên nhiên",
+    "address": "Chí Linh, Hải Dương",
+    "best_time": "Sáng hoặc chiều mát",
+    "budget": "Vé vào khu di tích thắng cảnh: 20.000 VND/người. Vé gửi xe: 10.000 - 20.000 VND. Chi phí ăn uống nhẹ tự túc.",
+    "suitable_for": [
+      "người thích thiên nhiên",
+      "người thích đi bộ nhẹ",
+      "người thích văn hóa",
+      "người muốn không gian yên tĩnh"
+    ],
+    "description": "Khu vực núi Côn Sơn gắn với quần thể di tích Côn Sơn, có cảnh quan cây xanh, hồ và không gian núi đồi. Đây là điểm phù hợp cho du khách muốn kết hợp tham quan văn hóa với trải nghiệm thiên nhiên nhẹ nhàng.",
+    "tips": "Nên mang giày thoải mái và nước uống nếu dự định đi bộ trong khu vực rộng.",
+    "source_url": "https://sokhcn1.haiduong.gov.vn/Trang/ChiTietTinTuc.aspx?nid=3513&title=nguyen-trai-voi-con-son.html",
+    "latitude": 21.159417,
+    "longitude": 106.449722
+  },
+  {
+    "title": "Núi An Phụ - Kính Chủ",
+    "city": "Hải Dương",
+    "category": "thiên nhiên",
+    "address": "Kinh Môn, Hải Dương",
+    "best_time": "Buổi sáng hoặc chiều mát",
+    "budget": "Vé tham quan Đền Cao (núi An Phụ): Miễn phí. Vé tham quan Động Kính Chủ: 20.000 VND/người. Vé gửi xe tại các điểm: 10.000 VND/xe.",
+    "suitable_for": [
+      "người thích núi",
+      "người thích danh thắng",
+      "người thích văn hóa",
+      "người thích chụp ảnh"
+    ],
+    "description": "Khu vực An Phụ - Kính Chủ là không gian danh thắng và di tích ở Hải Dương, phù hợp với du khách muốn kết hợp cảnh quan núi đá, tham quan văn hóa và trải nghiệm ngoài trời trong ngày.",
+    "tips": "Nên đi vào ngày thời tiết khô ráo và chuẩn bị giày phù hợp nếu cần leo bậc hoặc đi đường dốc.",
+    "source_url": "https://hdnd.haiduong.gov.vn/source/H%C4%90ND_KHOA_XVII/ky-hop-28/to-trinh-ubnd/17333600359c--end--b.pdf",
+    "latitude": 21.012451,
+    "longitude": 106.518632
+  }
+]

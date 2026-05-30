@@ -1,30 +1,116 @@
 [
   {
-    "title": "Hồ Xuân Hương",
-    "city": "Đà Lạt",
-    "category": "thiên nhiên",
-    "address": "Trung tâm thành phố Đà Lạt",
-    "best_time": "Sáng sớm hoặc chiều mát",
-    "budget": "Miễn phí",
-    "suitable_for": ["người thích đi bộ", "cặp đôi", "gia đình"],
-    "description": "Hồ Xuân Hương phù hợp để đi dạo, đạp xe hoặc thư giãn. Đây là địa điểm trung tâm, dễ kết hợp với Quảng trường Lâm Viên, chợ Đà Lạt và các quán cafe gần đó.",
-    "tips": "Có thể kết hợp đi bộ quanh hồ và ghé quảng trường.",
-    "source_url": "",
-    "latitude": null,
-    "longitude": null
-  },
-  {
     "title": "Quảng trường Lâm Viên",
     "city": "Đà Lạt",
     "category": "tham quan",
-    "address": "Đường Trần Quốc Toản, Đà Lạt",
+    "address": "Trần Quốc Toản, phường 10, Đà Lạt, Lâm Đồng",
     "best_time": "Chiều mát hoặc buổi tối",
-    "budget": "Miễn phí",
-    "suitable_for": ["gia đình", "cặp đôi", "nhóm bạn"],
-    "description": "Quảng trường Lâm Viên là địa điểm biểu tượng của Đà Lạt, phù hợp để đi dạo, chụp ảnh và kết hợp tham quan Hồ Xuân Hương. Đây là điểm đến dễ di chuyển và không tốn chi phí.",
-    "tips": "Nên đi chiều mát để dễ chụp ảnh và dạo quanh hồ.",
-    "source_url": "",
-    "latitude": null,
-    "longitude": null
+    "budget": "Vé vào cửa: Miễn phí. Vé gửi xe máy: 5.000 - 10.000 VND. Chi phí ăn uống, trượt patin, thả diều tự túc.",
+    "suitable_for": [
+      "người thích chụp ảnh",
+      "gia đình",
+      "nhóm bạn",
+      "người muốn lịch trình nhẹ"
+    ],
+    "description": "Quảng trường Lâm Viên là không gian công cộng nổi bật bên hồ Xuân Hương, được biết đến với công trình biểu tượng nụ hoa atiso và hoa dã quỳ. Đây là điểm phù hợp để đi dạo, chụp ảnh và bắt đầu lịch trình khám phá trung tâm Đà Lạt.",
+    "tips": "Nên đi vào chiều mát hoặc buổi tối để dễ kết hợp dạo hồ Xuân Hương và ăn uống gần trung tâm.",
+    "source_url": "https://www.getyourguide.com/lam-vien-square-l193602/",
+    "latitude": 11.939722,
+    "longitude": 108.445278
+  },
+  {
+    "title": "Hồ Xuân Hương",
+    "city": "Đà Lạt",
+    "category": "tham quan",
+    "address": "Trung tâm thành phố Đà Lạt, Lâm Đồng",
+    "best_time": "Sáng sớm hoặc chiều mát",
+    "budget": "Vé tham quan: Miễn phí. Chi phí thuê xe đạp đôi quanh hồ: 30.000 - 50.000 VND/giờ; đạp vịt trên hồ: 60.000 - 100.000 VND/thuyền.",
+    "suitable_for": [
+      "người thích đi dạo nhẹ",
+      "người thích không gian lãng mạn",
+      "gia đình",
+      "cặp đôi"
+    ],
+    "description": "Hồ Xuân Hương nằm ở trung tâm Đà Lạt, là một trong những không gian cảnh quan quen thuộc của thành phố. Khu vực quanh hồ phù hợp để đi dạo, ngắm cảnh, chụp ảnh và kết hợp với các điểm gần trung tâm.",
+    "tips": "Nên đi giày thoải mái nếu muốn đi dạo quanh hồ. Có thể kết hợp với Quảng trường Lâm Viên trong cùng buổi.",
+    "source_url": "https://www.dalattrip.com/dalat-tourist-attractions/",
+    "latitude": 11.943611,
+    "longitude": 108.442778
+  },
+  {
+    "title": "Chợ đêm Đà Lạt",
+    "city": "Đà Lạt",
+    "category": "trải nghiệm",
+    "address": "Khu Hòa Bình, Đà Lạt, Lâm Đồng",
+    "best_time": "Buổi tối",
+    "budget": "Vé vào cửa: Miễn phí. Vé gửi xe máy khu Hòa Bình: 10.000 - 15.000 VND. Chi phí ăn uống (bánh tráng nướng, sữa đậu nành, khoai nướng) từ 20.000 - 100.000 VND/người tùy nhu cầu.",
+    "suitable_for": [
+      "người thích ẩm thực đường phố",
+      "người mua quà",
+      "nhóm bạn",
+      "du khách lần đầu đến Đà Lạt"
+    ],
+    "description": "Chợ đêm Đà Lạt là điểm trải nghiệm buổi tối quen thuộc, phù hợp để thưởng thức món ăn đường phố, mua đặc sản và cảm nhận không khí trung tâm thành phố về đêm.",
+    "tips": "Nên hỏi giá trước khi mua và giữ tư trang cẩn thận vào thời điểm đông khách.",
+    "source_url": "https://www.vietnamtourism.org.vn/travel-guide/vietnam-overview/regions-in-vietnam/what-to-eat-in-dalat.html",
+    "latitude": 11.942778,
+    "longitude": 108.437222
+  },
+  {
+    "title": "Nhà thờ Domaine de Marie",
+    "city": "Đà Lạt",
+    "category": "văn hóa",
+    "address": "Đà Lạt, Lâm Đồng",
+    "best_time": "Buổi sáng hoặc chiều",
+    "budget": "Vé vào cổng: Miễn phí. Gửi xe tùy tâm hoặc khoảng 5.000 VND. Du khách có thể mua đồ len ủng hộ nhà dòng.",
+    "suitable_for": [
+      "người thích kiến trúc",
+      "người thích chụp ảnh",
+      "người thích văn hóa",
+      "cặp đôi"
+    ],
+    "description": "Nhà thờ Domaine de Marie là một công trình tôn giáo có kiến trúc đặc trưng tại Đà Lạt. Địa điểm phù hợp cho lịch trình tham quan nhẹ, tìm hiểu kiến trúc và chụp ảnh.",
+    "tips": "Nên mặc trang phục lịch sự khi tham quan không gian tôn giáo.",
+    "source_url": "https://vietnamtourism.gov.vn/en/post/17608",
+    "latitude": 11.948611,
+    "longitude": 108.428333
+  },
+  {
+    "title": "Biệt điện Bảo Đại",
+    "city": "Đà Lạt",
+    "category": "văn hóa",
+    "address": "Đà Lạt, Lâm Đồng",
+    "best_time": "Buổi sáng hoặc đầu giờ chiều",
+    "budget": "Vé tham quan Dinh III Bảo Đại: 40.000 VND/người lớn, 20.000 VND/trẻ em. Vé gửi xe máy: 5.000 VND. Thuê trang phục cung đình chụp ảnh tự chọn: 50.000 - 100.000 VND.",
+    "suitable_for": [
+      "người thích lịch sử",
+      "người thích kiến trúc",
+      "gia đình",
+      "du khách muốn tìm hiểu Đà Lạt xưa"
+    ],
+    "description": "Biệt điện Bảo Đại là điểm tham quan văn hóa, lịch sử gắn với không gian biệt thự cổ và dấu ấn Đà Lạt thời trước. Địa điểm phù hợp để bổ sung chiều sâu văn hóa cho lịch trình.",
+    "tips": "Nên kiểm tra thông tin vé và thời gian tham quan trước khi đi.",
+    "source_url": "https://vietnamtourism.gov.vn/en/post/17608",
+    "latitude": 11.930556,
+    "longitude": 108.429444
+  },
+  {
+    "title": "Thung lũng Tình Yêu",
+    "city": "Đà Lạt",
+    "category": "tham quan",
+    "address": "Đà Lạt, Lâm Đồng",
+    "best_time": "Buổi sáng hoặc chiều mát",
+    "budget": "Vé trọn gói (bao gồm vào cổng, xe điện, pedalo đạp vịt trên hồ): 250.000 VND/người lớn, 125.000 VND/trẻ em.",
+    "suitable_for": [
+      "cặp đôi",
+      "gia đình",
+      "người thích chụp ảnh",
+      "người thích cảnh quan"
+    ],
+    "description": "Thung lũng Tình Yêu là điểm tham quan nổi tiếng của Đà Lạt, phù hợp với du khách thích cảnh quan, chụp ảnh và các hoạt động nhẹ trong khu du lịch.",
+    "tips": "Nên đi sớm để có nhiều thời gian tham quan và tránh khung giờ quá đông.",
+    "source_url": "https://www.dalattrip.com/dalat-tourist-attractions/",
+    "latitude": 11.977222,
+    "longitude": 108.451667
   }
 ]

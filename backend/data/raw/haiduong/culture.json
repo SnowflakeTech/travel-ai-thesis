@@ -1,0 +1,59 @@
+[
+  {
+    "title": "Làng gốm Chu Đậu",
+    "city": "Hải Dương",
+    "category": "văn hóa",
+    "address": "Nam Sách, Hải Dương",
+    "best_time": "Buổi sáng hoặc chiều",
+    "budget": "Vé vào cửa: Miễn phí. Vé gửi xe: 10.000 VND. Trải nghiệm tự tay làm gốm: 30.000 - 50.000 VND/người. Sản phẩm mua thêm tùy chọn.",
+    "suitable_for": [
+      "người thích làng nghề",
+      "người thích văn hóa",
+      "gia đình",
+      "học sinh sinh viên"
+    ],
+    "description": "Làng gốm Chu Đậu là điểm đến văn hóa gắn với nghề gốm truyền thống ở Hải Dương. Địa điểm phù hợp để tìm hiểu sản phẩm thủ công, lịch sử làng nghề và có thể kết hợp trải nghiệm mua sắm quà lưu niệm.",
+    "tips": "Nên liên hệ trước nếu muốn tham gia hoạt động trải nghiệm hoặc tham quan theo nhóm.",
+    "source_url": "https://web01.haiduong.gov.vn/",
+    "latitude": 20.985652,
+    "longitude": 106.331244
+  },
+  {
+    "title": "Lễ hội Côn Sơn - Kiếp Bạc",
+    "city": "Hải Dương",
+    "category": "trải nghiệm",
+    "address": "Chí Linh, Hải Dương",
+    "best_time": "Mùa xuân (tháng Giêng âm lịch) hoặc mùa thu (tháng Tám âm lịch) theo lịch lễ hội",
+    "budget": "Vé vào cửa: 20.000 VND/người/điểm. Vé gửi xe ngày hội: 20.000 - 50.000 VND/xe tùy bãi. Chi phí mua đồ lễ, dâng hương, ăn uống tự túc: 100.000 - 30.000 VND.",
+    "suitable_for": [
+      "người thích lễ hội",
+      "người thích văn hóa",
+      "du khách muốn trải nghiệm địa phương",
+      "gia đình"
+    ],
+    "description": "Lễ hội Côn Sơn - Kiếp Bạc là hoạt động văn hóa lớn gắn với quần thể di tích Côn Sơn - Kiếp Bạc. Lễ hội thu hút đông du khách, phù hợp để trải nghiệm không khí văn hóa, nghi lễ truyền thống và tìm hiểu lịch sử xứ Đông.",
+    "tips": "Nên kiểm tra lịch tổ chức từng năm và đi sớm nếu muốn tránh đông.",
+    "source_url": "https://hdnd.haiduong.gov.vn/phong-tuc---le-hoi/le-hoi-truyen-thong-con-son-kiep-bac---net-dep-van-hoa-xu-dong-n199.html",
+    "latitude": 21.159444,
+    "longitude": 106.446944
+  },
+  {
+    "title": "Trải nghiệm mùa vải Thanh Hà",
+    "city": "Hải Dương",
+    "category": "trải nghiệm",
+    "address": "Thanh Hà, Hải Dương",
+    "best_time": "Mùa vải, thường vào đầu hè (khoảng tháng 5 - tháng 6)",
+    "budget": "Vé vào tham quan, chụp ảnh tại vườn: 20.000 - 30.000 VND/người (được ăn vải tại vườn). Chi phí mua vải mang về làm quà: 30.000 - 60.000 VND/kg tùy thời điểm đầu hay chính vụ.",
+    "suitable_for": [
+      "người thích trái cây",
+      "người thích trải nghiệm nông nghiệp",
+      "gia đình",
+      "người mua quà"
+    ],
+    "description": "Trải nghiệm mùa vải Thanh Hà phù hợp với du khách muốn tìm hiểu nông sản địa phương, tham quan vùng trồng vải và mua đặc sản theo mùa. Đây là hoạt động có tính địa phương cao, phù hợp với lịch trình ngắn trong mùa hè.",
+    "tips": "Nên kiểm tra thời điểm vào vụ trước khi đi và hỏi giá rõ ràng nếu mua số lượng lớn.",
+    "source_url": "https://www.vietnamairlines.com/ph/vi/useful-information/travel-guide/dac-san-hai-duong",
+    "latitude": 20.890632,
+    "longitude": 106.402451
+  }
+]
